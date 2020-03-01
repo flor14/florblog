@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carpentries on English</title>
+    <link>/tags/carpentries/</link>
+    <description>Recent content in Carpentries on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/carpentries/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello world</title>
+      <link>/2019/04/hello-world.en-us/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/hello-world.en-us/</guid>
+      <description>Do you remember the first time you learned math in your life? Or history? I do not. But I remember my first steps programming. For self-taught adults like me, each step forward can feel like a great achievement. Each obstacle is in itself a learning opportunity. The idea of ​​this initial series of posts is to tell you about my first steps in the world of programming and give you some tools that can be useful to start.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+---
+title: sobre
+author: asdads
+date: '2019-04-24'
+slug: sobre
+categories:
+  - features
+  - R
+  - releases
+  - showcase appliquée
+tags:
+  - vs
+  - a
+  - chinese
+  - cover image
+keywords:
+  - tech
+comments: no
+showMeta: no
+showActions: no
+---
+

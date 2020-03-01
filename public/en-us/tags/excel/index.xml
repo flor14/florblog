@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>excel on English</title>
+    <link>/en-us/tags/excel/</link>
+    <description>Recent content in excel on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/en-us/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R is not just another type of statistical software</title>
+      <link>/en-us/2019/05/nivel-1.es-es/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en-us/2019/05/nivel-1.es-es/</guid>
+      <description>Suddenly you are programming!</description>
+    </item>
+    
+  </channel>
+</rss>

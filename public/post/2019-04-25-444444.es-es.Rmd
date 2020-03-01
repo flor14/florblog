@@ -1,0 +1,23 @@
+---
+title: 'caut'
+author: flore
+date: '2019-04-25'
+slug: cuatro.es-es
+categories:
+  - R
+  - releases
+  - showcase appliquée
+thumbnailImagePosition: left
+thumbnailImage: http://i.imgur.com/zQmKIKNm.png
+tags:
+  - chinese
+  - cover image
+  - d
+keywords:
+  - tech
+---
+## Quarterly Results
+
+## Eric Bouchut's blog
+
+[![Eric Bouchut's blog](http://i.imgur.com/zQmKIKNm.png)](http://ericbouchut.com/)

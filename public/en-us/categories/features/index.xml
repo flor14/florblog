@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features on English</title>
+    <link>/en-us/categories/features/</link>
+    <description>Recent content in Features on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/en-us/categories/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>now_yes</title>
+      <link>/en-us/2019/04/now-yes.en-us/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en-us/2019/04/now-yes.en-us/</guid>
+      <description>this works</description>
+    </item>
+    
+    <item>
+      <title>sobre</title>
+      <link>/en-us/2019/04/sobre.en-us/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en-us/2019/04/sobre.en-us/</guid>
+      <description>HUGOMORE42 ingles</description>
+    </item>
+    
+  </channel>
+</rss>

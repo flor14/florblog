@@ -1,0 +1,17 @@
+---
+title: ¿Dónde publicar tu ShinyApp?
+author: Florencia
+date: '2020-02-27'
+slug: donde_publicar_shinyapp.es-es
+categories:
+  - Shiny
+tags:
+  - ShinyApp
+  - publicar
+  - journal
+  - codigo
+keywords:
+  - tech
+---
+
+<!--more-->

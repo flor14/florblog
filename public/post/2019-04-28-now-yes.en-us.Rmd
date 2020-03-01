@@ -1,0 +1,19 @@
+---
+title: now_yes
+author: flor
+date: '2019-04-28'
+slug: now-yes.en-us
+categories:
+  - asd
+  - features
+  - R
+tags:
+  - chinese
+  - cover image
+keywords:
+  - tech
+coverimage: https://res.cloudinary.com/flor/image/upload/v1556487917/sample.jpg
+---
+
+this works
+

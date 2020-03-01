@@ -1,0 +1,43 @@
+---
+title: Hello world
+author: Florencia
+date: '2019-04-29'
+slug: hello-world.en-us
+categories:
+  - HelloWorld
+tags:
+  - LearningR
+  - Carpentries
+  - R
+  - PhD
+keywords:
+  - tech
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182739/3_tfssqo.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557243665/Holamundo_youtube_xmwuwc.png
+summary: " Starting here! "
+---
+
+> Do you remember the first time you learned math in your life? Or history? I do not. But I remember my first steps programming. For self-taught adults like me, each step forward can feel like a great achievement. Each obstacle is in itself a learning opportunity. The idea of ​​this initial series of posts is to tell you about my first steps in the world of programming and give you some tools that can be useful to start.
+
+Let me introduce myself: I have just finished my Ph.D. in biology and I am probably part of a phenomenon in extinction, something that being optimistic I call "the last generation graduated from a university in sciences without training in programming skills".
+
+This story begins in 2014, with a student (me!) finishing her first year of Ph.D. and frustrated by not finding a good postgraduate computing course. I was not sure what I was looking for, but I had a lot of data and it was difficult to use Excel for my purposes. At that time I would have liked to know [The Carpentries](https://carpentries.org/). It was only years later that Laura invited [Rayna](twitter.com/raynamharris) on her way to Buenos Aires to a [R-Ladies](https://www.meetup.com/es-ES/rladies-buenos-aires) meetup. There she presented this community that proposes free lessons designed specifically for those who do science learn [programming from scratch](https://software-carpentry.org/lessons/). If you are in this stage, I recommend you to approach this community, which is beginning to flourish in Latin America. In 2014 I hardly would have imagined that 4 years later I would be a certified instructor of the Carpentries, but that is another story.
+
+I would never have thought about writing a blog either. And at this point of the story, [Laura](twitter.com/_lacion_ ) appeared, who will be a recurring character in this story: 
+
+<center>
+
+![When would you start your blog? First, graduation. But after the defense of your thesis, I will remind you about this.](https://res.cloudinary.com/flor/image/upload/v1557272866/tesisTW_vx8kzd.png)
+
+</center> 
+
+WARNING! Let’s difference learning R and learn programming using R as your first language. My experience refers to this last case, so some of these steps are more linked to start programming, that is, use coding in problem-solving than to learn R per se.
+
+
+## ¿And now?
+Now I am learning Python and finishing a course about computer engineering. I am actively trying to apply more reproducible practices in my workflows. Also, through this blog, I intend to leave code that I generate for my thesis for free.
+
+##### Before continuing to the second post, do you know what it means ["Hello World"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)?

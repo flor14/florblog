@@ -1,0 +1,22 @@
+---
+title: Hello world
+author: Florencia
+date: '2019-04-23'
+slug: hello-world
+categories:
+  - R
+tags:
+  - d
+  - chinese
+  - cover image
+  - dailymotion
+keywords:
+  - tech
+---
+
+<!--more-->
+
+{ {< highlight r >}}
+library(tidyverse) # a comment
+x <- mean(mtcars$mpg)
+{ {< /highlight >}}

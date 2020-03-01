@@ -1,0 +1,72 @@
+---
+title: R no es solo otro tipo de software estadístico
+author: Florencia
+date: '2019-05-02'
+slug: nivel-1.es-es
+categories:
+  - Hola Mundo
+tags:
+  - AprendiendoR
+  - doctorado
+  - excel
+keywords:
+  - tech
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182740/5_fhfhvo.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557153493/2_pft8xl.png
+summary: " De repente estas programando "
+---
+
+## ¿Cómo llegue ahí?
+Usando R por primera vez con datos propios, decidí googlear un tutorial. Mis primeros pasos fueron importando bases de datos con la IDE de RStudio, realizando tests estadísticos, y anotando los resultados en un papel. Al ser usuaria de softwares de estadística clásicos y Excel, el botón “Importar datos” de la IDE de R-Studio me pareció intuitivo. Es decir, hacia algo similar cuando usaba un software con interfaz amigable. El flujo era más o menos así:
+
+<center>
+
+![Importar datos](https://res.cloudinary.com/flor/image/upload/v1557415994/rstui_njcpwh.png){ width=50% }
+
+</center>
+
+1. Importar datos: Botón importar datos. *SIMILAR a  EXCEL*.
+
+<center>
+
+![El menu de R-studio te permite aprender a escribir el código de la importación](Https://res.cloudinary.com/flor/image/upload/v1557285213/Screenshot_2_nobqit.png){ width=30% }
+
+</center>
+
+2. Instalar y usar un paquete. *NUEVO*.
+
+<center>
+
+![Instalar un paquete desde R-Studio](https://res.cloudinary.com/flor/image/upload/v1557415994/install_ty0edw.png){ width=50% }
+
+</center>
+
+3. Llamar una función del paquete. *SIMILAR a EXCEL*, pero R tiene su propia “escritura”. Para algunas funciones necesitaba instalar paquetes antes.
+4. Visualización. *NUEVO*. Debía escribir código para graficar. Me animé a algunos gráficos simples con plot() luego de googlear cómo hacerlo. 
+5. Exportar datos: *SIMILAR a EXCEL*. Copiar los resultados desde la consola de R a un Excel o tabla de Word. Si era un gráfico usaba “Export” en el panel de “Plots” de R-Studio.
+
+<center>
+
+![Exportar un gráfico desde R-Studio](https://res.cloudinary.com/flor/image/upload/v1557415994/plotsss_hmac0q.png){ width=50% }
+
+</center>
+
+Después de algún tiempo obteniendo resultados de forma fluida siguiendo este esquema, me sentía cómoda. Creo que mucha gente que usa R por su cuenta está en este paso, tal vez por siempre, ya que le permite obtener resultados.
+Escuche decir a [Yanina Saibene Bellini](www.twitter.com/yabellini) que las personas en este estadío "usan R (a través de [R-Studio](https://florencia.netlify.com/2019/05/hola-mundo-2-6.es-es/)) como una calculadora". Entiendo que hay algo en esto de tocar botones y elegir opciones que lo vuelve más intuitivo al principio, pero a costo de disminuir la reproducibilidad de tu flujo de trabajo.
+
+## Reflexiones 
+Este es el punto donde las diferencias con Excel en cuanto al flujo de trabajo básico son menores. Al momento de querer importar un dataset desde R-Studio, existe un code preview de cómo se escribiría esta misma acción en código. RStudio de esta forma te ayuda a que puedas empezar a escribir tu propio código. Veremos más adelante que esto aumenta la reproducibilidad de tu trabajo.
+Entender que “R no es solo otro tipo de software estadístico” llegó después de varias reflexiones. 
+Primero hay que entender la diferencia entre usar un lenguaje de programación y un software con interfaz de usuario. Éste último es más amigable e intuitivo de usar, pero ofrece un número de opciones limitadas. En R, al no tener una interfaz de usuario que limite mis elecciones, aparece el “síndrome de la hoja en blanco” (también conocido como "¿y ahora qué hago?"). Esta aparente desventaja, también puede considerarse una virtud: cuando usas R estás desarrollando tu propio algoritmo. 
+
+Existen ventajas al usar código para escribir todos los pasos de mis análisis ya que me permiten hacer mi flujo de trabajo reproducible. El uso directo de código habilita liberarlo en repositorios públicos y poder trabajar de forma colaborativa. Esto en sí es un cambio de paradigma en la forma en la que se hace ciencia hoy en día (cita).
+ Cuando escuché la charla plenaria de [Jenny Bryan](https://www.youtube.com/watch?v=nIeCuzfHQ6A&feature=youtu.be) en [LatinR](latin-r.com) 2018, pude formalizar en mi cabeza qué era lo que estaba percibiendo de novedoso. 
+
+## Recomendaciones
+* Ir a buscar un tutorial sobre cualquiera de estos temas es posible solo si uno sabe que esta funcionalidad existe, por lo que informarse es esencial. Si está en esta etapa, le sugiero que se acerque más a la comunidad de R. Tanto los tweets bajo el hashtag #rstats (o # rstats-ES en español), las comunidades como los [grupos de usuarios de R](https: // renbaires .github.io /) y [R-Ladies](rladies.org) ofrecen charlas gratuitas en entornos amigables. Te recomiendo que mires a tu país. Fue en [R-Ladies] (www.rladies.org) donde aprendí acerca de la existencia de paquetes brillantes, RMarkdown, blogdown, la posibilidad de raspado web, paquetes para generar mapas, el Tidyverse, el uso del control de versiones como Git, y otras múltiples funcionalidades.
+* También participe en iniciativas en Twitter bajo los hashtags #tidytuesday (o en español #datosdemiercoles) que le permiten aprender de la experiencia de otros usuarios y recibir consejos de otros usuarios.
+* ¡Todo error, advertencia! o la dificultad que aparece se puede buscar en Google, varios foros como [StackOverflow](https://stackoverflow.com/) o [RStudio community](https://community.rstudio.com/) suelen ser un sitio de intercambio Entre usuarios de todo el mundo. También [Maelle](twitter.com/ma_salmon) tiene [este](https://masalmon.eu/2018/07/22/wheretogethelp/) y [este otro](https://masalmon.eu/2019/01/25/uptodate/) publicaciones interesantes al respecto.
+

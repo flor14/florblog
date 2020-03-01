@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cover Image on Castellano</title>
+    <link>/tags/cover-image/</link>
+    <description>Recent content in Cover Image on Castellano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/cover-image/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AHORA SI</title>
+      <link>/2019/04/ahora-si.es-es/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/ahora-si.es-es/</guid>
+      <description>Esto ya funciona</description>
+    </item>
+    
+    <item>
+      <title>dada</title>
+      <link>/2019/04/dada/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/dada/</guid>
+      <description>{% blockquote %} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem. {% endblockquote %} {{ if not .Params.exclude_jquery}}  {{ end }}</description>
+    </item>
+    
+    <item>
+      <title>ddddd</title>
+      <link>/2019/04/ddddd/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/ddddd/</guid>
+      <description>Quarterly ResultsEric Bouchut’s blog
+Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.HUGOMORE42 library(shiny)snippe
+</description>
+    </item>
+    
+    <item>
+      <title>ffefefef</title>
+      <link>/2019/04/ffefefef/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/ffefefef/</guid>
+      <description>´´´´{{&amp;lt; hl-text [classes] &amp;gt;}}content{{&amp;lt; /hl-text &amp;gt;}}´´
+{{&amp;lt; image classes=“fancybox right clear” src=“image2.png” thumbnail=“http://google.fr/images/image125.png” group=“group:travel” thumbnail-width=“150px” thumbnail-height=“300px” title=“A beautiful sunrise” &amp;gt;}}
+{{&amp;lt; tabbed-codeblock example http://example.com &amp;gt;}}var test = ‘test’;.btn {color: red;}{{&amp;lt; /tabbed-codeblock &amp;gt;}}
+{{&amp;lt; wide-image src=“http://google.fr/images/image125.png” title=“A beautiful sunrise” &amp;gt;}}</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>/2019/04/about.es-es/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/about.es-es/</guid>
+      <description>Sougfd</description>
+    </item>
+    
+    <item>
+      <title>lalala</title>
+      <link>/2019/04/lalala.es-es/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/lalala.es-es/</guid>
+      <description>---
+title: lalala
+author: flor
+date: &#39;2019-04-24&#39;
+slug: lalala.es-es
+categories:
+  - features
+  - R
+  - releases
+tags:
+  - cover image
+  - d
+keywords:
+  - tech
+---
+
+
+
+
+
+HUGOMORE42</description>
+    </item>
+    
+    <item>
+      <title>sobre</title>
+      <link>/2019/04/sobre/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/sobre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hola mundo</title>
+      <link>/2019/04/hola-mundo/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/hola-mundo/</guid>
+      <description>si si si si</description>
+    </item>
+    
+    <item>
+      <title>Cover image showcase</title>
+      <link>/2015/05/cover-image-showcase/</link>
+      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/05/cover-image-showcase/</guid>
+      <description>&lt;p&gt;Tranquilpeak integrate a unique &amp;ldquo;cover image&amp;rdquo; feature. Open this post to see how this feature sublimate your article.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

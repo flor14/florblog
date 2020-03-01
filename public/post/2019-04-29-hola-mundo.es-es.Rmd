@@ -1,0 +1,46 @@
+---
+title: Hola Mundo
+author: Florencia
+date: '2019-04-29'
+slug: hola-mundo.es-es
+categories:
+  - Hola Mundo
+tags:
+  - AprendiendoR
+  - Carpentries
+  - doctorado
+comments: false
+showTags: true
+keywords:
+  - tech
+  - doctorado
+  - R
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182739/3_tfssqo.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557153493/2_pft8xl.png
+summary: " Esto empieza acá "
+---
+
+
+> ¿Te acordás de la primera vez que te enseñaron matemática en tu vida? ¿O historia? Yo no. Pero sí recuerdo mis primeros pasos programando. Cuando uno aprende algo siendo adulta y de forma autodidacta, cada escalón que uno avanza puede sentirse como un gran logro. Cada obstáculo es en sí mismo una oportunidad de aprendizaje. La idea de esta primera serie de posts es contarles sobre mis primeros pasos en el mundo de la programación y darles algunas herramientas que les pueden ser útiles para empezar.
+
+Me presento: acabo de terminar mi doctorado en en biología y soy probablemente parte de un fenómeno en extinción, algo que siendo optimista denomino “la última generación que se graduó de una universidad en ciencias sin saber programación”. 
+
+Esta historia comienza en 2014, con una estudiante doctoral terminando su primer año y frustrada por no encontrar un buen curso de postgrado donde aprender computación. No sabía bien qué buscaba, pero tenía muchos datos y se me estaba complicando usar el Excel para mis propósitos. En ese momento me hubiese venido muy bien conocer [The Carpentries](https://carpentries.org/). Fue recién años después que Laura invitó a [Rayna](https://twitter.com/raynamharris) de paso en Buenos Aires a un meetup de [R-Ladies](https://www.meetup.com/es-ES/rladies-buenos-aires). Allí presentó esta comunidad que propone lecciones gratuitas pensadas específicamente para quienes hacemos ciencia aprendan [programación desde cero](https://software-carpentry.org/lessons/). Si estás en esta etapa, te recomiendo que te acerques a esta comunidad, la cual está comenzando a florecer en Latinoamérica. Difícilmente en 2014 me hubiese imaginado que 4 años después sería instructora certificada de las Carpentries, pero eso es otra historia.
+
+Tampoco hubiese pensado nunca en tener un blog. Y ahí apareció [Laura](https://twitter.com/_lacion_), un personaje recurrente en esta historia: 
+
+<center>
+
+![tweet de [Laura](https://twitter.com/_lacion_)](https://res.cloudinary.com/flor/image/upload/v1557272866/tesisTW_vx8kzd.png)
+
+</center>
+
+WARNING! Una cosa es aprender R y otra es aprender programación usando usando R como tu primer lenguaje. Mi experiencia se refiere a este último caso, por lo que algunos de estos pasos están más ligados a empezar a programar, es decir, usar código en la resolución de problemas, que a aprender R per se.
+ 
+## ¿Y ahora?
+Ahora estoy aprendiendo Python y cursando una materia de ingeniería informática.  Trato de aplicar cada vez más prácticas reproducibles en mis flujos de trabajo. También, a través de este blog, pretendo dejar libre código que generé durante mi tesis doctoral.
+
+##### Antes de seguir al segundo post ¿Sabés que significa ["Hola Mundo"](https://es.wikipedia.org/wiki/Hola_mundo)?

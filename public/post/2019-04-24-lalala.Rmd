@@ -1,0 +1,17 @@
+---
+title: lalala
+author: flor
+date: '2019-04-24'
+slug: lalala.es-es
+categories:
+  - features
+  - R
+  - releases
+tags:
+  - cover image
+  - d
+keywords:
+  - tech
+---
+
+<!--more-->

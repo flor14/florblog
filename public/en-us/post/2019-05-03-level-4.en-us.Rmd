@@ -1,0 +1,76 @@
+---
+title: Reproducibility
+author: Florencia
+date: '2019-05-05'
+slug: nivel-4.es-es
+categories:
+  - Hola Mundo
+tags:
+  - learningR
+  - PhD
+  - reproducible research
+keywords:
+  - tech
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182740/8_hkxx9x.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557243665/Holamundo_youtube_xmwuwc.png
+summary: " Programming can be easier "
+---
+## How do I got there?
+> Did you ever re-run an old script and have errors due to you have updated a package? Do you want to get a graphic again but you forgot the format and size you used the first time? Have you ever forgotten the name and location of the file where your database is stored? Have you ever said, "I spent hours trying to run my code and then I realized that the error was very simple"? Well, maybe it's time to stop wasting time on the things we can avoid.
+
+A friend learning to program with R recently asked me for help with her code. The problem was a variable name that included an uppercase and then tried to recall it using lowercase. She felt frustrated and interpreted this as "programming is difficult".  Learning programming is difficult? Not because of an uppercase!. Just nobody told her previously that choosing the name of the variables is something to pay attention to [(and not only because of coding is case-sensitive)](https://speakerdeck.com/jennybc/how-to-name-files).
+
+## Reflection
+Reproducibility involves a set of practices that it is good to adopt from the beginning of learning. These practices ensure that anyone who runs the code at any time and place will get the same results as you, and this is important for two reasons: (1) to show evidence of the correctness of your results and (2)  to enable others to make use of our methods and results. You can read more about reproducible research [here](http://ropensci.github.io/reproducibility-guide/sections/introduction/).
+You can learn a lot in a self-taught way ignoring the idea of reproducible science. Knowing these practices from the beginning would have saved me a lot of time and headaches. If it were up to me, reproducibility would be one of the first steps to be taken in any R course, beyond the topic. These are good practices that professional programmers use all the time. Having good workflows with data and code is very important.
+
+Some practices involving reproducible science:
+
+* Work using [projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
+* Use of [version control](https://happygitwithr.com/)
+* Choose [appropriate names](https://speakerdeck.com/jennybc/how-to-name-files) for variables and files
+* Work with plain text files (Gandrud, 2016)
+* Save information from the R session
+* Leave all imports and exports of files written as code
+* Use [packrat](http://rstudio.github.io/packrat/) to control the versions of the packages
+* Use RMarkdown and knitr for automated reports (or some other similar system) (Xie, 2017)
+
+
+<center>
+
+![Create a project in R-Studio. File-> New Project...](https://res.cloudinary.com/flor/image/upload/v1557417816/proyects_sneeyo.png){ width=50% }
+
+</center>
+
+
+## Recommendations
+* Read about reproducible workflows. You can start with the references for this post or with this [links](http://ropensci.github.io/reproducibility-guide/sections/references/) compiled from [ROpenSci](https://ropensci.org).
+* If you are going to enroll in a course, ask if they implement any of this in advance, unfortunately, these good practices have not yet been fully opened on the side of teachers. 
+
+Paradoxically, the last of my posts would have been an excellent step 1 of my learning. With that spirit, I had the opportunity to offer a pre-congress course for students in SETAC Argentina 2018, called "Introduction to R for Scientists", which was based on everything I described in this series of posts. That course was the end of this learning cycle and also of my Ph.D. It was the opportunity to give back to the community part of what it gave me. Few things are better than teaching to really learn something! 
+
+### References
+
+* Bartlett, A. (2016) [Git for Humans.](Https://speakerdeck.com/alicebartlett/git-for-humans) Financial Times, London; Chat at UX Brighton.
+
+* Bryan, J (2015) [How to name files?](Https://speakerdeck.com/jennybc/how-to-name-files) Talk.
+
+* Bryan, J., the STAT 545 TAs, Hester, J. [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+
+* Gandrud, C. (2016). [Reproducible research with R and R studio](https://github.com/christophergandrud/Rep-Res-Book). Chapman and Hall / CRC.
+
+* Kuhn, M. (2018). CRAN Task View: [Reproducible Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+
+* ROpenSci. Introduction. In: Reproducibility in Science. [A Guide to enhancing reproducibility in scientific results and writing](http://ropensci.github.io/reproducibility-guide/
+) 
+
+* Stodden, V., Leisch, F., & Peng, R. D. (Eds.). (2014). Reproducing reproducible research. CRC Press.
+
+* Wright, T. and Zimmerman, N. (eds): Carpentry Software: R for Reproducible Scientific Analysis. Version 2016.06, June 2016,
+https://github.com/swcarpentry/r-novice-gapminder, 10.5281/zenodo.57520. [Project Management With RStudio](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/). R for Reproducible Scientific Analysis
+
+* Xie, Y. (2017). Dynamic Documents with R and knitr. Chapman and Hall / CRC.
+

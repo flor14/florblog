@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shiny on Versión en Español</title>
+    <link>/es-es/categories/shiny/</link>
+    <description>Recent content in Shiny on Versión en Español</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Wed, 04 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/es-es/categories/shiny/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>¿Dónde publicar tu ShinyApp?</title>
+      <link>/es-es/2020/03/donde_publicar_shinyapp.es-es/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/2020/03/donde_publicar_shinyapp.es-es/</guid>
+      <description>Motivación: Dejar disponibles mis análisisMi principal motivación para desarrollar ShinyApps fue poder realizar aplicaciones web relacionadas con mi investigación. El desarrollo de una ShinyApp para el análisis de bases de datos toxicológicas me permitió explorarlas en forma interactiva en relación a distintos criterios que pueden ser empleados para estimar valores regulatorios.
+¿Dónde publicar tu código?Luego de terminar la app, consulté en diversos foros y comunidades dónde podía publicar la ShinyApp.</description>
+    </item>
+    
+    <item>
+      <title>Aplicaciones web interactivas con Shiny - Material para un meetup</title>
+      <link>/es-es/2020/02/intro_shiny.es-es/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/2020/02/intro_shiny.es-es/</guid>
+      <description>¡Hola!En febrero daré un meetup de en el capítulo de R-Ladies, R-Ladies Resistencia-Corrientes (), junto al grupo de usuaries de R, R en el NEA. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
+El meetup consiste en un taller en el cual se arma una ShinyApp.
+Estás filminas parten de las que comencé a armar en un meetup del capítulo R-Ladies Buenos Aires en 2017, del cual soy co-organizadora.</description>
+    </item>
+    
+  </channel>
+</rss>

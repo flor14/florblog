@@ -1,0 +1,52 @@
+---
+title: The art of asking Google
+author: Florencia
+date: '2019-05-03'
+slug: nivel-2.es-es
+categories:
+  - HelloWorld
+tags:
+  - learningR
+  - PhD
+  - tidyverse
+keywords:
+  - tech
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182739/6_vfs7lp.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557243665/Holamundo_youtube_xmwuwc.png
+summary: " About syntaxis, the Tidyverse, and the evolution of the code "
+---
+
+## How do I got there?
+I'll start with an example. When I started graphing, I used ´plot()´ to generate a line graph. At that time I thought that writing code was something quite rigid: a point or a comma of more or less made nothing work. It was not conceivable for me the idea that there could be another redundant function with ´plot()´, that is to say that it would allow me to do the same graph. Why would there be 2 functions that do the same? It did not make sense. I did not know, for example, that these graphics with ´plot()´ could also do them with a function of the *ggplot2* package. This preconception brought me problems when interpreting the help of forums on the Internet, which presented possible solutions many times using different functions to solve the same problem.
+
+<center>
+![Example of differences in the code to perform the same graph from R Base or using the ggplot2 package](https://res.cloudinary.com/flor/image/upload/v1557288232/Screenshot_4_cwbgje.png)
+</center>
+
+## Reflections
+Sometimes, we can write disimilar code with the same functionalities. And I do not only mean change in structures or writing different functions, if not in the way it is written. If we speak in terms of programming languages, differences in the logic of writing the code are known as "syntax differences". Particularly there is a group of very famous packages for data science with R as a whole [tidyverse](https://www.tidyverse.org) with a syntax different from R base. The importance of understanding this is that it can generate confusion when interpreting solutions in Internet forums. If in Stack Overflow someone proposes the answer to a problem using R base and another person from a tidyverse package, we must bear in mind that the writing they are proposing is different, and in a certain way they talk about different routes to reach the same result . As one who speaks two dialects of the same language and says the same
+It is also important to consider that the packages evolve and, consequently, change over time. Sometimes, some solutions become obsolete. For example, the package * usethis * introduced improvements in the development of packages in R after its departure in 2018, but most of the tutorials before that date, do not use it. We talked about this with [PabloTe](https://twitter.com/pablinte)
+
+<center>
+![Reference sheet showing different ways in which code should be written in R, including the syntax of tidyverse packages. [Source](http://www.amelia.mn/sds220/handouts/Syntax-cheatsheet.pdf)](https://res.cloudinary.com/flor/image/upload/v1557288107/Screenshot_3_zspvdb.png){ width=80% }
+</center>
+
+## Recommendations
+
+* There is controversy about whether you should learn directly at [tidyverse](https://resources.rstudio.com/rstudio-conf-2018/teach-the-tidyverse-to-beginners-david-robinson) or R base. Regardless of whether one starts learning tidyverse or R base, it is important to consider this difference to interpret the forums and tutorials. If you prefer the tidyverse packages it can help you write your "tidyverse bar graph" directly in your internet browser so that the results use the tidyverse syntax.
+
+* As an open source of rapid evolution, none of these approaches is guaranteed, so "you learn as you go". Regarding the case of dates, limiting searches to the most recent ones can be a good way to obtain non-obsolete code as a result. 
+
+* If you can not find the answer in your preferred search engine, it's a good idea to try to read about it and find terms or keywords that bring us closer to the answers we want to find.
+
+### References
+
+* Peng, R (2018) [Teaching R to New Users - From tapply to the Tidyverse](https://simplystatistics.org/2018/07/12/use-r-keynote-2018/). Simply Statistics
+A journal blog by Rafa Irizarry, Roger Peng, and Jeff Leek. https://simplystatistics.org
+
+* McNamara, A (2018) [R Syntax Cheatsheet](http://www.amelia.mn/sds220/handouts/Syntax-cheatsheet.pdf)
+
+* Robinson, D (2018) Teach the Tidyverse to beginners. [Talk of the RStudio :: Conf 2018](https://resources.rstudio.com/rstudio-conf-2018/teach-the-tidyverse-to-beginners-david-robinson)

@@ -1,0 +1,53 @@
+---
+title: Aplicaciones web interactivas con Shiny - Material para un meetup
+author: Florencia
+date: '2020-02-20'
+slug: intro_shiny.es-es
+categories:
+  - Shiny
+tags:
+  - ShinyApp
+  - meetup
+  - rladies
+  - slides
+keywords:
+  - rstatses
+thumbnailImage: 
+  https://res.cloudinary.com/flor/image/upload/e_auto_brightness,o_70/v1580575702/matry_rep2gq.jpg
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1580574062/matryoshka_dolls-wallpaper-1366x768_zntpia.jpg
+summary: "Filminas de Shiny para un meetup de R-Ladies"
+---
+
+# ¡Hola!
+
+En febrero daré un meetup de en el capítulo de [R-Ladies](http://rladies.org/), R-Ladies Resistencia-Corrientes (), junto al grupo de usuaries de R, [R en el NEA](https://renelnea.github.io/web/). Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
+
+El meetup consiste en un taller en el cual se arma una ShinyApp. 
+
+Estás filminas parten de las que comencé a armar en un meetup del capítulo [R-Ladies Buenos Aires](https://twitter.com/RLadiesBA) en 2017, del cual soy co-organizadora.
+
+
+### Material
+
+<center>
+
+![](https://res.cloudinary.com/flor/image/upload/v1582639263/mamu_sfbchd.png)
+
+</center>
+
+[Filminas](https://flor14.github.io/rladies_shiny_meetup_2020_es/rladies_shiny_2020#1)
+
+[Repositorio en Github con el código de las filminas](https://github.com/flor14/rladies_shiny_meetup_2020_es)
+
+[Código de la ShinyApp](https://github.com/flor14/rladies_shiny_meetup_2020_es/tree/master/Rladies_app_es)
+
+
+Espero que este material puede ser útil para quienes aún no se han animado a desarrollar su propia webapp con Shiny.
+
+<center>
+
+![](https://res.cloudinary.com/flor/image/upload/c_scale,w_254/v1582643473/parentesis_y06vxc.png)
+
+</center>

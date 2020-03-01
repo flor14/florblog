@@ -1,0 +1,57 @@
+---
+title: Together we learn better
+author: Florencia
+date: '2019-05-04'
+slug: nivel-3.es-es
+categories:
+  - Hola Mundo
+tags:
+  - LearningR
+  - PhD
+  - Communities
+  - R
+  - rladies
+  - rstudioconf
+keywords:
+  - tech
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182740/7_fqluo2.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557243665/Holamundo_youtube_xmwuwc.png
+summary: " The R community "
+---
+
+## How do I get there?
+The second half of 2016 I did a research stay in Canada. One afternoon a colleague helped me solve some problems using R. I learned about the use of indexes and loops, which allowed me to automate the work. After his help, I could write code to obtain graphics from a database automatically. 50 graphics with a click and 10 lines of code? Great revelation! Here I began to understand the power to automate my work.
+
+## Reflections
+I returned to Buenos Aires with two ideas:
+
+1) Having received only one day of help I had learned much faster and on subjects that I would not have thought to look for on my own.
+
+2) Automatizing my work opened up new possibilities. I decided at this time that my research was going to be all with R instead of using other specialized software.
+
+In relation to point (1), I started looking for groups of users that would come together to learn how to program. So I found the meetup of the 2nd event of [R-Ladies Buenos Aires](https://www.meetup.com/es/rladies-buenos-aires/). And at this point, the story gets full of characters and makes its official entry [Laura](http://blog.rladies.org/post/vacation_grow_rladiesnetwork/), and also [Daniela](https://twitter.com/d4tagirl) and [Paloma](https://twitter.com/palolili23), among the three founders of the chapter, along with many others that will surely appear in future posts. Thanks to the invitation of the founders of Buenos Aires chapter, I joined the R-Ladies Buenos Aires chapter as an organizer at the beginning of 2017. R-Ladies opened the door for me to participate in [LatinR](www.latin-r.com) 2018 and the translation of chapters of [R4DS-es] (https://twitter.com/R4DS_es) together with the community of Latin American users and meet very valuable and interesting people.
+
+<center>
+
+![Me “working independently”. Artwork by [Allison Horst](https://twitter.com/allison_horst)](https://res.cloudinary.com/flor/image/upload/v1557410461/codemyown_bp3xok.jpg){ width=70% }
+
+</center>
+
+The community of R was not formed only by academics like me, but by people who study and do sociology, agronomy, mathematics, political science, chemistry, computer science, economics, medicine, psychology, journalism, etc. Suddenly, in all disciplines, there was in addition to R, data science. Where I noticed the most was when I participated (thanks to a full RStudio scholarship) [RStudio::Conf 2018](https://resources.rstudio.com/rstudio-conf-2018): this was not something about my discipline anymore, programming was here to stay. 
+
+Being self-taught means that there is no predetermined map of the path to follow and, in this case, the community became a source of networking, nutritious and fundamental.
+
+At the same time, the number of packages available for use in R [increases exponentially](https://gist.github.com/daroczig/3cf06d6db4be2bbe3368) and existing ones can have updates, so being up to date becomes important. The search for information on the web is almost essential within the practice of programming daily (link). Actively contributing to the R community (from a role not necessarily reserved for experts such as organizing a meetup or correcting a typo in a help file) is a good way to keep up and, often, save hours of search answers, thanks to collective knowledge. charlottes wickham has a presentation on how to start contributing to the community.
+
+## Recommendations
+
+* Actively participate in the various activities of the community. Get involved in the organization of R users groups or participate actively is a good way to get motivated while learning (and a good place to find help!). 
+
+* Attend conferences and meetups that have codes of conduct, a principle that shows that organizers care about maintaining a friendly environment for everyone.
+
+* Follow Twitter accounts, such as [Mara Averick](twitter.com/dataandme) and follow the hashtag #rstats (#rstats-ES) to get up to date.
+
+* Participate in events to translate material into Spanish, such as [R4DS-es](https://twitter.com/R4DS_es) and [The Carpentries](https://carpentries.org/), since you not only learn, you also that you also contribute to the Spanish-speaking community. It is also a way to stay updated and learn new technologies (like Git) in low risk environments. It is voluntary work where you learn the best international practices and you build trusting work relationships.

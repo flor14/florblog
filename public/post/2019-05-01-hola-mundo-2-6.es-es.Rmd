@@ -1,0 +1,42 @@
+---
+title: R = R + RStudio
+author: Florencia
+date: '2019-05-01'
+slug: hola-mundo-2-6.es-es
+categories:
+  - Hola Mundo
+tags:
+  - AprendiendoR
+  - doctorado
+  - RStudio
+keywords:
+  - tech
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182739/4_bpjexb.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557153493/2_pft8xl.png
+---
+
+###### Obstáculos que encontré al aprender a programar en R (y cómo superarlos)
+## 
+
+#### ¿Cómo llegue ahí?
+En el verano de 2015 tomé un curso de postgrado, donde en una práctica nos enseñaban a realizar una simulación sencilla con R. Para este trabajo práctico instalé R en mi PC y comencé a reproducir las líneas de código a medida que las iba explicando el docente. Consulté al asistente de clase por una duda. Este, horrorizado al mirar mi pantalla, me dice: “recomiendo fuertemente que instales también RStudio, es mucho más fácil”.
+
+#### Reflexiones 
+ Si bien el curso no era sobre R, me fuí con tres ideas sin las cuales no hubiese podido empezar este camino:
+
+1)  La noción de que R y RStudio eran cosas diferentes: RStudio permitía una gestión del código más sencilla,
+
+2)  R y RStudio instalados en la PC,
+
+y, lo que no es menor,
+
+3)  Haber corrido código y darme cuenta que era algo que yo también podía hacer.
+
+Pero no me malinterpreten. Tranquilamente podría haber resuelto la práctica de ese curso usando solo la consola de R. Lo que no me hubiese sido tan sencillo es continuar aprendiendo por mi cuenta sin haber usado la IDE de RStudio.
+
+#### Recomendaciones 
+* Suelen hacerse jornadas de instalación donde ofrecen ayuda con los pasos necesarios para tener funcionando R y RStudio en tu compu. 
+* También hay tutoriales muy útiles como éste (link). 

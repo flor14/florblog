@@ -1,0 +1,55 @@
+---
+title: Juntos aprendemos más
+author: Florencia
+date: '2019-05-04'
+slug: nivel-3.es-es
+categories:
+  - Hola Mundo
+tags:
+  - AprendiendoR
+  - doctorado
+  - Comunidades
+  - R
+  - rladies
+  - rstudioconf
+keywords:
+  - tech
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182740/7_fqluo2.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557153493/2_pft8xl.png
+summary: " La comunidad de R "
+---
+
+## ¿Como llegué hasta ahí?
+La segunda mitad de 2016 hice una estadía de investigación en Canadá. Una tarde, un colega me ayudó a resolver algunos problemas usando R. Aprendí sobre el uso de índices y loops, lo que me permitió automatizar el trabajo. Después de su ayuda, pude escribir código que me permitía obtener gráficos de una base de datos automáticamente. ¿50 gráficos con un clic y 10 líneas de código? ¡Gran revelación! Aquí comencé a entender el poder para automatizar mi trabajo.
+
+## Reflexiones
+Regresé a Buenos Aires con dos ideas:
+
+1) Habiendo recibido solo un día de ayuda, aprendí mucho más rápido y en temas que no habría pensado buscar por mi cuenta.
+
+2) Comrender la automatización del trabajo abrió nuevas posibilidades. Decidí en este momento que mi investigación iba a ser todo con R en lugar de usar otro software especializado.
+
+En relación con el punto (1), comencé a buscar grupos de usuarios que se unieran para aprender a programar. Así que encontré el meetup del segundo evento de [R-Ladies Buenos Aires](https://www.meetup.com/es/rladies-buenos-aires/). Y en este punto, la historia se llena de personajes y hace su entrada oficial [Laura](http://blog.rladies.org/post/vacation_grow_rladiesnetwork/), y también [Daniela](https://twitter.com/d4tagirl) y [Paloma](https://twitter.com/palolili23), entre los tres fundadores del capítulo, junto con muchos otros que seguramente aparecerán en publicaciones futuras. Gracias a la invitación de los fundadores del capítulo de Buenos Aires, me uní al capítulo de R-Ladies Buenos Aires como organizadora a principios de 2017. R-Ladies me abrió la puerta para participar en [LatinR](www.latin-r .com) 2018 y la traducción de los capítulos de [R4DS-es](https://twitter.com/R4DS_es) junto con la comunidad de usuarios latinoamericanos y conocen a personas muy valiosas e interesantes.
+
+<center>
+
+![Programando "por mi cuenta". Ilustración por [Allison Horst](https://twitter.com/allison_horst)](https://res.cloudinary.com/flor/image/upload/v1557410461/codemyown_bp3xok.jpg){ width=70% }
+
+</center>
+
+La comunidad de R no estaba formada solo por académicos como yo, sino por personas que estudian y hacen sociología, agronomía, matemáticas, ciencias políticas, química, ciencias de la computación, economía, medicina, psicología, periodismo, etc. De repente, en todas las disciplinas había además de R, ciencia de datos. Lo que más noté fue cuando participé (gracias a una beca completa de RStudio) en la [RStudio::Conf 2018](https://resources.rstudio.com/rstudio-conf-2018): esto ya no era algo sobre mi disciplina, la programación llegó para quedarse. Emprender este camino de forma autodidacta significa que no hay un mapa predeterminado del camino a seguir y, en este caso, la comunidad se convirtió en una fuente de redes, nutritiva y fundamental.
+
+Al mismo tiempo, la cantidad de paquetes disponibles para su uso en R [aumenta exponencialmente](https://gist.github.com/daroczig/3cf06d6db4be2bbe3368) y los existentes pueden tener actualizaciones, por lo que es importante estar al día. La búsqueda de información en la web es casi esencial dentro de la práctica de la programación diaria. Contribuir activamente a la comunidad R (desde un rol no necesariamente reservado para expertos como organizar una reunión o corregir un error tipográfico en un archivo de ayuda) es una buena manera de mantenerse al día y, a menudo, ahorrar horas de trabajo en solucionar problemas, gracias al conocimiento colectivo. 
+
+## Recomendaciones
+
+* Participar activamente en las diversas actividades de la comunidad. Involucrarse en la organización de grupos de usuarios de R o participar activamente es una buena manera de  mientras aprende (¡y un buen lugar para encontrar ayuda!).
+
+* Asistir a conferencias y reuniones que tengan códigos de conducta, un principio que demuestra que los organizadores se preocupan por mantener un ambiente amigable para todos.
+
+* Seguir cuentas de Twitter, como la de [Mara Averick](twitter.com/dataandme) y el hashtag #rstats (# rstats-ES en español) para estar al día.
+
+* Participar en eventos para traducir material al español, como [R4DS-es](https://twitter.com/R4DS_es) y [The Carpentries](https://carpentries.org/), ya que no solo aprendes, también que contribuyes a la comunidad hispanohablante. También es una forma de mantenerse actualizado y aprender nuevas tecnologías (como Git) en entornos de bajo riesgo. Es un trabajo voluntario donde aprendes las mejores prácticas internacionales y construyes relaciones de trabajo de confianza.

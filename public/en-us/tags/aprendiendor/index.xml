@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AprendiendoR on English</title>
+    <link>/en-us/tags/aprendiendor/</link>
+    <description>Recent content in AprendiendoR on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/en-us/tags/aprendiendor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R = r &#43; RStudio</title>
+      <link>/en-us/2019/05/hola-mundo-2-6.es-es/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en-us/2019/05/hola-mundo-2-6.es-es/</guid>
+      <description>Obstacles I found when learning to program in R (and how to overcome them)</description>
+    </item>
+    
+  </channel>
+</rss>

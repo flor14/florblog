@@ -1,0 +1,12 @@
+---
+title: intro shiny
+author: ''
+date: '2020-01-16'
+slug: en-us
+categories: []
+tags: []
+keywords:
+  - tech
+---
+
+<!--more-->

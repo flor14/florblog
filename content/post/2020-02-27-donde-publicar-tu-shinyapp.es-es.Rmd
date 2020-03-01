@@ -1,0 +1,54 @@
+---
+title: ¿Dónde publicar tu ShinyApp?
+author: Florencia
+date: '2020-03-04'
+slug: donde_publicar_shinyapp.es-es
+categories:
+  - Shiny
+tags:
+  - ShinyApp
+  - publicar
+  - journal
+  - codigo
+  - software
+  - open source
+  - academia
+keywords:
+  - rstatses
+thumbnailImage: 
+  https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1582548588/2_k0l388.png
+thumbnailImagePosition: left
+coverimage:
+  https://res.cloudinary.com/flor/image/upload/v1582548588/2_k0l388.png
+summary: "Mi experiencia publicando una ShinyApp - Links a listas de Journals científicos dónde publicar una ShinyApp"
+---
+
+## Motivación: Dejar disponibles mis análisis
+Mi principal motivación para desarrollar ShinyApps fue poder realizar aplicaciones web relacionadas con mi investigación. El desarrollo de una ShinyApp para el análisis de bases de datos toxicológicas me permitió explorarlas en forma interactiva en relación a distintos criterios que pueden ser empleados para estimar valores regulatorios.
+
+## ¿Dónde publicar tu código?
+Luego de terminar la app, consulté en diversos foros y comunidades dónde podía publicar la ShinyApp. ¿Qué es mejor?¿Publicarlo como material suplementario de un paper o como un software en si mismo? 
+
+En el foro de RStudio Community obtuve una lista de posibles revistas y consejos sobre dónde publicar, las cuales se pueden consultar en el siguiente [post](https://community.rstudio.com/t/can-i-publish-a-shiny-app-in-a-scientific-journal-how-where/6306). En particular en este link [In which journals should I publish my software? Por Neil Chue Hong](https://www.software.ac.uk/which-journals-should-i-publish-my-software) me fue muy útil.
+
+Finalmente me decidí por la revista [The Journal of Open Source Software](https://joss.theoj.org/).
+
+Una ventaja de publicar el código en sí es que el proceso de revisión de la revista se centró en cómo publicar el código como software open source, un concepto con el que apenas estamos familiarizados como investigadores.
+
+Por ejemplo, durante la revisión incluí un archivo para indicar cómo los usuarios podrían contribuir a mi ShinyApp y una licencia. Probablemente no habría hecho ninguno de estos pasos al tratar de publicar ShinyApp como material suplementario de un artículo. 
+ 
+## Mi primer publicación "Shiny" 
+
+El año pasado publiqué una primera app para analizar bases de datos toxicológicas con el fin de realizar evaluación de riesgo.
+
+D’Andrea et al., (2019). [shinyssd v1.0: Species Sensitivity Distributions for Ecotoxicological Risk Assessment](https://joss.theoj.org/papers/10.21105/joss.00785). Journal of Open Source Software,
+4(37), 785
+
+## ¿Los papers científicos estan desactualizados?
+
+Este artículo llamado [The Scientific Paper Is Outdated. Por R. Abernathey](https://www.chronicle.com/article/The-Scientific-Paper-Is/248045) (en inglés) me pareció muy interesante .
+
+> ¿Los científicos deberían pasar más tiempo desarrollando software? ¿Qué piensan?
+
+### Agradecimiento
+Quiero agradecer a [Maelle Salmon](https://masalmon.eu/), quién me animó a publicar este post

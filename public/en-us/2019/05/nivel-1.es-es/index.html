@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.58.3 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Florencia D&#39;Andrea">
+<meta name="keywords" content="tech">
+<meta name="description" content="Suddenly you are programming!">
+
+
+<meta property="og:description" content="Suddenly you are programming!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="R is not just another type of statistical software">
+<meta name="twitter:title" content="R is not just another type of statistical software">
+<meta property="og:url" content="/en-us/2019/05/nivel-1.es-es/">
+<meta property="twitter:url" content="/en-us/2019/05/nivel-1.es-es/">
+<meta property="og:site_name" content="English">
+<meta property="og:description" content="Suddenly you are programming!">
+<meta name="twitter:description" content="Suddenly you are programming!">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-05-02T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2019-05-02T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Hola Mundo">
+    
+  
+  
+    
+      <meta property="article:tag" content="learningR">
+    
+      <meta property="article:tag" content="PhD">
+    
+      <meta property="article:tag" content="excel">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@cantoflor_87">
+
+
+  <meta name="twitter:creator" content="@cantoflor_87">
+
+
+
+
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182740/5_fhfhvo.png">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182740/5_fhfhvo.png">
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/v1557243665/Holamundo_youtube_xmwuwc.png">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/v1557243665/Holamundo_youtube_xmwuwc.png">
+
+
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:00f4ff,c_fill,g_auto,r_max,w_1000/v1556820798/53470204_10161578291805584_3847140376125112320_n_avjqly.jpg">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:00f4ff,c_fill,g_auto,r_max,w_1000/v1556820798/53470204_10161578291805584_3847140376125112320_n_avjqly.jpg">
+
+
+    <title>R is not just another type of statistical software</title>
+
+    <link rel="icon" href="https://res.cloudinary.com/flor/image/upload/v1556588922/favicon_rjn8au.ico">
+    
+
+    
+	
+    <link rel="canonical" href="/en-us/2019/05/nivel-1.es-es/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-nnm2spxvve8onlujjlegkkytaehyadd4ksxc1hyzzq9a2wvtrgbljqyulomn.min.css" />
+    
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-139316094-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+	
+	
+  </head>
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/en-us">English</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about">
+    
+	
+    
+      
+        <img class="header-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:00f4ff,c_fill,g_auto,r_max,w_1000/v1556820798/53470204_10161578291805584_3847140376125112320_n_avjqly.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+  
+    
+      <div class="sidebar-profile">
+	    <a href="/#about">
+          <img class="sidebar-profile-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:00f4ff,c_fill,g_auto,r_max,w_1000/v1556820798/53470204_10161578291805584_3847140376125112320_n_avjqly.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Florencia D&#39;Andrea</h4>
+        
+	  </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/en-us">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/en-us/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/en-us/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/en-us/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.researchgate.net/profile/Maria_Dandrea2">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-graduation-cap"></i>
+      
+      <span class="sidebar-button-desc">Research</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://flor14.github.io/online-cv/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/flor14">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/cantoflor_87">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="mailto:lascientificasdedatos@gmail.com" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-pencil"></i>
+      
+      <span class="sidebar-button-desc">Mail</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/en-us/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-left
+              "
+       style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1557243665/Holamundo_youtube_xmwuwc.png')"
+       data-behavior="4">
+    
+      <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      R is not just another type of statistical software
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-05-02T00:00:00Z">
+        
+  
+  
+  
+  
+    2 May 2019
+  
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="/en-us/categories/hola-mundo">Hola Mundo</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="4"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+
+<div id="how-do-i-got-there" class="section level2">
+<h2>How do I got there?</h2>
+<p>Using R for the first time with my own data, I decided to google a tutorial. My first steps were importing databases with the IDE of R-Studio, performing statistical tests, and writing down the results on a paper. Being a user of classic statistics software and Excel, the “Import data” button of the R-Studio IDE seemed intuitive. That is, towards something similar when using software with a friendly interface. The flow was more or less like this:</p>
+<center>
+<img src="https://res.cloudinary.com/flor/image/upload/v1557415994/rstui_njcpwh.png" alt="Import data" style="width:50.0%" />
+</center>
+<ol style="list-style-type: decimal">
+<li>Import data: Button import data. <em>SIMILAR to EXCEL</em>.</li>
+</ol>
+<center>
+<div class="figure">
+<img src="Https://res.cloudinary.com/flor/image/upload/v1557285213/Screenshot_2_nobqit.png" alt="The R-Studio import data menu helps you learn how you could import the file using code." style="width:30.0%" />
+<p class="caption">The R-Studio import data menu helps you learn how you could import the file using code.</p>
+</div>
+</center>
+<ol start="2" style="list-style-type: decimal">
+<li>Install and use a package. <em>NEW</em>.</li>
+</ol>
+<center>
+<div class="figure">
+<img src="https://res.cloudinary.com/flor/image/upload/v1557415994/install_ty0edw.png" alt="Install a package" style="width:50.0%" />
+<p class="caption">Install a package</p>
+</div>
+</center>
+<ol start="3" style="list-style-type: decimal">
+<li>Call a function of the package. <em>SIMILAR to EXCEL</em>, but R has its own “writing”. For some functions I needed to install packages before.</li>
+<li>Visualization. <em>NEW</em>. I had to write code to graph. I encouraged some simple graphics with plot () after googling how to do it.</li>
+</ol>
+<center>
+<div class="figure">
+<img src="https://res.cloudinary.com/flor/image/upload/v1557415994/plotsss_hmac0q.png" alt="Export a plot from R-Studio" style="width:50.0%" />
+<p class="caption">Export a plot from R-Studio</p>
+</div>
+</center>
+<ol start="5" style="list-style-type: decimal">
+<li>Export data: <em>SIMILAR to EXCEL</em>. Copy the results from the R console to an Excel or Word table. If it was a graphic, it used “Export” in the “Plots” panel of R-Studio.</li>
+</ol>
+<p>After some time getting results in a fluid way following this scheme, I felt comfortable. I think a lot of people who use R on their own are in this step, maybe forever, since it allows them to get results.
+Listen to call <a href="www.twitter.com/yabellini">Yanina Saibene Bellini</a> that people in this stage “use R (through <a href="https://florencia.netlify.com/2019/05/hello-world-2-6.es-is%20/">R-Studio</a>) like a calculator”. I understand that there is something about touching buttons and choosing options that makes it more intuitive at first, but at the cost of decreasing the reproducibility of your workflow.</p>
+</div>
+<div id="reflections" class="section level2">
+<h2>Reflections</h2>
+<p>This is the point where the differences with Excel in terms of basic workflow are lowest. At the moment of wanting to import a dataset from R-Studio, there is a code preview of how this same action would be written in code. RStudio in this way helps you to start writing your own code. We will see later that this increases the reproducibility of your work.
+Understanding that “R is not just another type of statistical software” came after several reflections.
+First you have to understand the difference between using a programming language and a software with user interface. The latter is friendlier and more intuitive to use, but offers a number of limited options. In R, not having a user interface that limits my choices, appears the “blank sheet syndrome” (also known as “what now?”). This apparent disadvantage can also be considered a virtue: when you use R you are developing your own algorithm.</p>
+<p>There are advantages to using code to write all the steps of my analysis because they allow me to make my workflow reproducible. The direct use of code enables releasing it in public repositories and being able to work collaboratively. This in itself is a paradigm shift in the way science is done today (quote).
+When I heard the plenary talk of <a href="https://www.youtube.com/watch?v=nIeCuzfHQ6A&amp;feature=youtu.be">Jenny Bryan</a> at <a href="latin-r.com">LatinR</a> 2018, I was able to formalize in my head what It was what I was perceiving as novel.</p>
+</div>
+<div id="recommendations" class="section level2">
+<h2>Recommendations</h2>
+<ul>
+<li>Go find a tutorial on any of these topics is possible only if one knows that this functionality exists, hence being informed becomes essential. If you are in this stage I suggest you get closer to the community of R. Both the tweets under the hashtag #rstats (or #rstats-ES in Spanish), communities as the <a href="https://renbaires.github.io/">user groups of R</a> and <a href="rladies.org">R-Ladies</a> offer free talks in friendly environments. I recommend you look at your country. It was at [R-Ladies] (www.rladies.org) where I learned about the existence of shiny packages, RMarkdown, blogdown, the possibility of web scraping, packages to generate maps, the Tidyverse, the use of control of versions like Git, and multiple other functionalities.</li>
+<li>Also participate in initiatives on Twitter under the hashtags #tidytuesday (or in Spanish #datosdemiercoles) allow learning from the experience of other users and advice from other users.</li>
+<li>Every error, warning! or difficulty that appears can be googled on the internet, various forums such as <a href="https://stackoverflow.com/">StackOverflow</a> or <a href="https://community.rstudio.com/">RStudio community</a> are usually an exchange site between users of all the world. Also <a href="twitter.com/ma_salmon">Maelle</a> has <a href="https://masalmon.eu/2018/07/22/wheretogethelp/">this</a> and <a href="https://masalmon.eu/2019/01/25/uptodate/">this other</a> interesting posts about it.</li>
+</ul>
+</div>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/en-us/tags/learningr/">learningR</a>
+
+  <a class="tag tag--primary tag--small" href="/en-us/tags/phd/">PhD</a>
+
+  <a class="tag tag--primary tag--small" href="/en-us/tags/excel/">excel</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/en-us/2019/05/nivel-2.es-es/" data-tooltip="The art of asking Google">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/en-us/2019/05/hola-mundo-2-6.es-es/" data-tooltip="R = r &#43; RStudio">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/en-us/2019/05/nivel-1.es-es/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 Florencia D&#39;Andrea. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/en-us/2019/05/nivel-2.es-es/" data-tooltip="The art of asking Google">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/en-us/2019/05/hola-mundo-2-6.es-es/" data-tooltip="R = r &#43; RStudio">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/en-us/2019/05/nivel-1.es-es/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=%2Fen-us%2F2019%2F05%2Fnivel-1.es-es%2F%29">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:00f4ff,c_fill,g_auto,r_max,w_1000/v1556820798/53470204_10161578291805584_3847140376125112320_n_avjqly.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Florencia D&#39;Andrea</h4>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Biologa
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Argentina
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/en-us/2019/05/nivel-4.es-es/">
+                <h3 class="media-heading">Reproducibility</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Programming can be easier</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/en-us/2019/05/nivel-3.es-es/">
+                <h3 class="media-heading">Together we learn better</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">The R community</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/en-us/2019/05/nivel-2.es-es/">
+                <h3 class="media-heading">The art of asking Google</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">About syntaxis, the Tidyverse, and the evolution of the code</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/en-us/2019/05/nivel-1.es-es/">
+                <h3 class="media-heading">R is not just another type of statistical software</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Suddenly you are programming!</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/en-us/2019/05/hola-mundo-2-6.es-es/">
+                <h3 class="media-heading">R = r &#43; RStudio</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Obstacles I found when learning to program in R (and how to overcome them)</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/en-us/2019/04/hello-world.en-us/">
+                <h3 class="media-heading">Hello world</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Starting here!</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         6 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1556483003/textura-de-madera-oscura-1553_az5tbv.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/en-us\/2019\/05\/nivel-1.es-es\/';
+          
+            this.page.identifier = '\/en-us\/2019\/05\/nivel-1.es-es\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'florencia';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

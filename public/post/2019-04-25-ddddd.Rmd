@@ -1,0 +1,36 @@
+---
+title: 'ddddd'
+author: flore
+date: '2019-04-25'
+slug: ddddd
+categories:
+  - R
+  - releases
+  - showcase appliquée
+tags:
+  - chinese
+  - cover image
+  - d
+keywords:
+  - tech
+autoThumbnailImage: false
+thumbnailImagePosition: "top"
+coverImage: //d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg
+metaAlignment: center
+---
+## Quarterly Results
+
+## Eric Bouchut's blog
+
+[![Eric Bouchut's blog](http://i.imgur.com/zQmKIKNm.png)](http://ericbouchut.com/)
+
+![Tranquilpeak](/img/showcase.png)
+Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+<!-- toc -->
+
+Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+<!--more-->
+
+
+library(shiny)
+snippe

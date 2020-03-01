@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dailymotion on Castellano</title>
+    <link>/tags/dailymotion/</link>
+    <description>Recent content in Dailymotion on Castellano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 25 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/dailymotion/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ffefefef</title>
+      <link>/2019/04/ffefefef/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/ffefefef/</guid>
+      <description>´´´´{{&amp;lt; hl-text [classes] &amp;gt;}}content{{&amp;lt; /hl-text &amp;gt;}}´´
+{{&amp;lt; image classes=“fancybox right clear” src=“image2.png” thumbnail=“http://google.fr/images/image125.png” group=“group:travel” thumbnail-width=“150px” thumbnail-height=“300px” title=“A beautiful sunrise” &amp;gt;}}
+{{&amp;lt; tabbed-codeblock example http://example.com &amp;gt;}}var test = ‘test’;.btn {color: red;}{{&amp;lt; /tabbed-codeblock &amp;gt;}}
+{{&amp;lt; wide-image src=“http://google.fr/images/image125.png” title=“A beautiful sunrise” &amp;gt;}}</description>
+    </item>
+    
+    <item>
+      <title>hola mundo</title>
+      <link>/2019/04/hola-mundo/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/hola-mundo/</guid>
+      <description>si si si si</description>
+    </item>
+    
+    <item>
+      <title>Video integrations showcase</title>
+      <link>/2014/08/video-integrations-showcase/</link>
+      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/08/video-integrations-showcase/</guid>
+      <description>&lt;p&gt;Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

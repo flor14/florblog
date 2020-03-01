@@ -1,0 +1,52 @@
+---
+title: R = r + RStudio 
+author: Florencia
+date: '2019-05-01'
+slug: hola-mundo-2-6.es-es
+categories:
+  - Hola Mundo
+tags:
+  - AprendiendoR
+  - doctorado
+  - RStudio
+keywords:
+  - tech
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182739/4_bpjexb.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557243665/Holamundo_youtube_xmwuwc.png
+summary: " Obstacles I found when learning to program in R (and how to overcome them)"
+---
+
+## How do I got there?
+
+ In the summer of 2015 I took a postgraduate course, where in a practice we were taught to perform a simple simulation with R. For this practical work I installed R on my PC and started to reproduce the lines of code as I explained them the teacher. I consulted the class assistant for a question. The helper horrified when looking at my screen, tells me: "I strongly recommend that you also install RStudio, it is much easier".
+
+## Reflections
+ Although the course was not about R, I went with three ideas without I could not have been possible to start: 
+
+1) The notion that R and RStudio were different things: R-Studio allowed simpler code management.
+Making an analogy we could compare [R with the engine of a car and R-Studio with the dashboard of a car](https://moderndive.com/2-getting-started.html). It seemed like a good way to understand the difference between the two.
+
+2) R and RStudio installed on the PC,
+
+and, what is not minor,
+
+3) *To have run code and realize that it was something that I could also do*.
+
+But do not get me wrong. I could have solved the practice of that course using only the R console. What would not have been so simple is to continue learning on my own without having used the RSEudio IDE.
+
+## Recommendations
+* First you must install free [R](https://www.r-project.org/) and then [R-Studio](https://www.rstudio.com/products/rstudio/download/).
+
+* Sometimes it's good to know that there are ways to use R-Studio from the web without installing as [R-Studio Cloud](https://rstudio.cloud/)
+
+* Sometimes there are installation days where they offer help with the necessary steps to have R and R-Studio working in your computer. Be aware!
+
+* Select from the web a short tutorial for beginners of something you felt more comfortable with and try to reproduce it. That will help you with the feeling that you are not able to do it.
+
+### References
+
+Ismay C, Kim A. (2019) Chapter 2: Getting Started with Data in R. En: [Moderndive. Statistical Inference via Data Science](https://moderndive.com/). A moderndive into R and the tidyverse.
+

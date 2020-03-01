@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gratis on English Version</title>
+    <link>/tags/gratis/</link>
+    <description>Recent content in Gratis on English Version</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/gratis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutoriales en R</title>
+      <link>/2020/02/tutoriales-en-r.es-es/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/02/tutoriales-en-r.es-es/</guid>
+      <description>TutorialesExisten dos formas de realizar tutoriales en R, con el framework gratuito que creo Ines Montani y/o el paquete learnR.
+El post en el que recientemente colaboré junto a Ted Laderas, quien desarrollo el paquete decampr y Jessica X para el blog de RStudio Education comenta algunas diferencias entre ambas formas de realizar tutoriales.
+Puedes encontrar una lista de todos los tutoriales realizados con este framework aquí.
+En este post voy a generar una guía rápida sobre como realizar desde 0 un tutorial con el framework de Ines Montani.</description>
+    </item>
+    
+  </channel>
+</rss>

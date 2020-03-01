@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tidyverse on Castellano</title>
+    <link>/tags/tidyverse/</link>
+    <description>Recent content in tidyverse on Castellano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>El arte de preguntarle a Google</title>
+      <link>/2019/05/nivel-2.es-es/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/nivel-2.es-es/</guid>
+      <description>Sobre la sintaxis, el Tidyverse y la evolución del código.</description>
+    </item>
+    
+  </channel>
+</rss>

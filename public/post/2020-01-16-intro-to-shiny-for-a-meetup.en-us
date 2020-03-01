@@ -1,0 +1,26 @@
+---
+title: Intro to shiny for a meetup
+author: Florencia
+date: '2020-01-20'
+slug: intro_shiny.en-us
+categories:
+  - shiny
+tags:
+  - shiny
+  - intro
+  - teaching
+  - meetup
+  - rstats
+keywords:
+  - tech
+thumbnailImage: 
+   https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1557182739/3_tfssqo.png
+thumbnailImagePosition: right
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1557243665/Holamundo_youtube_xmwuwc.png
+summary: " Starting here! "
+---
+
+Hola
+
+<!--more-->

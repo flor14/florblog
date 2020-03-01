@@ -1,0 +1,18 @@
+---
+title: Curriculum vitae
+author: Florencia
+date: '2019-04-30'
+slug: curriculum-vitae
+categories:
+  - cv
+  - vitae
+tags:
+  - cv
+  - vitae
+keywords:
+  - tech
+comments: no
+showMeta: no
+showActions: no
+---
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AprendiendoR on Castellano</title>
+    <link>/tags/aprendiendor/</link>
+    <description>Recent content in AprendiendoR on Castellano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/aprendiendor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reproducibilidad</title>
+      <link>/2019/05/nivel-4.es-es/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/nivel-4.es-es/</guid>
+      <description>Programar puede ser más fácil</description>
+    </item>
+    
+    <item>
+      <title>Juntos aprendemos más</title>
+      <link>/2019/05/nivel-3.es-es/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/nivel-3.es-es/</guid>
+      <description>La comunidad de R</description>
+    </item>
+    
+    <item>
+      <title>El arte de preguntarle a Google</title>
+      <link>/2019/05/nivel-2.es-es/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/nivel-2.es-es/</guid>
+      <description>Sobre la sintaxis, el Tidyverse y la evolución del código.</description>
+    </item>
+    
+    <item>
+      <title>R no es solo otro tipo de software estadístico</title>
+      <link>/2019/05/nivel-1.es-es/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/nivel-1.es-es/</guid>
+      <description>De repente estas programando</description>
+    </item>
+    
+    <item>
+      <title>R = r &#43; R-Studio</title>
+      <link>/2019/05/hola-mundo-2-6.es-es/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/hola-mundo-2-6.es-es/</guid>
+      <description>Obstáculos que encontré al aprender a programar en R (y cómo superarlos)</description>
+    </item>
+    
+    <item>
+      <title>Hola Mundo</title>
+      <link>/2019/04/hola-mundo.es-es/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/hola-mundo.es-es/</guid>
+      <description>Esto empieza acá</description>
+    </item>
+    
+  </channel>
+</rss>

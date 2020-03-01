@@ -1,0 +1,37 @@
+---
+title: ffefefef
+author: flore
+date: '2019-04-25'
+slug: ffefefef
+categories:
+  - features
+  - R
+tags:
+  - cover image
+  - d
+  - dailymotion
+keywords:
+  - tech
+---
+´´´´
+{{< hl-text [classes] >}}
+content
+{{< /hl-text >}}
+´´
+
+{{< image classes="fancybox right clear" src="image2.png" thumbnail="http://google.fr/images/image125.png" group="group:travel" thumbnail-width="150px" thumbnail-height="300px" title="A beautiful sunrise" >}}
+
+{{< tabbed-codeblock example http://example.com >}}
+    <!-- tab js -->
+        var test = 'test';
+    <!-- endtab -->
+    <!-- tab css -->
+        .btn {
+            color: red;
+        }
+    <!-- endtab -->
+{{< /tabbed-codeblock >}}
+
+{{< wide-image src="http://google.fr/images/image125.png" title="A beautiful sunrise" >}}
+
+

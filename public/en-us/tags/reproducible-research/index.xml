@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reproducible research on English</title>
+    <link>/en-us/tags/reproducible-research/</link>
+    <description>Recent content in reproducible research on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/en-us/tags/reproducible-research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reproducibility</title>
+      <link>/en-us/2019/05/nivel-4.es-es/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en-us/2019/05/nivel-4.es-es/</guid>
+      <description>Programming can be easier</description>
+    </item>
+    
+  </channel>
+</rss>
