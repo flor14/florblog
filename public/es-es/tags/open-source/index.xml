@@ -6,7 +6,7 @@
     <description>Recent content in Open Source on Versión en Español</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Wed, 04 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/es-es/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>¿Dónde publicar tu ShinyApp?</title>
       <link>/es-es/2020/03/donde-publicar-tu-shinyapp.es-es/</link>
-      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/es-es/2020/03/donde-publicar-tu-shinyapp.es-es/</guid>
       <description>Motivación: Dejar disponibles mis análisisMi principal motivación para desarrollar ShinyApps fue poder realizar aplicaciones web relacionadas con mi investigación. El desarrollo de una ShinyApp para el análisis de bases de datos toxicológicas me permitió explorarlas en forma interactiva en relación a distintos criterios que pueden ser empleados para estimar valores regulatorios.
