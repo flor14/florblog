@@ -2,21 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shinyapp on English Version</title>
-    <link>https://florencia.netlify.com/tags/shinyapp/</link>
+    <link>/tags/shinyapp/</link>
     <description>Recent content in Shinyapp on English Version</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://florencia.netlify.com/tags/shinyapp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/shinyapp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Where to publish your ShinyApp?</title>
+      <link>/2020/03/where-to-publish-your-shinyapp.en-us/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/where-to-publish-your-shinyapp.en-us/</guid>
+      <description>MotivationI started to develop ShinyApps because of my research. The development of a ShinyApp for the analysis of toxicological databases allowed me to explore the data in relation to different criteria.
+Where to publish?After finishing the app, my first question was whether to publish the ShinyApp. Should I include it as supplementary material of other paper or could be published as software itself?
+I got valuable suggestions in the RStudio Community forum including a list of possible journals accepting ShinyApps, in the following thread.</description>
+    </item>
+    
+    <item>
       <title>Interactive web applications with Shiny - meetup material</title>
-      <link>https://florencia.netlify.com/2020/02/intro_shiny.en-us/</link>
+      <link>/2020/02/intro_shiny.en-us/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://florencia.netlify.com/2020/02/intro_shiny.en-us/</guid>
+      <guid>/2020/02/intro_shiny.en-us/</guid>
       <description>Hello!In February I will participate in a meetup of the R-Ladies chapter R-Ladies Resistencia-Corrientes and the R user group R en el NEA. These groups represent the R users of Resistencia and Corrientes cities of Argentina.
 The meetup consists of a workshop where attendees will learn to build their own apps. This material improves the one that I presented in an R-Ladies Buenos Aires meetup in 2017.
 MaterialSlides</description>

@@ -13,10 +13,10 @@
     
     <item>
       <title>Where to publish your ShinyApp?</title>
-      <link>/2020/03/donde_publicar_shinyapp.en-us/</link>
+      <link>/2020/03/where-to-publish-your-shinyapp.en-us/</link>
       <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/donde_publicar_shinyapp.en-us/</guid>
+      <guid>/2020/03/where-to-publish-your-shinyapp.en-us/</guid>
       <description>MotivationI started to develop ShinyApps because of my research. The development of a ShinyApp for the analysis of toxicological databases allowed me to explore the data in relation to different criteria.
 Where to publish?After finishing the app, my first question was whether to publish the ShinyApp. Should I include it as supplementary material of other paper or could be published as software itself?
 I got valuable suggestions in the RStudio Community forum including a list of possible journals accepting ShinyApps, in the following thread.</description>
