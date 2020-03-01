@@ -3,272 +3,166 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2020/03/donde_publicar_shinyapp.en-us/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/02/intro_shiny.en-us/</loc>
+    <loc>https://florencia.netlify.com/2020/02/intro_shiny.en-us/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/02/tutoriales-en-r.es-es/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/archives/</loc>
+    <loc>https://florencia.netlify.com/archives/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
-                href="/es-es/archives/"
+                href="https://florencia.netlify.com/es-es/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="/archives/"
+                href="https://florencia.netlify.com/archives/"
                 />
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://florencia.netlify.com/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
-                href="/es-es/categories/"
+                href="https://florencia.netlify.com/es-es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="/categories/"
+                href="https://florencia.netlify.com/categories/"
                 />
   </url>
   
   <url>
-    <loc>/tags/code/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/educaci%C3%B3n/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="/es-es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/gratis/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/journal/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="/es-es/tags/journal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="/tags/journal/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/meetup/</loc>
+    <loc>https://florencia.netlify.com/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
-                href="/es-es/tags/meetup/"
+                href="https://florencia.netlify.com/es-es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="/tags/meetup/"
+                href="https://florencia.netlify.com/"
                 />
   </url>
   
   <url>
-    <loc>/tags/open-source/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="/es-es/tags/open-source/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="/tags/open-source/"
-                />
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="/es-es/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/publish/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/rladies/</loc>
+    <loc>https://florencia.netlify.com/tags/meetup/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
-                href="/es-es/tags/rladies/"
+                href="https://florencia.netlify.com/es-es/tags/meetup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="/tags/rladies/"
+                href="https://florencia.netlify.com/tags/meetup/"
                 />
   </url>
   
   <url>
-    <loc>/tags/rstates/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/science/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/shiny/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="/es-es/categories/shiny/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="/categories/shiny/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/shinyapp/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="/es-es/tags/shinyapp/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="/tags/shinyapp/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/slides/</loc>
+    <loc>https://florencia.netlify.com/post/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
-                href="/es-es/tags/slides/"
+                href="https://florencia.netlify.com/es-es/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="/tags/slides/"
+                href="https://florencia.netlify.com/post/"
                 />
   </url>
   
   <url>
-    <loc>/tags/software/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
+    <loc>https://florencia.netlify.com/tags/rladies/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
-                href="/es-es/tags/software/"
+                href="https://florencia.netlify.com/es-es/tags/rladies/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="/tags/software/"
+                href="https://florencia.netlify.com/tags/rladies/"
                 />
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
+    <loc>https://florencia.netlify.com/categories/shiny/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
-                href="/es-es/tags/"
+                href="https://florencia.netlify.com/es-es/categories/shiny/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="/tags/"
+                href="https://florencia.netlify.com/categories/shiny/"
                 />
   </url>
   
   <url>
-    <loc>/tags/tutoriales/</loc>
+    <loc>https://florencia.netlify.com/tags/shinyapp/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://florencia.netlify.com/es-es/tags/shinyapp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://florencia.netlify.com/tags/shinyapp/"
+                />
   </url>
   
   <url>
-    <loc>/categories/tutoriales/</loc>
+    <loc>https://florencia.netlify.com/tags/slides/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://florencia.netlify.com/es-es/tags/slides/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://florencia.netlify.com/tags/slides/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://florencia.netlify.com/tags/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://florencia.netlify.com/es-es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://florencia.netlify.com/tags/"
+                />
   </url>
   
 </urlset>

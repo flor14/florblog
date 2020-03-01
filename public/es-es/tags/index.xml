@@ -2,102 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Versión en Español</title>
-    <link>/es-es/tags/</link>
+    <link>https://florencia.netlify.com/es-es/tags/</link>
     <description>Recent content in Tags on Versión en Español</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Wed, 04 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/es-es/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://florencia.netlify.com/es-es/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Academia</title>
-      <link>/es-es/tags/academia/</link>
-      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/es-es/tags/academia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Codigo</title>
-      <link>/es-es/tags/codigo/</link>
-      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/es-es/tags/codigo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Journal</title>
-      <link>/es-es/tags/journal/</link>
-      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/es-es/tags/journal/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Meetup</title>
-      <link>/es-es/tags/meetup/</link>
+      <link>https://florencia.netlify.com/es-es/tags/meetup/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/es-es/tags/meetup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Open Source</title>
-      <link>/es-es/tags/open-source/</link>
-      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/es-es/tags/open-source/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Publicar</title>
-      <link>/es-es/tags/publicar/</link>
-      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/es-es/tags/publicar/</guid>
+      <guid>https://florencia.netlify.com/es-es/tags/meetup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rladies</title>
-      <link>/es-es/tags/rladies/</link>
+      <link>https://florencia.netlify.com/es-es/tags/rladies/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/es-es/tags/rladies/</guid>
+      <guid>https://florencia.netlify.com/es-es/tags/rladies/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shinyapp</title>
-      <link>/es-es/tags/shinyapp/</link>
-      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      <link>https://florencia.netlify.com/es-es/tags/shinyapp/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/es-es/tags/shinyapp/</guid>
+      <guid>https://florencia.netlify.com/es-es/tags/shinyapp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>/es-es/tags/slides/</link>
+      <link>https://florencia.netlify.com/es-es/tags/slides/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/es-es/tags/slides/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>/es-es/tags/software/</link>
-      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/es-es/tags/software/</guid>
+      <guid>https://florencia.netlify.com/es-es/tags/slides/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rladies on Versión en Español</title>
-    <link>/es-es/tags/rladies/</link>
+    <link>https://florencia.netlify.com/es-es/tags/rladies/</link>
     <description>Recent content in Rladies on Versión en Español</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/es-es/tags/rladies/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://florencia.netlify.com/es-es/tags/rladies/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Aplicaciones web interactivas con Shiny - Material para un meetup</title>
-      <link>/es-es/2020/02/intro_shiny.es-es/</link>
+      <link>https://florencia.netlify.com/es-es/2020/02/intro_shiny.es-es/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/es-es/2020/02/intro_shiny.es-es/</guid>
+      <guid>https://florencia.netlify.com/es-es/2020/02/intro_shiny.es-es/</guid>
       <description>¡Hola!En febrero daré un meetup de en el capítulo de R-Ladies, R-Ladies Resistencia-Corrientes (), junto al grupo de usuaries de R, R en el NEA. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
 El meetup consiste en un taller en el cual se arma una ShinyApp.
 Estás filminas parten de las que comencé a armar en un meetup del capítulo R-Ladies Buenos Aires en 2017, del cual soy co-organizadora.</description>
