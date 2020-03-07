@@ -52,7 +52,7 @@ Some considerations:
 
 ## My first "shiny" paper
 
-Last year I published a first Shiny App to analyze ecotoxicological databases.
+Finally, last year I published a first Shiny App to analyze ecotoxicological databases.
 
 D’Andrea et al., (2019). [shinyssd v1.0: Species Sensitivity Distributions for Ecotoxicological Risk Assessment](https://joss.theoj.org/papers/10.21105/joss.00785). Journal of Open Source Software,
 4(37), 785
