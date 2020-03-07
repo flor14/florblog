@@ -48,7 +48,7 @@ Some considerations:
 
 * [Add version numbers](http://r-pkgs.had.co.nz/release.html)
 
-* [Include community guidelines]. For this you can use the function `usethis::use_tidy_contributing()` 
+* *Include community guidelines*. For this you can use the function `usethis::use_tidy_contributing()` 
 
 ## My first "shiny" paper
 
