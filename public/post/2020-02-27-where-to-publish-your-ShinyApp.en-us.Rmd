@@ -48,7 +48,7 @@ Some considerations:
 
 * [Add version numbers](http://r-pkgs.had.co.nz/release.html)
 
-* *Include community guidelines*. For this you can use the function `usethis::use_tidy_contributing()` 
+* **Include community guidelines**. For this you can use the function `usethis::use_tidy_contributing()` 
 
 ## My first "shiny" paper
 
@@ -57,7 +57,7 @@ Last year I published a first Shiny App to analyze ecotoxicological databases.
 D’Andrea et al., (2019). [shinyssd v1.0: Species Sensitivity Distributions for Ecotoxicological Risk Assessment](https://joss.theoj.org/papers/10.21105/joss.00785). Journal of Open Source Software,
 4(37), 785
 
-## Is the Scientific Paper outdated? 
+## Are Scientific Papers outdated? 
 
 I have recently read a very interesting article called [The Scientific Paper Is Outdated. By R. Abernathey](https://www.chronicle.com/article/The-Scientific-Paper-Is/248045). 
 

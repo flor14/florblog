@@ -49,7 +49,7 @@ Algunas consideraciones de utilidad antes de submitir:
 
 * [Agregar números de versión](http://r-pkgs.had.co.nz/release.html)
 
-* *Incluir lineamientos para contribución de la comunidad*. Para esto puede usar la función `usethis::use_tidy_contributing()`
+* **Incluir guías sobre como debe contribuir la comunidad**. Para esto puede usar la función `usethis::use_tidy_contributing()`
 
 ## Mi primer publicación "Shiny" 
 
