@@ -39,7 +39,7 @@ Por ejemplo, durante la revisión incluí un archivo para indicar cómo los usua
 
 ## ¿Qué tan buena tiene que ser mi aplicación Shiny?
 
-Depende del lugar de publicación. En mi experiencia con JOSS, debe hacer que su software esté disponible en un repositorio abierto (GitHub, Bitbucket, etc.) e incluir una licencia de código abierto aprobada por OSI. Lea más aquí sobre los otros [requisitos](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements).
+Depende del lugar de publicación. En mi experiencia con JOSS, debe hacer que su software esté disponible en un repositorio abierto (como GitHub, Bitbucket, etc.) e incluir una licencia de código abierto. Lea más aquí sobre los otros [requisitos](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements).
 
 Algunas consideraciones:
 * [Convertir la aplicación Shiny en un paquete](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio)
