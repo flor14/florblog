@@ -41,9 +41,13 @@ As an example, I included a file to indicate how users could contribute to my Sh
 It depends on the publication venue. In my experience with JOSS, you have to make your software available in an open repository (GitHub, Bitbucket, etc.) and include an OSI approved open source license. Read more here about the other [requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements).
 
 Some considerations:
+
 * [Make the Shiny App into an R package](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio) 
+
 * [Add a DOI for the Repository](https://guides.github.com/activities/citable-code/ )
+
 * [Add version numbers](http://r-pkgs.had.co.nz/release.html)
+
 * [Include community guidelines]. For this you can use the function `usethis::use_tidy_contributing()` 
 
 ## My first "shiny" paper

@@ -39,12 +39,16 @@ Por ejemplo, durante la revisión incluí un archivo para indicar cómo los usua
 
 ## ¿Qué tan buena tiene que ser mi Shiny App?
 
-Depende del lugar de publicación. En mi experiencia con JOSS, primero debe hacer que su software esté disponible en un repositorio abierto (como GitHub, Bitbucket, etc.) e incluir una licencia de código abierto. Lea más aquí sobre los otros [requisitos](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements).
+Depende del lugar de publicación. En mi experiencia publicando en JOSS, primero el software debe estar disponible en un repositorio abierto (como GitHub, Bitbucket, etc.) e incluir una licencia de código abierto. Podes leer más aquí sobre los otros [requisitos](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements).
 
 Algunas consideraciones de utilidad antes de submitir:
+
 * [Convertir la aplicación Shiny en un paquete](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio)
+
 * [Agregar un DOI para el repositorio](https://guides.github.com/activities/citable-code/)
+
 * [Agregar números de versión](http://r-pkgs.had.co.nz/release.html)
+
 * [Incluir lineamientos para contribución de la comunidad]. Para esto puede usar la función `usethis::use_tidy_contributing()`
 
 ## Mi primer publicación "Shiny" 
