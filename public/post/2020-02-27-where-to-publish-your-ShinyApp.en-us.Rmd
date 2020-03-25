@@ -36,7 +36,7 @@ One advantage of publishing the code itself is that the journal' review process 
 
 As an example, I included a file to indicate how users could contribute to my Shiny App and a license. I probably would not have done any of these steps of trying to publish the Shiny App as supplementary material of a paper.
 
-## How good does my Shiny app have to be
+## How good does my Shiny app have to be?
 
 It depends on the publication venue. In my experience with JOSS, you have to make your software available in an open repository (GitHub, Bitbucket, etc.) and include an OSI approved open source license. Read more here about the other [requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements).
 

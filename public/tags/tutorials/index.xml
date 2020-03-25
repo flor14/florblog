@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on English Version</title>
+    <link>/tags/tutorials/</link>
+    <description>Recent content in Tutorials on English Version</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recipe for your first online tutorial</title>
+      <link>/2020/03/cooking-your-first-tutorial.en-us/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/cooking-your-first-tutorial.en-us/</guid>
+      <description>The aim of this post is to provide a route map highlighting the incredible resources available to generate your own tutorial and some considerations.
+HelloLast year I helped to build some free online tutorials using Ines Montani Framework. After one busy year that included the end of my PhD finally I have some time to make a contribution to the community about how to build these tutorials.</description>
+    </item>
+    
+  </channel>
+</rss>
