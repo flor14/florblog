@@ -18,11 +18,11 @@ thumbnailImage:
   https://res.cloudinary.com/flor/image/upload/v1584660577/3_zru9mg.png
 thumbnailImagePosition: right
 coverimage:
-  https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1584660577/3_zru9mg.png
+  https://res.cloudinary.com/flor/image/upload/v1584660577/3_zru9mg.png
 summary: "An initial guide on how to start your tutorial from scratch using Ines Montani tutorial framework"
 ---
 
-> The aim of this post is to provide a route map highlighting the incredible resources available to generate your own tutorial and some considerations.
+> The aim of this post is to provide a route map highlighting the resources available to generate your own tutorial and some considerations.
 
 ## Hello
 
@@ -34,16 +34,16 @@ Last year I helped to build some free online tutorials using Ines Montani Framew
 
 1- [Ted Laderas](https://twitter.com/tladeras) has written some key *"pros and cons"* of using this framework in the [post](https://education.rstudio.com/blog/2020/03/r-bootcamp/) in the RStudio education blog explaining  the difference between Ines' framework with *learnr* tutorial package. 
 
-2 - Ines Montani documentation is really detailed. If you find problems in building the tutorial I strongly suggest you came back to [her repo](). 
+2 - Ines Montani documentation is really detailed. If you find problems in building the tutorial I strongly suggest you came back to [her repo](https://github.com/ines/course-starter-r). 
 
-> Do you teach a class in R and have a course that want to convert to a tuturial? A presential course it is not exactly the same as a online tutorial [Teaching Tech Together, Greg Wilson](https://teachtogether.tech/#s:online), so maybe you will have to adapt your material previuosly.
+> Do you teach a class in R and have a course that want to convert to a tuturial? A presential course it is not exactly the same as a online tutorial for example in the book [Teaching Tech Together, Greg Wilson](https://teachtogether.tech/#s:online). Will do you have to adapt your material previously?
 
-### Recipe for an online tutorial
-###### 1. **Ingredients**
+### Recipe for an online tutorial 📝
+#### 1. **Ingredients**
 
 First of all you have to divide your course into **chapters**. As a general rule there are 4 or 5 chapters. 
 
-##### The chapters can have:
+###### The chapters can have:
 
 * Slides with explanatory text associated 
 
@@ -55,65 +55,84 @@ First of all you have to divide your course into **chapters**. As a general rule
 
 > You can use [decampr package](https://laderast.github.io/decampr/articles/from_scratch.html) to generate some of the basic file structures. 🤖 
 
-###### 2. **Repository**
+#### 2. **Prepare a repository**
 
-[The R course repository](https://github.com/ines/course-starter-r) is on GitHub. You can get a copy using it as a [template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+You should have an account on GitHub (it is free). If you do not know how to do this, please check this [webpage](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account)
+
+[The course starter R repository](https://github.com/ines/course-starter-r) is on GitHub. You can get a copy using it as a [template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 
 Have a look to the [repository structure](https://ines.github.io/course-starter-python/#repository-structure). In this example is for a python tutorial, but it is basically the same structure. 
 
 > Remember that Ines Montani framework is available for [Python](https://github.com/ines/course-starter-python) too.
 
-#### ?
+#### 3. **Custom elements** 📦
 
-* Slides with its explanatory text associated -> 📁 **slides** folder 
-  - The slides are .md files. It is good idea to name the file according to the chapter number and order, for example **chapter2_01.md**.
+###### **Slides with text**
+* 📁 **slides** folder 
+  - The slides are markdown (.md) files. It is good idea to name the file according to the chapter number and order, for example **chapter2_01.md**.
   
-  - *How is the structure of the slides file?* Ines described it [here]()
-
-* Codeblock -> 📁 **exercises** folder 
+  - *How is the structure of the slides file?* Ines described it [here](https://github.com/ines/course-starter-r)
+  
+###### **Codeblock**
+*  📁 **exercises** folder 
   - Each exercise file has an associated solution file (and a ideally a test file)
   - The names for each file should have the same reference number:
   
   ![The solutions and exercises are separated files, linked by the final number in the name of the file](https://res.cloudinary.com/flor/image/upload/v1585163873/tutorial2_hbfvio.png)
   
-* Multiple choise -> 📁 **chapters** folder 
+
+
+###### **Multiple choise exercises**
+
+* 📁 **chapters** folder 
   - There are not specific files for them, are generated inside each chapter file. 
-  
-  Read more [here]()
+  - Read more about them [in the documentation](https://github.com/ines/course-starter-r)
+
   
 > ⚠️ Remember to include a unique id to each multiple choise exercise!
 
-* Audio and Video
- Read [here](https://ines.github.io/course-starter-python/#embedding-video-and-audio)
+
+###### **Audio and Video** 
+ Detailed [here](https://ines.github.io/course-starter-python/#embedding-video-and-audio)
  
-* Chapters -> 📁 **chapters** folder 
-  - Each chapter is a markdown file. 
-  - Here you have to specify the elements included in the chapter in the order name of the slides, exercises and solution files.
+###### **Chapters** 
+* 📁 **chapters** folder 
+  - Each chapter is a markdown (.md) file. 
+  - Chapter structure: you should include the name of the slides, exercises and solution files. 
   
-    ![The chapters are markdown files. In his tutorial Noam Ross decided to include a "references.md" with extra material](https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png)
+
+  ![In his tutorial Noam Ross decided to include a "references.md" with extra material](https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png)
+
+#### Do not forget 😮
+
+- Customize the *meta.json* file with the information of your course.
+
+- Add a profile picture and logo too! -> 📁 **static** folder.
+
+> ⚠️ Remember include the logo in .svg format! You can convert a .png pr .jpg image to this format online
 
 
-###### 3. **Cooking!**
+### 3. **Cooking!**🍳
 
 Have you added all your files to you repository? Now it is time to see if it works!
-Remember to [Section: Setting up Binder](https://github.com/ines/course-starter-r) the file in 📁 **binder** folder.
+Remember to read the [Section: Setting up Binder](https://github.com/ines/course-starter-r) and checking the file *install.R* -> 📁 **binder** folder.
 
-This can take a while! 
+This can take a while! ⏰
 
-Meanwhile you can start your account in [Netlify](https://www.netlify.com/) for the deploy as [Ines did](), but this step could be skipped. Why to use netlify? [I found this blogpost of Yihui Xie](https://yihui.org/en/2017/06/netlify-instead-of-github-pages/) as a possible explanation.
+Meanwhile you can start your account in [Netlify](https://www.netlify.com/) for the deploy as [Ines did](), but this step could be skipped. Why to use netlify? [I found this blogpost of Yihui Xie](https://yihui.org/en/2017/06/netlify-instead-of-github-pages/) with an explanation. It is up to you!
 
-###### 4. **Decoration**
+#### 4. **Decoration** 🍒🎨
 
-- [Add a summary and a course description]()
-- [Change the logo]()
-- [Change logo size]()
-- [Change the colors]()
-- [Add a licence logo]()
-- [Add links to the bio section]()
+- [Add a summary and a course description as introduction](https://ines.github.io/course-starter-python/#introduction-on-homepage)
+- [Change logo size ](https://github.com/noamross/gams-in-r-course/blob/master/src/styles/index.module.sass) modifying *width* argument after *.logo*
+- [Change the colors]() Modify *theme.sass*
+- [Add a licence badge!](https://creativecommons.org/licenses/) Look in the section "Add legal code" after each type of licence.
 
-###### 5. **Something is missing**
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-Test are not fully developed! But you can only add a test file with a success message if you want. 
+#### 5. **Something is missing** 
+
+⚠️ Test are not fully developed yet! 
 
 ### Bon Appetite 🍽!
 
