@@ -120,7 +120,7 @@ You should have an account on GitHub (it is free). If you do not know how to do 
 
 Have you added all your files to you repository? Now it is time to see if it works!
 
-Remember to read the [Section: Setting up Binder](https://github.com/ines/course-starter-r) and checking that the file [*install.R*](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/binder/install.R) has all the packages used in the tutorial -> 📁 **binder** folder.
+Remember to read the [Section: Setting up Binder](https://github.com/ines/course-starter-r) and checking that the file [*install.R*](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/binder/install.R) has all the packages used in the tutorial -> 📁 [**binder** folder.](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/binder)
 
 You will have to use [Binder](https://mybinder.org/) in your repo. This can take a while! ⏰
 
@@ -141,13 +141,13 @@ As soon as you are using Netlify you will be able to visualize the changes that 
 
 ⚠️ 
 
-Remember that [tests are not fully developed yet!](https://github.com/ines/course-starter-r) Read the last section of the documentation.
+Remember that tests are not fully developed yet!. For more info, read [the last section of the documentation.](https://github.com/ines/course-starter-r)
 
 ### Bon appétit 🍽!
 
 Now you have your online tutorial ready to feed the community! 
 
-You can make a pull request to [this repository](https://github.com/flor14/tutorials) that I am maintaining that collects all the courses generated with this material and other useful material to build your own course.
+You can make a pull request to [this repository](https://github.com/flor14/tutorials) that collects all the courses generated with this framework and other useful material to build your own course.
 
 ## Thanks
 

@@ -116,7 +116,7 @@ Es buena idea mirar la [estrutura del repositorio](https://ines.github.io/course
 ### 3. **¡Cocinando!**🍳
 
 ¿Incluiste todos tus archivos en el repositorio? ¡Ahora es el momento de ver si todo funciona! 
-Recorda leer la sección: [Setting up Binder](https://github.com/ines/course-starter-r) y modificar el archivo [*install.R*](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/binder/install.R) agregando todos los paquetes utilizados en el tutorial -> 📁 Carpeta **binder** 
+Recorda leer la sección: [Setting up Binder](https://github.com/ines/course-starter-r) y modificar el archivo [*install.R*](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/binder/install.R) agregando todos los paquetes utilizados en el tutorial -> 📁 [Carpeta **binder**](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/binder)
 
 Deberá usar [Binder](https://mybinder.org/) en su repositorio. ¡Esto puede tomar un tiempo! ⏰
 
