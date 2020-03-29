@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.54.0 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Florencia D&#39;Andrea">
+<meta name="keywords" content="rstatses, rstats, interactivo, framework">
+<meta name="description" content="El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.
+HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.
+Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.">
+
+
+<meta property="og:description" content="El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.
+HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.
+Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Receta para tu primer tutorial interactivo">
+<meta name="twitter:title" content="Receta para tu primer tutorial interactivo">
+<meta property="og:url" content="/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/">
+<meta property="twitter:url" content="/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/">
+<meta property="og:site_name" content="Versión en Español">
+<meta property="og:description" content="El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.
+HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.
+Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.">
+<meta name="twitter:description" content="El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.
+HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.
+Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.">
+<meta property="og:locale" content="es-es">
+
+  
+    <meta property="article:published_time" content="2020-03-28T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2020-03-28T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Tutoriales">
+    
+  
+  
+    
+      <meta property="article:tag" content="Tutoriales">
+    
+      <meta property="article:tag" content="Ines Montani">
+    
+      <meta property="article:tag" content="framework">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@cantoflor_87">
+
+
+  <meta name="twitter:creator" content="@cantoflor_87">
+
+
+
+
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1584660577/3_zru9mg.png">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1584660577/3_zru9mg.png">
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/v1584660577/3_zru9mg.png">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/v1584660577/3_zru9mg.png">
+
+
+
+
+    <title>Receta para tu primer tutorial interactivo</title>
+
+    <link rel="icon" href="https://res.cloudinary.com/flor/image/upload/v1556588922/favicon_rjn8au.ico">
+    
+
+    
+	
+    <link rel="canonical" href="/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-nnm2spxvve8onlujjlegkkytaehyadd4ksxc1hyzzq9a2wvtrgbljqyulomn.min.css" />
+    
+    
+
+    
+      
+    
+    
+	
+	
+  </head>
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/es-es">Versión en Español</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about">
+    
+	
+    
+      
+        <img class="header-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Foto de autor" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+  
+    
+      <div class="sidebar-profile">
+	    <a href="/#about">
+          <img class="sidebar-profile-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Foto de autor" />
+        </a>
+        <h4 class="sidebar-profile-name">Florencia D&#39;Andrea</h4>
+        
+	  </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Inicio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categorías</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Etiquetas</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archivos</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://flor14.github.io/online-cv-es/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">Bio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/flor14">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/cantoflor_87">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="mailto:lascientificasdedatos@gmail.com" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-pencil"></i>
+      
+      <span class="sidebar-button-desc">Correo</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-left
+              "
+       style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1584660577/3_zru9mg.png')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Receta para tu primer tutorial interactivo
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-03-28T00:00:00Z">
+        
+  
+  
+  
+  
+    28 Marzo 2020
+  
+
+      </time>
+    
+    
+  
+  
+    <span>en</span>
+    
+      <a class="category-link" href="/es-es/categories/tutoriales">Tutoriales</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+
+<blockquote>
+<p>El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.</p>
+</blockquote>
+<div id="hola" class="section level2">
+<h2>Hola</h2>
+<p>El año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. <a href="https://github.com/flor14/tutorials">Aquí</a> encontrarás algunos ejemplos de tutoriales creados con este framework.</p>
+<p>Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.</p>
+<div id="por-qué-usar-este-framework-para-armar-tu-tutorial" class="section level3">
+<h3>¿Por qué usar este framework para armar tu tutorial?</h3>
+<p>1- <a href="https://twitter.com/tladeras">Ted Laderas</a> describió algunos <em>“pros y contras”</em> de usar este framework en un <a href="https://education.rstudio.com/blog/2020/03/r-bootcamp/">post</a> que salió en el blog de RStudio education explicando la diferencia entre el framework de Ines y los tutoriales que pueden generarse con el paquete de R <em>learnr</em>.</p>
+<p>2 - La documentación de Ines Montani es realmente detallada. Si encuentran algun problem en mientras estan generando el tutorial les recomiendo fuertemente que vuelvan a consultar su <a href="https://github.com/ines/course-starter-r">repositorio</a>.</p>
+<blockquote>
+<p>¿Enseñas algún curso de R y queres convertirlo a un tutorial interactivo? Pensá que un curso diseñado para enseñarse con modalidad presencial no es esxactamente lo mismo que un tutorial online Te recomiendo leer este capítulo del libro <a href="https://teachtogether.tech/#s:online">Teaching Tech Together de Greg Wilson</a>.</p>
+</blockquote>
+</div>
+<div id="receta-para-un-tutorial-interactivo" class="section level3">
+<h3>Receta para un tutorial interactivo 📝</h3>
+<div id="ingredientes" class="section level4">
+<h4>1. <strong>Ingredientes</strong></h4>
+<p>Primero tenes que dividir tu material en <strong>capítulos</strong>. Por lo general en un tutorial hay entre 4 y 5 capítulos.</p>
+<div id="los-capítulos-pueden-tener" class="section level6">
+<h6>Los capítulos pueden tener:</h6>
+<ul>
+<li><p>Filminas con texto asociado</p></li>
+<li><p>Ejercicios de bloques de código</p></li>
+<li><p>Ejercicios de opción múltiple</p></li>
+<li><p>Archivos de audio o video</p></li>
+</ul>
+<p>🤖
+&gt; Podes usar el paquete <a href="https://laderast.github.io/decampr/articles/from_scratch.html">decampr</a> para generar alguna de las estructuras de archivos básicas.</p>
+</div>
+</div>
+<div id="crea-tu-repositorio" class="section level4">
+<h4>2. <strong>Crea tu repositorio</strong> 🏁</h4>
+<p>Primero debes generar una cuenta en GitHub (es gratis). Si no sabes como hacer esto, poer favor revisa esta <a href="https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account">página</a>. Por consultas sobre el uso de git y GitHub con R te recomiendo consultar el libro <a href="htpps://www.happygitwithr.com">Happy git with R</a> de <a href="https://twitter.com/JennyBryan">Jenny Bryan</a>.</p>
+<p><a href="https://github.com/ines/course-starter-r">El repositorio inicial para armar el curso</a> se encuentra en GitHub. Podes obtener una copia usándolo como un <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template">template</a>.</p>
+<p>Es buena idea mirar la <a href="https://ines.github.io/course-starter-python/#repository-structure">estrutura del repositorio</a>. En este ejemplo es un tutorial de Python, pero es basicamente la misma estructura.</p>
+<blockquote>
+<p>Recorda que el framework de Ines Montani esta también disponible para <a href="https://github.com/ines/course-starter-python">Python</a>.</p>
+</blockquote>
+</div>
+<div id="elementos-a-modificar" class="section level4">
+<h4>3. <strong>Elementos a modificar</strong> 📦</h4>
+<div id="filminas-con-texto" class="section level6">
+<h6><strong>Filminas con texto</strong></h6>
+<ul>
+<li>📁 Carpeta <strong>slides</strong>
+<ul>
+<li><p>The slides are markdown (.md) files. It is good idea to name the file according to the chapter number and order, for example <strong>chapter2_01.md</strong>.</p></li>
+<li><p><em>How is the structure of the slides file?</em> Ines described it <a href="https://github.com/ines/course-starter-r">here</a></p></li>
+</ul></li>
+</ul>
+</div>
+<div id="ejercicios-en-bloque-de-código" class="section level6">
+<h6><strong>Ejercicios en bloque de código</strong></h6>
+<ul>
+<li>📁 Carpeta <strong>exercises</strong></li>
+<li>Cada archivo de ejercicios tiene asociado otro con las soluciones (e idealmente un archivo para los tests)</li>
+<li>Los test no han sido aún desarrollados.</li>
+<li>Los nombres de los archivos deben presentar el mismo número como referencia:</li>
+</ul>
+<div class="figure">
+<img src="https://res.cloudinary.com/flor/image/upload/v1585163873/tutorial2_hbfvio.png" alt="Las soluciones y los ejercicios son archivos separados, unidos por el número que se encuentra al final del nombre del archivo" />
+<p class="caption">Las soluciones y los ejercicios son archivos separados, unidos por el número que se encuentra al final del nombre del archivo</p>
+</div>
+</div>
+<div id="ejercicios-de-opciones-múltiples" class="section level6">
+<h6><strong>Ejercicios de opciones múltiples</strong></h6>
+<ul>
+<li>📁 Carpeta <strong>chapters</strong>
+<ul>
+<li>No hay archivos especificos para ellos, se generan dentro de cada archivo en el capitulo correspondiente.</li>
+<li>Podes leer más sobre ellos en <a href="https://github.com/ines/course-starter-r">la documentación</a></li>
+</ul></li>
+</ul>
+<blockquote>
+<p>⚠️ Recordá incluir un id único a cada ejercicio de opciones multiples</p>
+</blockquote>
+</div>
+<div id="audio-y-video" class="section level6">
+<h6><strong>Audio y Video</strong></h6>
+<p>Detallado <a href="https://ines.github.io/course-starter-python/#embedding-video-and-audio">aquí</a></p>
+</div>
+<div id="chapters" class="section level6">
+<h6><strong>Chapters</strong></h6>
+<ul>
+<li>📁 Carpeta <strong>chapters</strong>
+<ul>
+<li>Cada capítulo es un archivo markdown (.md).</li>
+<li>Estructura del capítulo: deberías incluir un nombre para las filminas y archivos de ejercicios y soluciones.</li>
+</ul>
+<img src="https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png" title="fig:" alt="En su tutorial Noam Ross decidió incluir un archivo “references.md” (referencias) con material extra" /></li>
+</ul>
+</div>
+</div>
+<div id="no-olvidar" class="section level4">
+<h4>No olvidar 😮</h4>
+<ul>
+<li><p>ModificaModificar el archivo <em>meta.json</em> nformación correspondiente a tu curso.</p></li>
+<li><p>Agrega una foto de perfil y un logo! -&gt; 📁 Carpeta <strong>static</strong>.</p></li>
+</ul>
+<blockquote>
+<p>⚠️ Recordar incluir un logo en formato .svg! Podes convertir un archivo .png o .jpg a este formato online</p>
+</blockquote>
+</div>
+</div>
+<div id="cocinando" class="section level3">
+<h3>3. <strong>¡Cocinando!</strong>🍳</h3>
+<p>¿Incluiste todos tus archivos en el repositorio? ¡Ahora es el momento de ver si todo funciona!
+Recorda leer la sección: <a href="https://github.com/ines/course-starter-r">Setting up Binder</a> y modificar el archivo <a href="https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/binder/install.R"><em>install.R</em></a> agregando todos los paquetes utilizados en el tutorial -&gt; 📁 Carpeta <strong>binder</strong></p>
+<p>Deberá usar <a href="https://mybinder.org/">Binder</a> en su repositorio. ¡Esto puede tomar un tiempo! ⏰</p>
+<p>Mientras tanto podes abrirte una cuenta en <a href="https://www.netlify.com/">Netlify</a> para el deploy. Este paso puede ser evitado. ¿Por qué usar Netlify? <a href="https://yihui.org/en/2017/06/netlify-instead-of-github-pages/">Encontré este blog post de Yihui Xie</a>con una posible explicación. ¡Es tu desición!</p>
+<p>A partir de que comiences a usar Netlify podrás visualizar los cambios que vas haciendo en el tutorial. El código de los ejercicios no funcionará hasta que no uses Binder en tu repositorio.</p>
+<div id="personalizalo" class="section level4">
+<h4>4. <strong>Personalizalo</strong> 🍒</h4>
+<ul>
+<li><a href="https://ines.github.io/course-starter-python/#introduction-on-homepage">Agregar una descripción del curso en la página de inicio</a></li>
+<li><a href="https://github.com/noamross/gams-in-r-course/blob/master/src/styles/index.module.sass">Cambiar el tamaño del logo</a> cambiando el argumento <em>width</em> en <em>.logo</em></li>
+<li><a href="https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/theme.sass">Cambiar los colores del tema</a> Modifica el archivo <em>theme.sass</em></li>
+<li><a href="https://creativecommons.org/licenses/?lang=es_ES">Agrega un a licencia al material</a> Busca en la sección “Acceda al código legal” en cada tipo de licencia para encontrar el código que debes <a href="">pegar en tu tutorial</a>.</li>
+</ul>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+</div>
+<div id="algo-falta" class="section level4">
+<h4>5. <strong>Algo falta</strong></h4>
+<p>⚠️ Recordá que los tests no estan desarrolados. Podés leer <a href="https://github.com/ines/course-starter-r">la última sección</a> de la documentación para saber más respecto de los test.</p>
+</div>
+</div>
+<div id="bon-appétit" class="section level3">
+<h3>Bon appétit 🍽!</h3>
+<p>Ahora tenes listo tu tutorial para alimentar a la comunidad</p>
+<p>Podes hacer un pull request a <a href="https://github.com/flor14/tutorials">este repositorio</a> que estoy manteniendo y donde estoy listando todos los cursos generados con este framework y otro material util para generar tu propio curso.</p>
+</div>
+</div>
+<div id="gracias" class="section level2">
+<h2>Gracias</h2>
+<p>Me gustaría agradecer a <a href="https://twitter.com/noamross">Noam Ross</a>, <a href="https://twitter.com/juliasilge">Julia Silge</a>, <a href="https://twitter.com/_inesmontani">Ines Montani</a> y <a href="https://twitter.com/tladeras">Ted Laderas</a> por dejar el material de sus cursos disponibles de manera gratuita.</p>
+
+
+HUGOMORE42
+
+</div>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">ETIQUETADO EN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/es-es/tags/tutoriales/">Tutoriales</a>
+
+  <a class="tag tag--primary tag--small" href="/es-es/tags/ines-montani/">Ines Montani</a>
+
+  <a class="tag tag--primary tag--small" href="/es-es/tags/framework/">framework</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/es-es/2020/03/donde-publicar-tu-shinyapp.es-es/" data-tooltip="¿Dónde publicar tu Shiny App?">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Florencia D&#39;Andrea. Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional.
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/es-es/2020/03/donde-publicar-tu-shinyapp.es-es/" data-tooltip="¿Dónde publicar tu Shiny App?">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=%2Fes-es%2F2020%2F03%2Freceta-para-tu-primer-tutorial.es-es%2F%29">
+          <i class="fa fa-twitter"></i><span>Compartir en Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Foto de autor" />
+    
+    <h4 id="about-card-name">Florencia D&#39;Andrea</h4>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Biologa
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Argentina
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Buscar" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no se encontraron artículos</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/">
+                <h3 class="media-heading">Receta para tu primer tutorial interactivo</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.
+HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.
+Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/es-es/2020/03/donde-publicar-tu-shinyapp.es-es/">
+                <h3 class="media-heading">¿Dónde publicar tu Shiny App?</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Motivación: Dejar disponibles mis análisisMi principal motivación para desarrollar Shiny Apps fue poder realizar aplicaciones web relacionadas con mi investigación. El desarrollo de una ShinyApp para el análisis de bases de datos toxicológicas me permitió explorarlas en forma interactiva en relación a distintos criterios que pueden ser empleados para estimar valores regulatorios.
+¿Dónde publicar tu código?Luego de terminar la app, consulté en diversos foros y comunidades dónde podía publicar la Shiny App.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/es-es/2020/02/intro_shiny.es-es/">
+                <h3 class="media-heading">Aplicaciones web interactivas con Shiny - Material para un meetup</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Feb 2, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">¡Hola!En febrero daré un meetup de en el capítulo de R-Ladies, R-Ladies Resistencia-Corrientes (), junto al grupo de usuaries de R, R en el NEA. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
+El meetup consiste en un taller en el cual se arma una ShinyApp.
+Estás filminas parten de las que comencé a armar en un meetup del capítulo R-Ladies Buenos Aires en 2017, del cual soy co-organizadora.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no se encontraron artículos"
+         data-message-one="1 artículo encontrado"
+         data-message-other="{n} artículos encontrados">
+         3 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1579182616/images_1_i4cpen.png');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/es-es\/2020\/03\/receta-para-tu-primer-tutorial.es-es\/';
+          
+            this.page.identifier = '\/es-es\/2020\/03\/receta-para-tu-primer-tutorial.es-es\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'florencia';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

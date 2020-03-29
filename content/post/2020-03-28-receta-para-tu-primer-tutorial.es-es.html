@@ -1,0 +1,165 @@
+---
+title: Receta para tu primer tutorial interactivo
+author: Florencia D'Andrea
+date: '2020-03-28'
+slug: receta-para-tu-primer-tutorial.es-es
+categories: 
+  - Tutoriales
+tags:
+  - Tutoriales
+  - Ines Montani
+  - framework
+keywords:
+  - rstatses
+  - rstats
+  - interactivo
+  - framework
+thumbnailImage: 
+  https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1584660577/3_zru9mg.png
+thumbnailImagePosition: right
+coverimage:
+  https://res.cloudinary.com/flor/image/upload/v1584660577/3_zru9mg.png
+summary: "Una guia para realizar tu tutorial interactivo usando el framework de Ines Montani"
+---
+
+
+
+<blockquote>
+<p>El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.</p>
+</blockquote>
+<div id="hola" class="section level2">
+<h2>Hola</h2>
+<p>El año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. <a href="https://github.com/flor14/tutorials">Aquí</a> encontrarás algunos ejemplos de tutoriales creados con este framework.</p>
+<p>Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.</p>
+<div id="por-qué-usar-este-framework-para-armar-tu-tutorial" class="section level3">
+<h3>¿Por qué usar este framework para armar tu tutorial?</h3>
+<p>1- <a href="https://twitter.com/tladeras">Ted Laderas</a> describió algunos <em>“pros y contras”</em> de usar este framework en un <a href="https://education.rstudio.com/blog/2020/03/r-bootcamp/">post</a> que salió en el blog de RStudio education explicando la diferencia entre el framework de Ines y los tutoriales que pueden generarse con el paquete de R <em>learnr</em>.</p>
+<p>2 - La documentación de Ines Montani es realmente detallada. Si encuentran algun problem en mientras estan generando el tutorial les recomiendo fuertemente que vuelvan a consultar su <a href="https://github.com/ines/course-starter-r">repositorio</a>.</p>
+<blockquote>
+<p>¿Enseñas algún curso de R y queres convertirlo a un tutorial interactivo? Pensá que un curso diseñado para enseñarse con modalidad presencial no es esxactamente lo mismo que un tutorial online Te recomiendo leer este capítulo del libro <a href="https://teachtogether.tech/#s:online">Teaching Tech Together de Greg Wilson</a>.</p>
+</blockquote>
+</div>
+<div id="receta-para-un-tutorial-interactivo" class="section level3">
+<h3>Receta para un tutorial interactivo 📝</h3>
+<div id="ingredientes" class="section level4">
+<h4>1. <strong>Ingredientes</strong></h4>
+<p>Primero tenes que dividir tu material en <strong>capítulos</strong>. Por lo general en un tutorial hay entre 4 y 5 capítulos.</p>
+<div id="los-capítulos-pueden-tener" class="section level6">
+<h6>Los capítulos pueden tener:</h6>
+<ul>
+<li><p>Filminas con texto asociado</p></li>
+<li><p>Ejercicios de bloques de código</p></li>
+<li><p>Ejercicios de opción múltiple</p></li>
+<li><p>Archivos de audio o video</p></li>
+</ul>
+<p>🤖
+&gt; Podes usar el paquete <a href="https://laderast.github.io/decampr/articles/from_scratch.html">decampr</a> para generar alguna de las estructuras de archivos básicas.</p>
+</div>
+</div>
+<div id="crea-tu-repositorio" class="section level4">
+<h4>2. <strong>Crea tu repositorio</strong> 🏁</h4>
+<p>Primero debes generar una cuenta en GitHub (es gratis). Si no sabes como hacer esto, poer favor revisa esta <a href="https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account">página</a>. Por consultas sobre el uso de git y GitHub con R te recomiendo consultar el libro <a href="htpps://www.happygitwithr.com">Happy git with R</a> de <a href="https://twitter.com/JennyBryan">Jenny Bryan</a>.</p>
+<p><a href="https://github.com/ines/course-starter-r">El repositorio inicial para armar el curso</a> se encuentra en GitHub. Podes obtener una copia usándolo como un <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template">template</a>.</p>
+<p>Es buena idea mirar la <a href="https://ines.github.io/course-starter-python/#repository-structure">estrutura del repositorio</a>. En este ejemplo es un tutorial de Python, pero es basicamente la misma estructura.</p>
+<blockquote>
+<p>Recorda que el framework de Ines Montani esta también disponible para <a href="https://github.com/ines/course-starter-python">Python</a>.</p>
+</blockquote>
+</div>
+<div id="elementos-a-modificar" class="section level4">
+<h4>3. <strong>Elementos a modificar</strong> 📦</h4>
+<div id="filminas-con-texto" class="section level6">
+<h6><strong>Filminas con texto</strong></h6>
+<ul>
+<li>📁 Carpeta <strong>slides</strong>
+<ul>
+<li><p>The slides are markdown (.md) files. It is good idea to name the file according to the chapter number and order, for example <strong>chapter2_01.md</strong>.</p></li>
+<li><p><em>How is the structure of the slides file?</em> Ines described it <a href="https://github.com/ines/course-starter-r">here</a></p></li>
+</ul></li>
+</ul>
+</div>
+<div id="ejercicios-en-bloque-de-código" class="section level6">
+<h6><strong>Ejercicios en bloque de código</strong></h6>
+<ul>
+<li>📁 Carpeta <strong>exercises</strong></li>
+<li>Cada archivo de ejercicios tiene asociado otro con las soluciones (e idealmente un archivo para los tests)</li>
+<li>Los test no han sido aún desarrollados.</li>
+<li>Los nombres de los archivos deben presentar el mismo número como referencia:</li>
+</ul>
+<div class="figure">
+<img src="https://res.cloudinary.com/flor/image/upload/v1585163873/tutorial2_hbfvio.png" alt="Las soluciones y los ejercicios son archivos separados, unidos por el número que se encuentra al final del nombre del archivo" />
+<p class="caption">Las soluciones y los ejercicios son archivos separados, unidos por el número que se encuentra al final del nombre del archivo</p>
+</div>
+</div>
+<div id="ejercicios-de-opciones-múltiples" class="section level6">
+<h6><strong>Ejercicios de opciones múltiples</strong></h6>
+<ul>
+<li>📁 Carpeta <strong>chapters</strong>
+<ul>
+<li>No hay archivos especificos para ellos, se generan dentro de cada archivo en el capitulo correspondiente.</li>
+<li>Podes leer más sobre ellos en <a href="https://github.com/ines/course-starter-r">la documentación</a></li>
+</ul></li>
+</ul>
+<blockquote>
+<p>⚠️ Recordá incluir un id único a cada ejercicio de opciones multiples</p>
+</blockquote>
+</div>
+<div id="audio-y-video" class="section level6">
+<h6><strong>Audio y Video</strong></h6>
+<p>Detallado <a href="https://ines.github.io/course-starter-python/#embedding-video-and-audio">aquí</a></p>
+</div>
+<div id="chapters" class="section level6">
+<h6><strong>Chapters</strong></h6>
+<ul>
+<li>📁 Carpeta <strong>chapters</strong>
+<ul>
+<li>Cada capítulo es un archivo markdown (.md).</li>
+<li>Estructura del capítulo: deberías incluir un nombre para las filminas y archivos de ejercicios y soluciones.</li>
+</ul>
+<img src="https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png" title="fig:" alt="En su tutorial Noam Ross decidió incluir un archivo “references.md” (referencias) con material extra" /></li>
+</ul>
+</div>
+</div>
+<div id="no-olvidar" class="section level4">
+<h4>No olvidar 😮</h4>
+<ul>
+<li><p>ModificaModificar el archivo <em>meta.json</em> nformación correspondiente a tu curso.</p></li>
+<li><p>Agrega una foto de perfil y un logo! -&gt; 📁 Carpeta <strong>static</strong>.</p></li>
+</ul>
+<blockquote>
+<p>⚠️ Recordar incluir un logo en formato .svg! Podes convertir un archivo .png o .jpg a este formato online</p>
+</blockquote>
+</div>
+</div>
+<div id="cocinando" class="section level3">
+<h3>3. <strong>¡Cocinando!</strong>🍳</h3>
+<p>¿Incluiste todos tus archivos en el repositorio? ¡Ahora es el momento de ver si todo funciona!
+Recorda leer la sección: <a href="https://github.com/ines/course-starter-r">Setting up Binder</a> y modificar el archivo <a href="https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/binder/install.R"><em>install.R</em></a> agregando todos los paquetes utilizados en el tutorial -&gt; 📁 Carpeta <strong>binder</strong></p>
+<p>Deberá usar <a href="https://mybinder.org/">Binder</a> en su repositorio. ¡Esto puede tomar un tiempo! ⏰</p>
+<p>Mientras tanto podes abrirte una cuenta en <a href="https://www.netlify.com/">Netlify</a> para el deploy. Este paso puede ser evitado. ¿Por qué usar Netlify? <a href="https://yihui.org/en/2017/06/netlify-instead-of-github-pages/">Encontré este blog post de Yihui Xie</a>con una posible explicación. ¡Es tu desición!</p>
+<p>A partir de que comiences a usar Netlify podrás visualizar los cambios que vas haciendo en el tutorial. El código de los ejercicios no funcionará hasta que no uses Binder en tu repositorio.</p>
+<div id="personalizalo" class="section level4">
+<h4>4. <strong>Personalizalo</strong> 🍒</h4>
+<ul>
+<li><a href="https://ines.github.io/course-starter-python/#introduction-on-homepage">Agregar una descripción del curso en la página de inicio</a></li>
+<li><a href="https://github.com/noamross/gams-in-r-course/blob/master/src/styles/index.module.sass">Cambiar el tamaño del logo</a> cambiando el argumento <em>width</em> en <em>.logo</em></li>
+<li><a href="https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/theme.sass">Cambiar los colores del tema</a> Modifica el archivo <em>theme.sass</em></li>
+<li><a href="https://creativecommons.org/licenses/?lang=es_ES">Agrega un a licencia al material</a> Busca en la sección “Acceda al código legal” en cada tipo de licencia para encontrar el código que debes <a href="">pegar en tu tutorial</a>.</li>
+</ul>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+</div>
+<div id="algo-falta" class="section level4">
+<h4>5. <strong>Algo falta</strong></h4>
+<p>⚠️ Recordá que los tests no estan desarrolados. Podés leer <a href="https://github.com/ines/course-starter-r">la última sección</a> de la documentación para saber más respecto de los test.</p>
+</div>
+</div>
+<div id="bon-appétit" class="section level3">
+<h3>Bon appétit 🍽!</h3>
+<p>Ahora tenes listo tu tutorial para alimentar a la comunidad</p>
+<p>Podes hacer un pull request a <a href="https://github.com/flor14/tutorials">este repositorio</a> que estoy manteniendo y donde estoy listando todos los cursos generados con este framework y otro material util para generar tu propio curso.</p>
+</div>
+</div>
+<div id="gracias" class="section level2">
+<h2>Gracias</h2>
+<p>Me gustaría agradecer a <a href="https://twitter.com/noamross">Noam Ross</a>, <a href="https://twitter.com/juliasilge">Julia Silge</a>, <a href="https://twitter.com/_inesmontani">Ines Montani</a> y <a href="https://twitter.com/tladeras">Ted Laderas</a> por dejar el material de sus cursos disponibles de manera gratuita.</p>
+<!--more-->
+</div>

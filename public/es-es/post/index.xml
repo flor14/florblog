@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Versión en Español</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/es-es/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Receta para tu primer tutorial interactivo</title>
+      <link>/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/</guid>
+      <description>El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.
+HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.
+Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.</description>
+    </item>
     
     <item>
       <title>¿Dónde publicar tu Shiny App?</title>

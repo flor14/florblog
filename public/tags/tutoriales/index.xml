@@ -6,21 +6,20 @@
     <description>Recent content in Tutoriales on English Version</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/tutoriales/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Tutoriales en R</title>
-      <link>/2020/02/tutoriales-en-r.es-es/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <title>Receta para tu primer tutorial interactivo</title>
+      <link>/2020/03/receta-para-tu-primer-tutorial.es-es/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/tutoriales-en-r.es-es/</guid>
-      <description>TutorialesExisten dos formas de realizar tutoriales en R, con el framework gratuito que creo Ines Montani y/o el paquete learnR.
-El post en el que recientemente colaboré junto a Ted Laderas, quien desarrollo el paquete decampr y Jessica X para el blog de RStudio Education comenta algunas diferencias entre ambas formas de realizar tutoriales.
-Puedes encontrar una lista de todos los tutoriales realizados con este framework aquí.
-En este post voy a generar una guía rápida sobre como realizar desde 0 un tutorial con el framework de Ines Montani.</description>
+      <guid>/2020/03/receta-para-tu-primer-tutorial.es-es/</guid>
+      <description>El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.
+HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.
+Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.</description>
     </item>
     
   </channel>

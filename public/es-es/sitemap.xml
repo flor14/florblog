@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/es-es/2020/03/donde-publicar-tu-shinyapp.es-es/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -55,6 +60,38 @@
   </url>
   
   <url>
+    <loc>/es-es/tags/framework/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="/tags/framework/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="/es-es/tags/framework/"
+                />
+  </url>
+  
+  <url>
+    <loc>/es-es/tags/ines-montani/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="/tags/ines-montani/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="/es-es/tags/ines-montani/"
+                />
+  </url>
+  
+  <url>
     <loc>/es-es/tags/journal/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -104,7 +141,7 @@
   
   <url>
     <loc>/es-es/post/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -221,8 +258,20 @@
   </url>
   
   <url>
+    <loc>/es-es/tags/tutoriales/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/es-es/categories/tutoriales/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/es-es/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
