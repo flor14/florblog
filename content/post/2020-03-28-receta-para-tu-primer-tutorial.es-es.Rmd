@@ -54,7 +54,6 @@ Primero tenes que dividir tu material en  **capítulos**. Por lo general en un t
 * Archivos de audio o video
 
  🤖 
- 
 > Podes usar el paquete [decampr](https://laderast.github.io/decampr/articles/from_scratch.html) para generar alguna de las estructuras de archivos básicas.
 
 #### 2. **Crea tu repositorio** 🏁
@@ -91,7 +90,6 @@ Es buena idea mirar la [estrutura del repositorio](https://ines.github.io/course
   - Podes leer más sobre ellos en [la documentación](https://github.com/ines/course-starter-r)
 
 ⚠️
-  
 >  Recordá elegir un id único para cada ejercicio de opciones múltiples
 
 ###### **Audio y Video** 
@@ -113,7 +111,6 @@ Es buena idea mirar la [estrutura del repositorio](https://ines.github.io/course
 - Agrega una foto de perfil y un logo! -> 📁 [Carpeta **static**.](https://github.com/noamross/gams-in-r-course/tree/master/static)
 
 ⚠️
-
 >  Recordar incluir un logo en formato .svg! Podes convertir un archivo .png o .jpg a este formato online
 
 ### 3. **¡Cocinando!**🍳

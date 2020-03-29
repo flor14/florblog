@@ -72,12 +72,11 @@ You should have an account on GitHub (it is free). If you do not know how to do 
 
 * 📁 [**slides** folder](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/slides)
   - The slides are markdown (.md) files. It is good idea to name the file according to the chapter number and order of appearance, for example **chapter2_01.md**.
-  
-  - *How is the structure of the slides file?* Ines described it [here](https://github.com/ines/course-starter-r)
+  - How is the structure of the slides file? Ines described it [here](https://github.com/ines/course-starter-r)
   
 ###### **Codeblock**
 
-*  📁 [**exercises** folder](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/exercises) 
+* 📁 [**exercises** folder](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/exercises) 
   - Each exercise file has an associated a solution file (and ideally a test file)
   - Tests are not fully developed yet.
   - The names for each file should have the same reference number:
