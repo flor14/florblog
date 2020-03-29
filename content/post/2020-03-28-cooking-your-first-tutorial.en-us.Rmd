@@ -58,7 +58,7 @@ First, you have to divide your course into **chapters**. As a general rule there
 🤖 
 > You can use [decampr package](https://laderast.github.io/decampr/articles/from_scratch.html) to generate some of the basic file structures. 
 
-#### 2. **Start a repository** 🏁
+#### 2. **Copy the repository** 🏁
 
 You should have an account on GitHub (it is free). If you do not know how to do this, please check the following [webpage](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account). If you want more information about git and GitHub in relation to R, I recommend the online book [Happy git with R](htpps://www.happygitwithr.com) by [Jenny Bryan](https://twitter.com/JennyBryan).
 

@@ -56,7 +56,7 @@ Primero tenes que dividir tu material en  **capítulos**. Por lo general en un t
  🤖 
 > Podes usar el paquete [decampr](https://laderast.github.io/decampr/articles/from_scratch.html) para generar alguna de las estructuras de archivos básicas.
 
-#### 2. **Crea tu repositorio** 🏁
+#### 2. **Copia el repositorio** 🏁
 
 Primero debes generar una cuenta en GitHub (es gratis). Si no sabes como hacer esto, poer favor revisa esta [página](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account). Por consultas sobre el uso de git y GitHub con R te recomiendo consultar el libro [Happy git with R](htpps://www.happygitwithr.com) de [Jenny Bryan](https://twitter.com/JennyBryan).
 
