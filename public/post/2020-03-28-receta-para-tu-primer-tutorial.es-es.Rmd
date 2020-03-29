@@ -54,6 +54,7 @@ Primero tenes que dividir tu material en  **capítulos**. Por lo general en un t
 * Archivos de audio o video
 
  🤖 
+ 
 > Podes usar el paquete [decampr](https://laderast.github.io/decampr/articles/from_scratch.html) para generar alguna de las estructuras de archivos básicas.
 
 #### 2. **Crea tu repositorio** 🏁
@@ -107,7 +108,7 @@ Es buena idea mirar la [estrutura del repositorio](https://ines.github.io/course
 
 #### No olvidar 😮
 
-- ModificaModificar el [archivo *meta.json*](https://github.com/noamross/gams-in-r-course/blob/master/meta.json) con la información correspondiente a tu curso.
+- Modificar el [archivo *meta.json*](https://github.com/noamross/gams-in-r-course/blob/master/meta.json) con la información correspondiente a tu curso.
 
 - Agrega una foto de perfil y un logo! -> 📁 [Carpeta **static**.](https://github.com/noamross/gams-in-r-course/tree/master/static)
 

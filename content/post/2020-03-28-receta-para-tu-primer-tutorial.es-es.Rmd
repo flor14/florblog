@@ -54,6 +54,7 @@ Primero tenes que dividir tu material en  **capítulos**. Por lo general en un t
 * Archivos de audio o video
 
  🤖 
+ 
 > Podes usar el paquete [decampr](https://laderast.github.io/decampr/articles/from_scratch.html) para generar alguna de las estructuras de archivos básicas.
 
 #### 2. **Crea tu repositorio** 🏁

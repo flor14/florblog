@@ -104,7 +104,7 @@ You should have an account on GitHub (it is free). If you do not know how to do 
   - Each chapter is a markdown (.md) file. 
   - Chapter structure: you should include the name of the slides, exercises and solution files. 
   
-  ![In his tutorial Noam Ross decided to include a "references.md" file with extra material](https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png)
+  ![Example of files in the chapter folder](https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png)
 
 #### Do not forget 😮
 
