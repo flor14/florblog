@@ -22,19 +22,19 @@ coverimage:
 summary: "Una guia para realizar tu tutorial interactivo usando el framework de Ines Montani"
 ---
 
-> El objetivo de este trabajo es proveer una mapade ruta señalando los recursos disponibles para generar tu propio tutorial.
+> El objetivo de este posteo es proveer una mapa de ruta señalando los recursos disponibles para generar tu propio tutorial.
 
 ## Hola
 
-El año pasado ayude a pasar algunos cursos del formato de cursos de DataCamo al del framework generado especialmente por Ines Montani. [Aquí](https://github.com/flor14/tutorials) encontrarás algunos ejemplos de tutoriales creados con este framework. 
+El año pasado ayude a pasar algunos cursos del formato de cursos de DataCamp al del framework generado especialmente por Ines Montani. [Aquí](https://github.com/flor14/tutorials) encontrarás algunos ejemplos de tutoriales creados con este framework. 
 
-Luego de un año atareado que incluyo terminar mi PhD, finalmnete tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.
+Luego de un año atareado que incluyo terminar mi doctorado, finalmente tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.
 
 ### ¿Por qué usar este framework para armar tu tutorial?
 
 1- [Ted Laderas](https://twitter.com/tladeras) describió algunos *"pros y contras"* de usar este framework en un [post](https://education.rstudio.com/blog/2020/03/r-bootcamp/) que salió en el blog de RStudio education explicando la diferencia entre el framework de Ines y los tutoriales que pueden generarse con el paquete de R *learnr*. 
 
-2 - La documentación de Ines Montani es realmente detallada. Si encuentran algun problem en mientras estan generando el tutorial les recomiendo fuertemente que vuelvan a consultar su [repositorio](https://github.com/ines/course-starter-r). 
+2 - La documentación de Ines Montani es realmente detallada. Si encuentran algun problema en mientras estan generando el tutorial les recomiendo fuertemente que vuelvan a consultar su [repositorio](https://github.com/ines/course-starter-r). 
 
 > ¿Enseñas algún curso de R y queres convertirlo a un tutorial interactivo? Pensá que un curso diseñado para enseñarse con modalidad presencial no es esxactamente lo mismo que un tutorial online Te recomiendo leer este capítulo del libro [Teaching Tech Together de Greg Wilson](https://teachtogether.tech/#s:online). 
 
@@ -47,7 +47,7 @@ Primero tenes que dividir tu material en  **capítulos**. Por lo general en un t
 
 * Filminas con texto asociado  
 
-* Ejercicios de bloques de código 
+* Ejercicios en bloques de código 
 
 * Ejercicios de opción múltiple
 
@@ -69,47 +69,51 @@ Es buena idea mirar la [estrutura del repositorio](https://ines.github.io/course
 #### 3. **Elementos a modificar** 📦
 
 ###### **Filminas con texto**
-* 📁 Carpeta **slides**  
-  - The slides are markdown (.md) files. It is good idea to name the file according to the chapter number and order, for example **chapter2_01.md**.
+* 📁 [Carpeta **slides** ](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/slides) 
+  - Las filminas son archivos markdown (.md) files. Es buena idea elegit un nombre claro, por ejemplo que refleje el numero de capítulo y orden en que aparece, por ejemplo **chapter2_01.md**.
   
   - *How is the structure of the slides file?* Ines described it [here](https://github.com/ines/course-starter-r)
   
 ###### **Ejercicios en bloque de código**
-*  📁 Carpeta **exercises** 
+
+* 📁 [Carpeta **exercises**](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/exercises) 
   - Cada archivo de ejercicios tiene asociado otro con las soluciones (e idealmente un archivo para los tests)
-  - Los test no han sido aún desarrollados.
+  - Los tests de los ejercicios no han sido completamente desarrollados aún.
   - Los nombres de los archivos deben presentar el mismo número como referencia:
   
-  ![Las soluciones y los ejercicios son archivos separados, unidos por el número que se encuentra al final del nombre del archivo](https://res.cloudinary.com/flor/image/upload/v1585163873/tutorial2_hbfvio.png)
+  ![Las soluciones y los ejercicios son archivos separados, unidos por el número que se encuentra al final del nombre del archivo](https://res.cloudinary.com/flor/image/upload/c_scale,w_475/v1585163873/tutorial2_hbfvio.png)
 
 ###### **Ejercicios de opciones múltiples**
 
-* 📁 Carpeta **chapters** 
+* 📁 [Carpeta **chapters**](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/chapters)
   - No hay archivos especificos para ellos, se generan dentro de cada archivo en el capitulo correspondiente. 
   - Podes leer más sobre ellos en [la documentación](https://github.com/ines/course-starter-r)
 
+⚠️
   
-> ⚠️ Recordá incluir un id único a cada ejercicio de opciones multiples
-
+>  Recordá elegir un id único para cada ejercicio de opciones múltiples
 
 ###### **Audio y Video** 
+
  Detallado [aquí](https://ines.github.io/course-starter-python/#embedding-video-and-audio)
  
 ###### **Chapters** 
-* 📁 Carpeta **chapters** 
+
+* 📁 [Carpeta **chapters**](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/chapters) 
   - Cada capítulo es un archivo markdown (.md). 
   - Estructura del capítulo: deberías incluir un nombre para las filminas y archivos de ejercicios y soluciones. 
   
-
-  ![En su tutorial Noam Ross decidió incluir [un archivo "references.md" (_referencias_)](https://github.com/noamross/gams-in-r-course/commit/63e0d9dedc841a1b84ea151e8f95297fd3e4c0be) con material extra](https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png)
+  ![Ejemplo de la estructura de los capítulos del tutorial de Noam Ross](https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png)
 
 #### No olvidar 😮
 
-- ModificaModificar el archivo *meta.json* nformación correspondiente a tu curso.
+- Modificar el [archivo *meta.json*](https://github.com/noamross/gams-in-r-course/blob/master/meta.json) con la información correspondiente a tu curso.
 
-- Agrega una foto de perfil y un logo! -> 📁 Carpeta **static**.
+- Agrega una foto de perfil y un logo! -> 📁 [Carpeta **static**.](https://github.com/noamross/gams-in-r-course/tree/master/static)
 
-> ⚠️ Recordar incluir un logo en formato .svg! Podes convertir un archivo .png o .jpg a este formato online
+⚠️
+
+>  Recordar incluir un logo en formato .svg! Podes convertir un archivo .png o .jpg a este formato online
 
 ### 3. **¡Cocinando!**🍳
 
@@ -127,9 +131,9 @@ A partir de que comiences a usar Netlify podrás visualizar los cambios que vas 
 - [Agregar una descripción del curso en la página de inicio](https://ines.github.io/course-starter-python/#introduction-on-homepage)
 - [Cambiar el tamaño del logo](https://github.com/noamross/gams-in-r-course/blob/master/src/styles/index.module.sass) cambiando el argumento *width* en *.logo*
 - [Cambiar los colores del tema](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/theme.sass) Modifica el archivo *theme.sass*
-- [Agrega un a licencia al material](https://creativecommons.org/licenses/?lang=es_ES) Busca en la sección "Acceda al código legal" en cada tipo de licencia para encontrar el código que debes [pegar en tu tutorial]().
+- [Agrega una licencia al material](https://creativecommons.org/licenses/?lang=es_ES) Busca la licencia que prefieras y luego incluila en el archivo [*meta.json*](https://github.com/noamross/gams-in-r-course/blob/master/meta.json)
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
 
 #### 5. **Algo falta** 
 
@@ -140,7 +144,6 @@ A partir de que comiences a usar Netlify podrás visualizar los cambios que vas 
 Ahora tenes listo tu tutorial para alimentar a la comunidad 
 
 Podes hacer un pull request a [este repositorio](https://github.com/flor14/tutorials) que estoy manteniendo y donde estoy listando todos los cursos generados con este framework y otro material util para generar tu propio curso.
-
 
 ## Gracias
 

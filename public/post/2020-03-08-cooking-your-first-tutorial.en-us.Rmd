@@ -70,27 +70,28 @@ You should have an account on GitHub (it is free). If you do not know how to do 
 
 ###### **Slides with text**
 
-* 📁 **slides** folder 
-  - The slides are markdown (.md) files. It is good idea to name the file according to the chapter number and order, for example **chapter2_01.md**.
+* 📁 [**slides** folder](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/slides)
+  - The slides are markdown (.md) files. It is good idea to name the file according to the chapter number and order of appearance, for example **chapter2_01.md**.
   
   - *How is the structure of the slides file?* Ines described it [here](https://github.com/ines/course-starter-r)
   
 ###### **Codeblock**
 
-*  📁 **exercises** folder 
+*  📁 [**exercises** folder](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/exercises) 
   - Each exercise file has an associated a solution file (and ideally a test file)
   - Tests are not fully developed yet.
   - The names for each file should have the same reference number:
   
-  ![The solutions and exercises are separated files, linked by the final number in the name of the file](https://res.cloudinary.com/flor/image/upload/v1585163873/tutorial2_hbfvio.png)
+  ![The solutions and exercises are separated files, linked by the final number in the name of the file](https://res.cloudinary.com/flor/image/upload/c_scale,w_475/v1585163873/tutorial2_hbfvio.png)
   
 ###### **Multiple choise exercises**
 
-* 📁 **chapters** folder 
+* 📁 [**chapters** folder](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/chapters)
   - There are not specific files for them, are generated inside each chapter file. 
   - Read more about them [in the documentation](https://github.com/ines/course-starter-r)
 
 ⚠️
+
 > Remember to include a unique id to each multiple choice exercise!
 
 ###### **Audio and Video** 
@@ -99,21 +100,21 @@ You should have an account on GitHub (it is free). If you do not know how to do 
  
 ###### **Chapters** 
 
-* 📁 **chapters** folder 
+* 📁 [**chapters** folder](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/chapters)
   - Each chapter is a markdown (.md) file. 
   - Chapter structure: you should include the name of the slides, exercises and solution files. 
   
-
-  ![In his tutorial Noam Ross decided to include [a "references.md" file](https://github.com/noamross/gams-in-r-course/commit/63e0d9dedc841a1b84ea151e8f95297fd3e4c0be) with extra material](https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png)
+  ![In his tutorial Noam Ross decided to include a "references.md" file with extra material](https://res.cloudinary.com/flor/image/upload/v1585062072/tutorial1_emry8n.png)
 
 #### Do not forget 😮
 
-- Customize the *meta.json* file with the information corresponding to your course.
+- Customize the [*meta.json* file](https://github.com/noamross/gams-in-r-course/blob/master/meta.json) with the information corresponding to your course.
 
-- Add a profile picture and logo too! -> 📁 **static** folder.
+- Add a profile picture and logo too! -> 📁 [**static** folder.](https://github.com/noamross/gams-in-r-course/tree/master/static)
 
 ⚠️
->  Remember include the logo in .svg format! You can convert a .png pr .jpg image to this format online
+
+>  Remember include the logo in .svg format! You can convert a .png or .jpg image to this format online
 
 
 ### 3. **Cooking!**🍳
@@ -133,7 +134,7 @@ As soon as you are using Netlify you will be able to visualize the changes that 
 - [To add a summary and a course description as introduction](https://ines.github.io/course-starter-python/#introduction-on-homepage)
 - [Change logo size ](https://github.com/noamross/gams-in-r-course/blob/master/src/styles/index.module.sass) modifying *width* argument after *.logo*
 - [Change the colors](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/theme.sass) Modify *theme.sass*
-- [Add a licence badge!](https://creativecommons.org/licenses/) Look in the section "Add legal code" after each type of licence.
+- [Add a licence badge!](https://creativecommons.org/licenses/) You have to add it in the [meta.json](https://github.com/noamross/gams-in-r-course/blob/master/meta.json) file. 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
