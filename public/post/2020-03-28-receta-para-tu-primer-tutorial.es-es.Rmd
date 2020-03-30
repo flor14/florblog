@@ -56,7 +56,7 @@ Primero tenes que dividir tu material en  **capítulos**. Por lo general en un t
  🤖 
 > Podes usar el paquete [decampr](https://laderast.github.io/decampr/articles/from_scratch.html) para generar alguna de las estructuras de archivos básicas.
 
-#### 2. **Crea tu repositorio** 🏁
+#### 2. **Copia el repositorio** 🏁
 
 Primero debes generar una cuenta en GitHub (es gratis). Si no sabes como hacer esto, poer favor revisa esta [página](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account). Por consultas sobre el uso de git y GitHub con R te recomiendo consultar el libro [Happy git with R](htpps://www.happygitwithr.com) de [Jenny Bryan](https://twitter.com/JennyBryan).
 
@@ -81,7 +81,9 @@ Es buena idea mirar la [estrutura del repositorio](https://ines.github.io/course
   - Los tests de los ejercicios no han sido completamente desarrollados aún.
   - Los nombres de los archivos deben presentar el mismo número como referencia:
   
+<center>  
   ![Las soluciones y los ejercicios son archivos separados, unidos por el número que se encuentra al final del nombre del archivo](https://res.cloudinary.com/flor/image/upload/c_scale,w_475/v1585163873/tutorial2_hbfvio.png)
+</center>  
 
 ###### **Ejercicios de opciones múltiples**
 
