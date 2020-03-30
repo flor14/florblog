@@ -53,9 +53,9 @@ First, you have to divide your course into **chapters**. As a general rule there
 
 * Multiple choise exercises
 
-* Audio or video files
 
 🤖 
+
 > You can use [decampr package](https://laderast.github.io/decampr/articles/from_scratch.html) to generate some of the basic file structures. 
 
 #### 2. **Copy the repository** 🏁
@@ -94,12 +94,8 @@ You should have an account on GitHub (it is free). If you do not know how to do 
 
 ⚠️
 
-> Remember to include a unique id to each multiple choice exercise!
+> Remember to include an id if more than one choice question is present in one exercise! You have an example [here, in the second exercise](https://github.com/noamross/gams-in-r-course/edit/master/chapters/chapter2.md)  
 
-###### **Audio and Video** 
-
- Detailed [here](https://ines.github.io/course-starter-python/#embedding-video-and-audio)
- 
 ###### **Chapters** 
 
 * 📁 [**chapters** folder](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/chapters)

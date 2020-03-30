@@ -51,9 +51,9 @@ Primero tenes que dividir tu material en  **capítulos**. Por lo general en un t
 
 * Ejercicios de opción múltiple
 
-* Archivos de audio o video
 
  🤖 
+ 
 > Podes usar el paquete [decampr](https://laderast.github.io/decampr/articles/from_scratch.html) para generar alguna de las estructuras de archivos básicas.
 
 #### 2. **Copia el repositorio** 🏁
@@ -92,13 +92,10 @@ Es buena idea mirar la [estrutura del repositorio](https://ines.github.io/course
   - Podes leer más sobre ellos en [la documentación](https://github.com/ines/course-starter-r)
 
 ⚠️
->  Recordá elegir un id único para cada ejercicio de opciones múltiples
 
-###### **Audio y Video** 
+>  Recordá usar un id para cada ejercicio de opciones múltiples si tenes más de uno dentro del mismo ejercicio. Tenés un ejemplo [acá, en el segundo ejercicio](https://github.com/noamross/gams-in-r-course/edit/master/chapters/chapter2.md)  
 
- Detallado [aquí](https://ines.github.io/course-starter-python/#embedding-video-and-audio)
- 
-###### **Chapters** 
+###### **Capítulos** 
 
 * 📁 [Carpeta **chapters**](https://github.com/juliasilge/supervised-ML-case-studies-course/tree/master/chapters) 
   - Cada capítulo es un archivo markdown (.md). 
