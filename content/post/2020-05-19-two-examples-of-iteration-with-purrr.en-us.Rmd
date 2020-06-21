@@ -54,7 +54,7 @@ My two examples:
 ## Files
 
 
-```{r}
+```{r echo=FALSE}
 knitr::include_url("https://flor14.github.io/purrr_slides/purrr_class_15min#1", height = 300)
 ```
 
