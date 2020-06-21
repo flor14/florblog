@@ -64,6 +64,8 @@ El archivo con el código para la demostración en vivo se encuentra en [Live co
 
 ¡Ojalá les sea útil! 
 
+🐱🧶
+
 <center>
 
 ![](https://res.cloudinary.com/flor/image/upload/v1592183718/tuna_piola_qk9jad.png)

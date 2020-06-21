@@ -52,16 +52,19 @@ Me decidí por estos dos ejemplos:
 
 ## Archivos
 
+#### Filminas
+
+[Filminas aquí](https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1)
 ```{r echo=FALSE}
 knitr::include_url("https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1", height = 300)
 ```
 
-
-[Filminas aquí](https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1)
-
+#### Código para explicar en las demostraciones
 El archivo con el código para la demostración en vivo se encuentra en [Live coding.R](https://mybinder.org/v2/gh/flor14/purrr_class/e6be8080991cbd9cad0eba7b4f24858a469026a3) (hay que tener un poco de paciencia hasta que cargue R-Studio)
 
 ¡Ojalá les sea útil! 
+
+🐱🧶
 
 <center>
 
