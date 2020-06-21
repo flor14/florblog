@@ -22,8 +22,8 @@ summary: "Slides modified from the Tidyverse Certified Instructor Training teach
 
 ## Certification
 
-I recently became certified as a R-Studio Tidyverse [instructor](https://education.rstudio.com/trainers/). To pass the certification there are two exams, one specific a subject (such as Tidyverse or Shiny) and another one for teaching.
-In this blog I am going to share a 15 minute class that I prepared to pass the teaching exam.
+I recently became certified as a R-Studio Tidyverse [instructor](https://education.rstudio.com/trainers/). To pass the certification there are two exams, one of Tidyverse or Shiny and other of teaching.
+In this blog I am going to share a 15 minute class that I prepared to as parto of the teaching exam.
 
 
 ## What to teach about?
@@ -53,15 +53,16 @@ My two examples:
 
 ## Files
 
-
+#### Slides
+[Slides here](https://flor14.github.io/purrr_slides/purrr_class_15min#1)
 ```{r echo=FALSE}
 knitr::include_url("https://flor14.github.io/purrr_slides/purrr_class_15min#1", height = 300)
 ```
 
 
-[Slides here](https://flor14.github.io/purrr_slides/purrr_class_15min#1)
+#### Live coding
 
-The file with the code for the live demo is in [Live coding.R](https://mybinder.org/v2/gh/flor14/purrr_class/e6be8080991cbd9cad0eba7b4f24858a469026a3) (wait a bit until R-Studio loads)
+The file with the code for the live coding is in [Live coding.R](https://mybinder.org/v2/gh/flor14/purrr_class/e6be8080991cbd9cad0eba7b4f24858a469026a3) (wait a bit until R-Studio loads)
 
 
 I hope you find it useful!
