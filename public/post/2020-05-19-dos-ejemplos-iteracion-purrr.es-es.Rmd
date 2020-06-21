@@ -52,7 +52,7 @@ Me decidí por estos dos ejemplos:
 
 ## Archivos
 
-```{r}
+```{r echo=FALSE}
 knitr::include_url("https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1", height = 300)
 ```
 
