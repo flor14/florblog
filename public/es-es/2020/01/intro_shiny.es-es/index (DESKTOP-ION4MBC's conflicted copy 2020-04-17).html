@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.54.0 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Florencia D&#39;Andrea">
+<meta name="keywords" content="rstatsES">
+<meta name="description" content="¡Hola! En febrero daré un meetup de en el capítulo de R-Ladies, R-Ladies Resistencia-Corrientes, junto al grupo de usuaries de R, R en el NEA. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
+El meetup consiste en un taller en el cual genera paso a paso una ShinyApp.
+Estás filminas parten de las que comencé a armar en un meetup del capítulo R-Ladies Buenos Aires en 2017, del cual soy co-organizadora.">
+
+
+<meta property="og:description" content="¡Hola! En febrero daré un meetup de en el capítulo de R-Ladies, R-Ladies Resistencia-Corrientes, junto al grupo de usuaries de R, R en el NEA. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
+El meetup consiste en un taller en el cual genera paso a paso una ShinyApp.
+Estás filminas parten de las que comencé a armar en un meetup del capítulo R-Ladies Buenos Aires en 2017, del cual soy co-organizadora.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Material para el meetup &#34;Aplicaciones web interactivas con Shiny&#34;">
+<meta name="twitter:title" content="Material para el meetup &#34;Aplicaciones web interactivas con Shiny&#34;">
+<meta property="og:url" content="/es-es/2020/01/intro_shiny.es-es/">
+<meta property="twitter:url" content="/es-es/2020/01/intro_shiny.es-es/">
+<meta property="og:site_name" content="Versión en Español">
+<meta property="og:description" content="¡Hola! En febrero daré un meetup de en el capítulo de R-Ladies, R-Ladies Resistencia-Corrientes, junto al grupo de usuaries de R, R en el NEA. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
+El meetup consiste en un taller en el cual genera paso a paso una ShinyApp.
+Estás filminas parten de las que comencé a armar en un meetup del capítulo R-Ladies Buenos Aires en 2017, del cual soy co-organizadora.">
+<meta name="twitter:description" content="¡Hola! En febrero daré un meetup de en el capítulo de R-Ladies, R-Ladies Resistencia-Corrientes, junto al grupo de usuaries de R, R en el NEA. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
+El meetup consiste en un taller en el cual genera paso a paso una ShinyApp.
+Estás filminas parten de las que comencé a armar en un meetup del capítulo R-Ladies Buenos Aires en 2017, del cual soy co-organizadora.">
+<meta property="og:locale" content="es-es">
+
+  
+    <meta property="article:published_time" content="2020-01-20T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2020-01-20T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Shiny">
+    
+  
+  
+    
+      <meta property="article:tag" content="ShinyApp">
+    
+      <meta property="article:tag" content="meetup">
+    
+      <meta property="article:tag" content="rladies">
+    
+      <meta property="article:tag" content="slides">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@cantoflor_87">
+
+
+  <meta name="twitter:creator" content="@cantoflor_87">
+
+
+
+
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/e_auto_brightness,o_70/v1580575702/matry_rep2gq.jpg">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/e_auto_brightness,o_70/v1580575702/matry_rep2gq.jpg">
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/v1580574062/matryoshka_dolls-wallpaper-1366x768_zntpia.jpg">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/v1580574062/matryoshka_dolls-wallpaper-1366x768_zntpia.jpg">
+
+
+
+
+    <title>Material para el meetup &#34;Aplicaciones web interactivas con Shiny&#34;</title>
+
+    <link rel="icon" href="https://res.cloudinary.com/flor/image/upload/v1556588922/favicon_rjn8au.ico">
+    
+
+    
+	
+    <link rel="canonical" href="/es-es/2020/01/intro_shiny.es-es/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-nnm2spxvve8onlujjlegkkytaehyadd4ksxc1hyzzq9a2wvtrgbljqyulomn.min.css" />
+    
+    
+
+    
+      
+    
+    
+	
+	
+  </head>
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/es-es">Versión en Español</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about">
+    
+	
+    
+      
+        <img class="header-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Foto de autor" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+  
+    
+      <div class="sidebar-profile">
+	    <a href="/#about">
+          <img class="sidebar-profile-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Foto de autor" />
+        </a>
+        <h4 class="sidebar-profile-name">Florencia D&#39;Andrea</h4>
+        
+	  </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Inicio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categorías</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Etiquetas</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archivos</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://flor14.github.io/online-cv-es/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">Bio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/flor14">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/cantoflor_87">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="mailto:lascientificasdedatos@gmail.com" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-pencil"></i>
+      
+      <span class="sidebar-button-desc">Correo</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-left
+              "
+       style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1580574062/matryoshka_dolls-wallpaper-1366x768_zntpia.jpg')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Material para el meetup &#34;Aplicaciones web interactivas con Shiny&#34;
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-01-20T00:00:00Z">
+        
+  
+  
+  
+  
+    20 Enero 2020
+  
+
+      </time>
+    
+    
+  
+  
+    <span>en</span>
+    
+      <a class="category-link" href="/es-es/categories/shiny">Shiny</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<h1 id="hola">¡Hola!</h1>
+
+<p>En febrero daré un meetup de en el capítulo de  <a href="http://rladies.org/">R-Ladies</a>, <a href="https://twitter.com/RLadies_rciacte">R-Ladies Resistencia-Corrientes</a>, junto al grupo de usuaries de R, <a href="https://renelnea.github.io/web/">R en el NEA</a>. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.</p>
+
+<p>El meetup consiste en un taller en el cual genera paso a paso una ShinyApp.</p>
+
+<p>Estás filminas parten de las que comencé a armar en un meetup del capítulo <a href="https://twitter.com/RLadiesBA">R-Ladies Buenos Aires</a> en 2017, del cual soy co-organizadora.</p>
+
+<h3 id="material">Material</h3>
+
+<p><a href="https://flor14.github.io/rladies_shiny_meetup_2020_es/rladies_shiny_2020#1">Filminas</a></p>
+
+<p><a href="https://github.com/flor14/rladies_shiny_meetup_2020_es">Repositorio en Github con el código de las filminas</a></p>
+
+<p><a href="https://github.com/flor14/rladies_shiny_meetup_2020_es/tree/master/Rladies_app_es">Código de la ShinyApp</a></p>
+
+<p>Espero que este material puede ser útil para quienes aún no se han animado a desarrollar su propia webapp con Shiny.</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">ETIQUETADO EN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/es-es/tags/shinyapp/">ShinyApp</a>
+
+  <a class="tag tag--primary tag--small" href="/es-es/tags/meetup/">meetup</a>
+
+  <a class="tag tag--primary tag--small" href="/es-es/tags/rladies/">rladies</a>
+
+  <a class="tag tag--primary tag--small" href="/es-es/tags/slides/">slides</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/es-es/1/01/" data-tooltip="">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/es-es/2020/01/intro_shiny.es-es/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Florencia D&#39;Andrea. Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional.
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/es-es/1/01/" data-tooltip="">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/es-es/2020/01/intro_shiny.es-es/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=%2Fes-es%2F2020%2F01%2Fintro_shiny.es-es%2F%29">
+          <i class="fa fa-twitter"></i><span>Compartir en Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Foto de autor" />
+    
+    <h4 id="about-card-name">Florencia D&#39;Andrea</h4>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Biologa
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Argentina
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Buscar" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no se encontraron artículos</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/es-es/2020/01/intro_shiny.es-es/">
+                <h3 class="media-heading">Material para el meetup &#34;Aplicaciones web interactivas con Shiny&#34;</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">¡Hola! En febrero daré un meetup de en el capítulo de R-Ladies, R-Ladies Resistencia-Corrientes, junto al grupo de usuaries de R, R en el NEA. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
+El meetup consiste en un taller en el cual genera paso a paso una ShinyApp.
+Estás filminas parten de las que comencé a armar en un meetup del capítulo R-Ladies Buenos Aires en 2017, del cual soy co-organizadora.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/es-es/1/01/">
+                <h3 class="media-heading"></h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 0001
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Material para el meetup “Aplicaciones web interactivas con Shiny”/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0a?b:0);return this.pushStack(c=0&&bc?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);ih;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no se encontraron artículos"
+         data-message-one="1 artículo encontrado"
+         data-message-other="{n} artículos encontrados">
+         2 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1579182616/images_1_i4cpen.png');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/es-es\/2020\/01\/intro_shiny.es-es\/';
+          
+            this.page.identifier = '\/es-es\/2020\/01\/intro_shiny.es-es\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'florencia';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

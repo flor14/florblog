@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.54.0 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Florencia D&#39;Andrea">
+<meta name="keywords" content="tech">
+<meta name="description" content="CertificaciónRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+¿Sobre qué preparar la clase?Uso loops para mi trabajo y me son muy útiles al momento de automatizar tareas.">
+
+
+<meta property="og:description" content="CertificaciónRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+¿Sobre qué preparar la clase?Uso loops para mi trabajo y me son muy útiles al momento de automatizar tareas.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio">
+<meta name="twitter:title" content="Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio">
+<meta property="og:url" content="/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/">
+<meta property="twitter:url" content="/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/">
+<meta property="og:site_name" content="Versión en Español">
+<meta property="og:description" content="CertificaciónRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+¿Sobre qué preparar la clase?Uso loops para mi trabajo y me son muy útiles al momento de automatizar tareas.">
+<meta name="twitter:description" content="CertificaciónRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+¿Sobre qué preparar la clase?Uso loops para mi trabajo y me son muy útiles al momento de automatizar tareas.">
+<meta property="og:locale" content="es-es">
+
+  
+    <meta property="article:published_time" content="2020-06-21T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2020-06-21T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="clases">
+    
+  
+  
+    
+      <meta property="article:tag" content="enseñanza">
+    
+      <meta property="article:tag" content="filminas">
+    
+      <meta property="article:tag" content="purrr">
+    
+      <meta property="article:tag" content="iteración">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@cantoflor_87">
+
+
+  <meta name="twitter:creator" content="@cantoflor_87">
+
+
+
+
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1592763305/14_ibvzqm.png">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1592763305/14_ibvzqm.png">
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/v1592767972/postpurrr2_gjjgeb.png">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/v1592767972/postpurrr2_gjjgeb.png">
+
+
+
+
+    <title>Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio</title>
+
+    <link rel="icon" href="https://res.cloudinary.com/flor/image/upload/v1556588922/favicon_rjn8au.ico">
+    
+
+    
+	
+    <link rel="canonical" href="/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-nnm2spxvve8onlujjlegkkytaehyadd4ksxc1hyzzq9a2wvtrgbljqyulomn.min.css" />
+    
+    
+
+    
+      
+    
+    
+	
+	
+  </head>
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/es-es">Versión en Español</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about">
+    
+	
+    
+      
+        <img class="header-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Foto de autor" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+  
+    
+      <div class="sidebar-profile">
+	    <a href="/#about">
+          <img class="sidebar-profile-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Foto de autor" />
+        </a>
+        <h4 class="sidebar-profile-name">Florencia D&#39;Andrea</h4>
+        
+	  </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Inicio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categorías</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Etiquetas</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archivos</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://flor14.github.io/online-cv-es/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">Bio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/flor14">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/cantoflor_87">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="mailto:lascientificasdedatos@gmail.com" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-pencil"></i>
+      
+      <span class="sidebar-button-desc">Correo</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/es-es/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-left
+              "
+       style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1592767972/postpurrr2_gjjgeb.png')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-06-21T00:00:00Z">
+        
+  
+  
+  
+  
+    21 Junio 2020
+  
+
+      </time>
+    
+    
+  
+  
+    <span>en</span>
+    
+      <a class="category-link" href="/es-es/categories/clases">clases</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+
+<div id="certificación" class="section level2">
+<h2>Certificación</h2>
+<p>Recientemente aprobé los exámenes para certificarme como <a href="https://education.rstudio.com/trainers/">instructora</a> de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.
+En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.</p>
+</div>
+<div id="sobre-qué-preparar-la-clase" class="section level2">
+<h2>¿Sobre qué preparar la clase?</h2>
+<center>
+<img src="https://res.cloudinary.com/flor/image/upload/c_scale,w_156/v1592765241/purrr_yefga4.png" alt="Logo del paquete Purrr" />
+</center>
+<p>Uso loops para mi trabajo y me son muy útiles al momento de automatizar tareas. Decidí buscar dos ejemplos específicos de funciones en el paquete de <code>purrr</code> de iteración que pudieran resultar interesantes para los estudiantes.</p>
+<p>Me decidí por estos dos ejemplos:</p>
+<ul>
+<li><p>Lea un grupo de archivos con la misma extensión y obtenga un marco de datos usando <code>map_df()</code></p></li>
+<li><p>Generar informes de Rmarkdown a partir de una lista de parámetros automáticamente con <code>pwalk()</code></p></li>
+</ul>
+<center>
+<img src="https://res.cloudinary.com/flor/image/upload/v1592769070/7_eng_zdttur.png" />
+</center>
+</div>
+<div id="importante" class="section level2">
+<h2>Importante</h2>
+<ul>
+<li><p>Estos 15 minutos están destinados a explicarse DESPUÉS de <a href="https://es.r4ds.hadley.nz/iteraci%C3%B3n.html">loops y los paquetes <code>purrr</code></a> y <a href="https://es.r4ds.hadley.nz/r-markdown.html"><code>Rmarkdown</code></a>. En particular, para responder las partes de “A practicar” necesitan conceptos que se explicaron anteriormente al fragmento de la clase que muestro aquí.</p></li>
+<li><p>No es necesario usar Xaringan para la certificación. Convertí las filminas originales a Xaringan para este post e hice algunos cambios. Es importante que practiques tu clase controlando que no sobrepase los 15 minutos.</p></li>
+</ul>
+</div>
+<div id="archivos" class="section level2">
+<h2>Archivos</h2>
+<pre class="r"><code>knitr::include_url(&quot;https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1&quot;, height = 300)</code></pre>
+<iframe src="https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1" width="672" height="300">
+</iframe>
+<p><a href="https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1">Filminas aquí</a></p>
+<p>El archivo con el código para la demostración en vivo se encuentra en <a href="https://mybinder.org/v2/gh/flor14/purrr_class/e6be8080991cbd9cad0eba7b4f24858a469026a3">Live coding.R</a> (hay que tener un poco de paciencia hasta que cargue R-Studio)</p>
+<p>¡Ojalá les sea útil!</p>
+<center>
+<img src="https://res.cloudinary.com/flor/image/upload/v1592183718/tuna_piola_qk9jad.png" />
+</center>
+</div>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">ETIQUETADO EN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/es-es/tags/ense%C3%B1anza/">enseñanza</a>
+
+  <a class="tag tag--primary tag--small" href="/es-es/tags/filminas/">filminas</a>
+
+  <a class="tag tag--primary tag--small" href="/es-es/tags/purrr/">purrr</a>
+
+  <a class="tag tag--primary tag--small" href="/es-es/tags/iteraci%C3%B3n/">iteración</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/" data-tooltip="Receta para tu primer tutorial interactivo">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Florencia D&#39;Andrea. Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional.
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/" data-tooltip="Receta para tu primer tutorial interactivo">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=%2Fes-es%2F2020%2F06%2Fdos-ejemplos-iteracion-purrr.es-es%2F%29">
+          <i class="fa fa-twitter"></i><span>Compartir en Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Foto de autor" />
+    
+    <h4 id="about-card-name">Florencia D&#39;Andrea</h4>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Biologa
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Argentina
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Buscar" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no se encontraron artículos</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/">
+                <h3 class="media-heading">Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jun 6, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">CertificaciónRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+¿Sobre qué preparar la clase?Uso loops para mi trabajo y me son muy útiles al momento de automatizar tareas.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/es-es/2020/03/receta-para-tu-primer-tutorial.es-es/">
+                <h3 class="media-heading">Receta para tu primer tutorial interactivo</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">El objetivo de este posteo es proveer una mapa de ruta señalando los recursos disponibles para generar tu propio tutorial.
+HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamp al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.
+Luego de un año atareado que incluyo terminar mi doctorado, finalmente tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/es-es/2020/03/donde-publicar-tu-shinyapp.es-es/">
+                <h3 class="media-heading">¿Dónde publicar tu Shiny App?</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Motivación: Dejar disponibles mis análisisMi principal motivación para desarrollar Shiny Apps fue poder realizar aplicaciones web relacionadas con mi investigación. El desarrollo de una ShinyApp para el análisis de bases de datos toxicológicas me permitió explorarlas en forma interactiva en relación a distintos criterios que pueden ser empleados para estimar valores regulatorios.
+¿Dónde publicar tu código?Luego de terminar la app, consulté en diversos foros y comunidades dónde podía publicar la Shiny App.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/es-es/2020/02/intro_shiny.es-es/">
+                <h3 class="media-heading">Aplicaciones web interactivas con Shiny - Material para un meetup</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Feb 2, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">¡Hola!En febrero daré un meetup de en el capítulo de R-Ladies, R-Ladies Resistencia-Corrientes (), junto al grupo de usuaries de R, R en el NEA. Ambos grupos representan a las ciudades Argentinas de Resistencia y Corrientes.
+El meetup consiste en un taller en el cual se arma una ShinyApp.
+Estás filminas parten de las que comencé a armar en un meetup del capítulo R-Ladies Buenos Aires en 2017, del cual soy co-organizadora.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no se encontraron artículos"
+         data-message-one="1 artículo encontrado"
+         data-message-other="{n} artículos encontrados">
+         4 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1579182616/images_1_i4cpen.png');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/es-es\/2020\/06\/dos-ejemplos-iteracion-purrr.es-es\/';
+          
+            this.page.identifier = '\/es-es\/2020\/06\/dos-ejemplos-iteracion-purrr.es-es\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'florencia';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

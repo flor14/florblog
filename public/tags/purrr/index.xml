@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Purrr on English Version</title>
+    <link>/tags/purrr/</link>
+    <description>Recent content in Purrr on English Version</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/purrr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Two examples of iteration with purrr - Class for the R-Studio certification</title>
+      <link>/2020/06/two-examples-of-iteration-with-purrr.en-us/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/06/two-examples-of-iteration-with-purrr.en-us/</guid>
+      <description>CertificationI recently became certified as a R-Studio Tidyverse instructor. To pass the certification there are two exams, one specific a subject (such as Tidyverse or Shiny) and another one for teaching.In this blog I am going to share a 15 minute class that I prepared to pass the teaching exam.
+What to teach about?I use loops frecquently in for my work. I decided to look for two specific examples of functions in purrr package that could be motivating for the students.</description>
+    </item>
+    
+  </channel>
+</rss>

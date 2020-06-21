@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codigo on Versión en Español</title>
+    <link>/es-es/tags/codigo/</link>
+    <description>Recent content in Codigo on Versión en Español</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/es-es/tags/codigo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>¿Dónde publicar tu Shiny App?</title>
+      <link>/es-es/2020/03/donde-publicar-tu-shinyapp.es-es/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/2020/03/donde-publicar-tu-shinyapp.es-es/</guid>
+      <description>Motivación: Dejar disponibles mis análisisMi principal motivación para desarrollar Shiny Apps fue poder realizar aplicaciones web relacionadas con mi investigación. El desarrollo de una ShinyApp para el análisis de bases de datos toxicológicas me permitió explorarlas en forma interactiva en relación a distintos criterios que pueden ser empleados para estimar valores regulatorios.
+¿Dónde publicar tu código?Luego de terminar la app, consulté en diversos foros y comunidades dónde podía publicar la Shiny App.</description>
+    </item>
+    
+  </channel>
+</rss>

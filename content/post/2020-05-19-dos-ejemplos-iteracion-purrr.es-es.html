@@ -1,0 +1,63 @@
+---
+title: Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio
+author: Florencia D'Andrea 
+date: '2020-06-21'
+slug: dos-ejemplos-iteracion-purrr.es-es
+categories: 
+  - clases
+tags:
+  - enseñanza
+  - filminas
+  - purrr
+  - iteración
+keywords:
+  - tech
+thumbnailImage: 
+  https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1592763305/14_ibvzqm.png
+thumbnailImagePosition: left
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1592767972/postpurrr2_gjjgeb.png
+summary: "Material usado para rendir el examen de la certificación de R-Studio para ser Tidyverse Instructor"
+---
+
+
+
+<div id="certificación" class="section level2">
+<h2>Certificación</h2>
+<p>Recientemente aprobé los exámenes para certificarme como <a href="https://education.rstudio.com/trainers/">instructora</a> de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.
+En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.</p>
+</div>
+<div id="sobre-qué-preparar-la-clase" class="section level2">
+<h2>¿Sobre qué preparar la clase?</h2>
+<center>
+<img src="https://res.cloudinary.com/flor/image/upload/c_scale,w_156/v1592765241/purrr_yefga4.png" alt="Logo del paquete Purrr" />
+</center>
+<p>Uso loops para mi trabajo y me son muy útiles al momento de automatizar tareas. Decidí buscar dos ejemplos específicos de funciones en el paquete de <code>purrr</code> de iteración que pudieran resultar interesantes para los estudiantes.</p>
+<p>Me decidí por estos dos ejemplos:</p>
+<ul>
+<li><p>Lea un grupo de archivos con la misma extensión y obtenga un marco de datos usando <code>map_df()</code></p></li>
+<li><p>Generar informes de Rmarkdown a partir de una lista de parámetros automáticamente con <code>pwalk()</code></p></li>
+</ul>
+<center>
+<img src="https://res.cloudinary.com/flor/image/upload/v1592769070/7_eng_zdttur.png" />
+</center>
+</div>
+<div id="importante" class="section level2">
+<h2>Importante</h2>
+<ul>
+<li><p>Estos 15 minutos están destinados a explicarse DESPUÉS de <a href="https://es.r4ds.hadley.nz/iteraci%C3%B3n.html">loops y los paquetes <code>purrr</code></a> y <a href="https://es.r4ds.hadley.nz/r-markdown.html"><code>Rmarkdown</code></a>. En particular, para responder las partes de “A practicar” necesitan conceptos que se explicaron anteriormente al fragmento de la clase que muestro aquí.</p></li>
+<li><p>No es necesario usar Xaringan para la certificación. Convertí las filminas originales a Xaringan para este post e hice algunos cambios. Es importante que practiques tu clase controlando que no sobrepase los 15 minutos.</p></li>
+</ul>
+</div>
+<div id="archivos" class="section level2">
+<h2>Archivos</h2>
+<pre class="r"><code>knitr::include_url(&quot;https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1&quot;, height = 300)</code></pre>
+<iframe src="https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1" width="672" height="300">
+</iframe>
+<p><a href="https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1">Filminas aquí</a></p>
+<p>El archivo con el código para la demostración en vivo se encuentra en <a href="https://mybinder.org/v2/gh/flor14/purrr_class/e6be8080991cbd9cad0eba7b4f24858a469026a3">Live coding.R</a> (hay que tener un poco de paciencia hasta que cargue R-Studio)</p>
+<p>¡Ojalá les sea útil!</p>
+<center>
+<img src="https://res.cloudinary.com/flor/image/upload/v1592183718/tuna_piola_qk9jad.png" />
+</center>
+</div>

@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Versión en Español</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/es-es/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio</title>
+      <link>/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/</guid>
+      <description>CertificaciónRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+¿Sobre qué preparar la clase?Uso loops para mi trabajo y me son muy útiles al momento de automatizar tareas.</description>
+    </item>
     
     <item>
       <title>Receta para tu primer tutorial interactivo</title>

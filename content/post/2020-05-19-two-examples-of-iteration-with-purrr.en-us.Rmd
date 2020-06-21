@@ -1,0 +1,72 @@
+---
+title: Two examples of iteration with purrr - Class for the R-Studio certification
+author: Florencia D'Andrea
+date: '2020-06-21'
+slug: two-examples-of-iteration-with-purrr.en-us
+categories: 
+  - Teaching
+tags:
+  - teaching
+  - slides
+  - purrr
+  - iteration
+keywords:
+  - tech
+thumbnailImage: 
+  https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1592763305/14_ibvzqm.png
+thumbnailImagePosition: left
+coverimage:
+  https://res.cloudinary.com/flor/image/upload/v1592767972/postpurrr2_gjjgeb.png
+summary: "Slides modified from the Tidyverse Certified Instructor Training teaching exam"
+---
+
+## Certification
+
+I recently became certified as a R-Studio Tidyverse [instructor](https://education.rstudio.com/trainers/). To pass the certification there are two exams, one specific a subject (such as Tidyverse or Shiny) and another one for teaching.
+In this blog I am going to share a 15 minute class that I prepared to pass the teaching exam.
+
+
+## What to teach about?
+
+<center>
+![Logo del paquete Purrr](https://res.cloudinary.com/flor/image/upload/c_scale,w_156/v1592765241/purrr_yefga4.png)
+</center>
+
+I use loops frecquently in for my work. I decided to look for two specific examples of functions in `purrr` package that could be motivating for the students.
+
+My two examples:
+
+- Read a group of files with the same extension and get a dataframe using `map_df()`
+
+- Generate Rmarkdown reports from a list of parameters automatically with `pwalk()`
+
+<center>
+![Generate reports](https://res.cloudinary.com/flor/image/upload/v1590443438/7_eng_oi5rck.png)
+</center>
+
+## Important
+
+* These 15 minutes are meant to be explained AFTER [loops and `purrr` package](https://r4ds.had.co.nz/iteration.html) and [`Rmarkdown` ](https://r4ds.had.co.nz/r-markdown.html). In particular, to answer the parts of "Let's Practice" you need concepts that were explained before.
+
+* It is not necessary to use Xaringan for the certification slides. I moved the original slides to Xaringan for this post and made a few changes. It is important that you practice your class keeping track of how long it lasts.
+
+
+## Files
+
+
+```{r}
+knitr::include_url("https://flor14.github.io/purrr_slides/purrr_class_15min#1", height = 300)
+```
+
+
+[Slides here](https://flor14.github.io/purrr_slides/purrr_class_15min#1)
+
+The file with the code for the live demo is in [Live coding.R] (https://mybinder.org/v2/gh/flor14/purrr_class/e6be8080991cbd9cad0eba7b4f24858a469026a3) (wait a bit until R-Studio loads)
+
+
+I hope you find it useful!
+
+![](https://res.cloudinary.com/flor/image/upload/v1592183718/tuna_piola_qk9jad.png)
+
+
+

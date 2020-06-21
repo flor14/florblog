@@ -1,0 +1,47 @@
+---
+title: Two examples of iteration with purrr
+author: Florencia D'Andrea
+date: '2020-05-19'
+slug: two-examples-of-iteration-with-purrr.en-us
+categories: 
+  - teaching
+tags:
+  - teaching
+  - slides
+  - purrr
+  - iteration
+keywords:
+  - tech
+thumbnailImage: 
+  https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1590446322/15_sn50go.png
+thumbnailImagePosition: left
+coverimage:
+   https://res.cloudinary.com/flor/image/upload/v1590446322/15_sn50go.png
+summary: "Slides modified from the Tidyverse Certified Instructor Training"
+---
+
+I recently took two exams and certified as a [Tidyverse instructor](). For the teaching exam I had to prepare 15 minutes of a class of my choice.
+
+## What to teach about?
+I decided to explain something that I find interesting to teach.
+For my work the use of loops is extremely necessary and vital to finish my PhD. However I always thought that the examples in the books do not show the initial students all the work that you can save by automating tasks.
+
+## purrr
+I decided to choose two functions from the `purrr` package that allow, by writing little code, to automate two tasks that can be very useful. On the one hand read a group of files with the same extension and obtain a dataframe using `map_df()` and on the other hand generate Rmarkdown reports automatically with `pwalk()`
+
+<center>
+
+![](https://res.cloudinary.com/flor/image/upload/v1590443429/1_eng_wbjzee.png)
+
+</center>
+
+## Files
+
+[Slides]()
+
+[Live coding 1 - `map_df()`]()
+
+[Live coding 2 - report generation]()
+
+Consideration: These 15 minutes are intended to be explained AFTER the `map()` and `walk()` families of functions. To solve the small practical parts I am assuming that iteration using the `purrr` package functions has already been explained.
+
