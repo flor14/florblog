@@ -17,7 +17,7 @@ thumbnailImage:
 thumbnailImagePosition: left
 coverimage:
   https://res.cloudinary.com/flor/image/upload/v1592767972/postpurrr2_gjjgeb.png
-summary: "Slides modified from the Tidyverse Certified Instructor Training teaching exam"
+summary: "Slides created for the teaching exam of the R-Studio certification"
 ---
 
 ## R-Studio Certification
