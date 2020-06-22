@@ -32,11 +32,9 @@ En este blog voy a compartir una clase de 15 minutos que preparé para aprobar e
 </center>
 
 Dentro de mi trabajo como postdoc uso loops muy seguido ya que debo automatizar distintas tareas. Es por eso que decidí enseñar dos ejemplos específicos de iteración usando funciones en el paquete `purrr`.
-Encuentro que estos ejemplos son motivadores para los estudiantes, ya que estas funciones ofrecen una manera simple de hacer mucho trabajo.
+Encuentro que estos ejemplos son motivadores para los estudiantes, ya que estas funciones ofrecen una manera simple de hacer mucho trabajo:
 
-Me decidí por estos dos ejemplos:
-
-* Lea un grupo de archivos con la misma extensión y obtenga un marco de datos usando `map_df()`
+* Leer un grupo de archivos con la misma extensión y obtener un marco de datos usando `map_df()`
 
 * Generar informes de Rmarkdown a partir de una lista de parámetros automáticamente con `pwalk()` 
 
@@ -54,12 +52,11 @@ Los 15 minutos son parte de la última clase del curso. Los estudiantes ya han a
 
 * Estos 15 minutos están destinados a explicarse DESPUÉS de [loops y los paquetes `purrr`](https://es.r4ds.hadley.nz/iteraci%C3%B3n.html) y [`Rmarkdown`](https://es.r4ds.hadley.nz/r-markdown.html). En particular, para responder las partes de "A practicar" necesitan conceptos que se explicaron anteriormente al fragmento de la clase que muestro aquí.
 
-* No es necesario usar Xaringan para preparar las filimnas para la certificación. 
+* No es necesario usar Xaringan para preparar las filmnas para la certificación. 
 
 * Es importante que practiques tu clase controlando que no exceda los 15 minutos.
 
 ## Archivos
-
 #### Filminas
 
 [Filminas aquí](https://flor14.github.io/purrr_filminas/purrr_class_15min_es#1)
