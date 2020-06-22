@@ -20,7 +20,7 @@ coverimage:
 summary: "Material usado para rendir el examen de la certificación de R-Studio para ser Tidyverse Instructor"
 ---
 
-## Certificación
+## Certificación de R-Studio
 
 Recientemente aprobé los exámenes para certificarme como  [instructora](https://education.rstudio.com/trainers/) de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.
 En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
@@ -31,7 +31,8 @@ En este blog voy a compartir una clase de 15 minutos que preparé para aprobar e
 ![Logo del paquete Purrr](https://res.cloudinary.com/flor/image/upload/c_scale,w_156/v1592765241/purrr_yefga4.png)
 </center>
 
-Uso loops para mi trabajo y me son muy útiles al momento de automatizar tareas. Decidí buscar dos ejemplos específicos de funciones en el paquete de `purrr` de iteración que pudieran resultar interesantes para los estudiantes.
+Dentro de mi trabajo como postdoc uso loops muy seguido ya que debo automatizar distintas tareas. Es por eso que decidí enseñar dos ejemplos específicos de iteración usando funciones en el paquete `purrr`.
+Encuentro que estos ejemplos son motivadores para los estudiantes, ya que estas funciones ofrecen una manera simple de hacer mucho trabajo.
 
 Me decidí por estos dos ejemplos:
 
@@ -44,11 +45,18 @@ Me decidí por estos dos ejemplos:
 ![](https://res.cloudinary.com/flor/image/upload/v1592769070/7_eng_zdttur.png)
 </center>
 
+## ¿Para quién es la clase?
+
+Esta clase esta pensada como parte de un curso de análisis de datos de tres semanas de duración para estudiantes graduados sin ninguna capacitación previa en programación.
+Los 15 minutos son parte de la última clase del curso. Los estudiantes ya han aprendido temas básicos como visualización, manipulación de datos, RMarkdown e iteración.
+
 ## Importante
 
 * Estos 15 minutos están destinados a explicarse DESPUÉS de [loops y los paquetes `purrr`](https://es.r4ds.hadley.nz/iteraci%C3%B3n.html) y [`Rmarkdown`](https://es.r4ds.hadley.nz/r-markdown.html). En particular, para responder las partes de "A practicar" necesitan conceptos que se explicaron anteriormente al fragmento de la clase que muestro aquí.
 
-* No es necesario usar Xaringan para la certificación. Convertí las filminas originales a Xaringan para este post e hice algunos cambios. Es importante que practiques tu clase controlando que no sobrepase los 15 minutos.
+* No es necesario usar Xaringan para preparar las filimnas para la certificación. 
+
+* Es importante que practiques tu clase controlando que no exceda los 15 minutos.
 
 ## Archivos
 
