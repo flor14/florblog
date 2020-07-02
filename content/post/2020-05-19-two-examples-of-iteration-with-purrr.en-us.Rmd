@@ -1,5 +1,5 @@
 ---
-title: Two examples of iteration with purrr - Class for the R-Studio certification
+title: Two examples of iteration with purrr - Class for the RStudio certification
 author: Florencia D'Andrea
 date: '2020-06-21'
 slug: two-examples-of-iteration-with-purrr.en-us
@@ -20,9 +20,9 @@ coverimage:
 summary: "Slides created for the teaching exam of the R-Studio certification"
 ---
 
-## R-Studio Certification
+## RStudio Certification
 
-I recently became certified as a R-Studio Tidyverse [Instructor](https://education.rstudio.com/trainers/). To pass the certification there are two exams. In this post, I am going to share a 15 minute class that I prepared to as part of the teaching exam.
+I recently became certified as a RStudio Tidyverse [Instructor](https://education.rstudio.com/trainers/). To pass the certification there are two exams. In this post, I am going to share a 15 minute class that I prepared to as part of the teaching exam.
 
 
 ## What to teach about?
