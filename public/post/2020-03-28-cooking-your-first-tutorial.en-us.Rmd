@@ -23,6 +23,8 @@ coverimage:
 summary: "An initial guide on how to start an interactive tutorial from scratch using Ines Montani framework"
 ---
 
+May 2020: Interview available on the RStudio blog about the tutorials https://education.rstudio.com/blog/2020/05/teach-interactive-course/
+
 > The aim of this post is to provide a route map highlighting the resources available to generate your own tutorial.
 
 ## Hello

@@ -8,21 +8,21 @@
 <meta name="generator" content="Hugo 0.54.0 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Florencia D&#39;Andrea">
 <meta name="keywords" content="tech">
-<meta name="description" content="Certificación de R-StudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+<meta name="description" content="Certificación de RStudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
 ¿Sobre qué preparar la clase?Dentro de mi trabajo como postdoc uso loops muy seguido ya que debo automatizar distintas tareas.">
 
 
-<meta property="og:description" content="Certificación de R-StudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+<meta property="og:description" content="Certificación de RStudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
 ¿Sobre qué preparar la clase?Dentro de mi trabajo como postdoc uso loops muy seguido ya que debo automatizar distintas tareas.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio">
-<meta name="twitter:title" content="Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio">
+<meta property="og:title" content="Dos ejemplos de iteración con purrr - Clase para la certificación de RStudio">
+<meta name="twitter:title" content="Dos ejemplos de iteración con purrr - Clase para la certificación de RStudio">
 <meta property="og:url" content="/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/">
 <meta property="twitter:url" content="/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/">
 <meta property="og:site_name" content="Versión en Español">
-<meta property="og:description" content="Certificación de R-StudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+<meta property="og:description" content="Certificación de RStudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
 ¿Sobre qué preparar la clase?Dentro de mi trabajo como postdoc uso loops muy seguido ya que debo automatizar distintas tareas.">
-<meta name="twitter:description" content="Certificación de R-StudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+<meta name="twitter:description" content="Certificación de RStudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
 ¿Sobre qué preparar la clase?Dentro de mi trabajo como postdoc uso loops muy seguido ya que debo automatizar distintas tareas.">
 <meta property="og:locale" content="es-es">
 
@@ -73,7 +73,7 @@
 
 
 
-    <title>Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio</title>
+    <title>Dos ejemplos de iteración con purrr - Clase para la certificación de RStudio</title>
 
     <link rel="icon" href="https://res.cloudinary.com/flor/image/upload/v1556588922/favicon_rjn8au.ico">
     
@@ -248,7 +248,7 @@
       <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio
+      Dos ejemplos de iteración con purrr - Clase para la certificación de RStudio
     </h1>
   
   
@@ -291,17 +291,18 @@
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<div id="certificación-de-r-studio" class="section level2">
-<h2>Certificación de R-Studio</h2>
+<div id="certificación-de-rstudio" class="section level2">
+<h2>Certificación de RStudio</h2>
 <p>Recientemente aprobé los exámenes para certificarme como <a href="https://education.rstudio.com/trainers/">instructora</a> de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.
 En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.</p>
 </div>
 <div id="sobre-qué-preparar-la-clase" class="section level2">
 <h2>¿Sobre qué preparar la clase?</h2>
 <center>
-<img src="https://res.cloudinary.com/flor/image/upload/c_scale,w_156/v1592765241/purrr_yefga4.png" alt="Logo del paquete Purrr" />
+<img src="https://res.cloudinary.com/flor/image/upload/c_scale,w_156/v1592765241/purrr_yefga4.png" title="fig:" alt="Logo del paquete Purrr" />
 </center>
 <p>Dentro de mi trabajo como postdoc uso loops muy seguido ya que debo automatizar distintas tareas. Es por eso que decidí enseñar dos ejemplos específicos de iteración usando funciones en el paquete <code>purrr</code>.
 Encuentro que estos ejemplos son motivadores para los estudiantes, ya que estas funciones ofrecen una manera simple de hacer mucho trabajo:</p>
@@ -564,14 +565,14 @@ Los 15 minutos son parte de la última clase del curso. Los estudiantes ya han a
             
             <div class="media-body">
               <a class="link-unstyled" href="/es-es/2020/06/dos-ejemplos-iteracion-purrr.es-es/">
-                <h3 class="media-heading">Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio</h3>
+                <h3 class="media-heading">Dos ejemplos de iteración con purrr - Clase para la certificación de RStudio</h3>
               </a>
               <span class="media-meta">
                 <span class="media-date text-small">
                   Jun 6, 2020
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Certificación de R-StudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
+              <div class="media-content hide-xs font-merryweather">Certificación de RStudioRecientemente aprobé los exámenes para certificarme como instructora de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.
 ¿Sobre qué preparar la clase?Dentro de mi trabajo como postdoc uso loops muy seguido ya que debo automatizar distintas tareas.</div>
             </div>
             <div style="clear:both;"></div>
@@ -589,9 +590,9 @@ Los 15 minutos son parte de la última clase del curso. Los estudiantes ya han a
                   Mar 3, 2020
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">El objetivo de este posteo es proveer una mapa de ruta señalando los recursos disponibles para generar tu propio tutorial.
-HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamp al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.
-Luego de un año atareado que incluyo terminar mi doctorado, finalmente tuve cierto tiempo para realizar una contribución a la comunidad sobre como generar estos tutoriales.</div>
+              <div class="media-content hide-xs font-merryweather">Mayo 2020: Podes leer la entrevista que salió en el blog de RStudio sobre los tutoriales https://education.rstudio.com/blog/2020/05/teach-interactive-course/
+El objetivo de este posteo es proveer una mapa de ruta señalando los recursos disponibles para generar tu propio tutorial.
+HolaEl año pasado ayude a pasar algunos cursos del formato de cursos de DataCamp al del framework generado especialmente por Ines Montani. Aquí encontrarás algunos ejemplos de tutoriales creados con este framework.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>

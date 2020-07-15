@@ -17,7 +17,8 @@
       <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/03/cooking-your-first-tutorial.en-us/</guid>
-      <description>The aim of this post is to provide a route map highlighting the resources available to generate your own tutorial.
+      <description>May 2020: Interview available on the RStudio blog about the tutorials https://education.rstudio.com/blog/2020/05/teach-interactive-course/
+The aim of this post is to provide a route map highlighting the resources available to generate your own tutorial.
 HelloLast year I helped to transform some courses from a DataCamp format to Ines Montani framework. Here you have some examples of tutorials created with this framework.
 After one busy year that included the end of my PhD finally I have some time to make a contribution to the community about how to build these tutorials.</description>
     </item>

@@ -1,5 +1,5 @@
 ---
-title: Dos ejemplos de iteración con purrr - Clase para la certificación de R-Studio
+title: Dos ejemplos de iteración con purrr - Clase para la certificación de RStudio
 author: Florencia D'Andrea 
 date: '2020-06-21'
 slug: dos-ejemplos-iteracion-purrr.es-es
@@ -20,7 +20,7 @@ coverimage:
 summary: "Material usado para rendir el examen de la certificación de R-Studio para ser Tidyverse Instructor"
 ---
 
-## Certificación de R-Studio
+## Certificación de RStudio
 
 Recientemente aprobé los exámenes para certificarme como  [instructora](https://education.rstudio.com/trainers/) de Tidyverse. La certificación consta de dos exámenes, uno específico (como Tidyverse o Shiny) y otro un examen de enseñanza.
 En este blog voy a compartir una clase de 15 minutos que preparé para aprobar el examen de enseñanza.

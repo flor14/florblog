@@ -22,6 +22,10 @@ coverimage:
 summary: "Una guia para realizar tu tutorial interactivo usando el framework de Ines Montani"
 ---
 
+
+Mayo 2020: Podes leer la entrevista que salió en el blog de RStudio sobre los tutoriales https://education.rstudio.com/blog/2020/05/teach-interactive-course/
+
+
 > El objetivo de este posteo es proveer una mapa de ruta señalando los recursos disponibles para generar tu propio tutorial.
 
 ## Hola
