@@ -1,0 +1,72 @@
+---
+title: Sharing reproducible and interactive environments in R with Binder
+author: "Florencia D'Andrea"
+date: '2020-08-28'
+slug: sharing-reproducible-and-interactive-environments-in-r-with-binder.en-us
+categories: 
+  - Reproducibility
+tags: 
+  - Shiny
+  - Binder
+  - RStudio
+  - environments
+  - LearnR
+  - interactive
+keywords:
+  - rstats
+  - reproducibility
+  - environments
+thumbnailImage: 
+  https://res.cloudinary.com/flor/image/upload/v1598698772/github_squares_c9trzb.png
+thumbnailImagePosition: right
+coverimage:
+  https://res.cloudinary.com/flor/image/upload/e_colorize:44/v1598698772/github_squares_c9trzb.png
+summary: "Shiny apps, RStudio projects and more"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="working-in-a-reproducible-manner" class="section level2">
+<h2>Working in a reproducible manner</h2>
+<p>I’m trying to make my next paper easier to reproduce.
+This has led me to read about computational reproducibility tools and get involved in communities like <a href="https://twitter.com/ReproHack">ReproHack</a>, where the focus is on elucidating best practices when sharing your code and data.</p>
+<blockquote>
+<p>Do you want to know more about ReproHack and computational reproducibility? I recommend <a href="https://twitter.com/annakrystalli">Anna Krystalli</a>’s <a href="https://www.youtube.com/watch?v=KHMW8fV2NXo">talk on UseR! 2020</a></p>
+</blockquote>
+</div>
+<div id="binder-and-r" class="section level2">
+<h2>Binder and R?</h2>
+<iframe src="https://flor14.github.io/reproducibility_slides_en/binder_reproducible_environments.html#16" width="672" height="400px">
+</iframe>
+<p>I got to know <a href="https://mybinder.readthedocs.io/en/latest/faq.html">Binder</a> thanks to the <a href="https://github.com/ines/course-starter-r">Ines Montani tutorial framework</a>. In this framework, Binder allows you to run the code of the exercises interactively.</p>
+<p>One of the benefits of Binder is being able to share Shiny apps, although it has some disadvantages compared to shinyapps.io. “Binderized” Shiny apps take longer to build but it is still an interesting alternative when leaving an application as part of a publication. It also has no restrictions on the number of apps that can be left for free. In addition, by simply changing the URL that we use to call the app, Binder allows us to access the same project using the RStudio IDE.</p>
+<blockquote>
+<p>If you want to deploy your Shiny app using <code>shinyapp.io</code> you can find instructions <a href="https://shiny.rstudio.com/articles/shinyapps.html#:~:text=Shinyapps.io%20is%20a%20platform,such%20as%20the%20RStudio%20IDE">in this webpage</a></p>
+</blockquote>
+<p>A short time ago I participated in <a href="https://carpentrycon.org/">CarpentryCon</a>, not only helping in the <a href="https://carpentries.org/blog/2020/08/Hablamos/">translations of lessons into Spanish</a>, but also giving a small workshop with Pablo Bernabeu on Reproducibility and Open Science where I briefly explained the use of Binder for R users.</p>
+<p>If you want to know more about Binder, I suggest <a href="https://the-turing-way.netlify.app/welcome">The Turing Way book</a>. The <a href="https://twitter.com/turingway">Turing Way</a> is another community that I recommend you follow if you are interested in the topic of open science and reproducibility.</p>
+<blockquote>
+<p>Tutorials: Binder is part of the Inés Montani framework for R and Python tutorials and can also be used to share <a href="https://syoh.org/learnr-tutorial/">learnR tutorials as it is explained in this blog post</a></p>
+</blockquote>
+</div>
+<div id="slides" class="section level2">
+<h2>Slides</h2>
+<p><img src="https://res.cloudinary.com/flor/image/upload/c_scale,w_460/v1599145015/charlaR_con_R_3_paoy3a.png" /></p>
+<p>I prepared these <a href="https://flor14.github.io/r_de_reproducibilidad/r_de_reproducibilidad.html#1">slides</a> as part of a meetup to present the first ReproHack in Spanish to be held at the <a href="https://latin-r.com/">LatinR</a> 2020 conference.</p>
+<p>In these slides you can find:</p>
+<ul>
+<li><p>Different ways to capture computational environments</p></li>
+<li><p>A brief overview of the <code>renv</code> package</p></li>
+<li><p>What Binder is</p></li>
+<li><p>Steps to share interactive enviroments with Binder.</p></li>
+</ul>
+<iframe src="https://flor14.github.io/reproducibility_slides_en/binder_reproducible_environments.html#21" width="672" height="400px">
+</iframe>
+<p>These slides are also in <a href="https://flor14.github.io/r_de_reproducibilidad/r_de_reproducibilidad.html#1">Spanish</a>.</p>
+</div>
+<div id="final-note" class="section level1">
+<h1>Final note</h1>
+<p>Due to <a href="https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/">changes to Docker terms of service</a> on November 1st the lack of activity for 6 months may cause the sharing link to become inactive.
+You can ask questions about Binder <a href="discourse.jupyter.org">here</a>.</p>
+</div>

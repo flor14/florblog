@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reproducibilidad on Versión en Español</title>
+    <link>/es-es/categories/reproducibilidad/</link>
+    <description>Recent content in Reproducibilidad on Versión en Español</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/es-es/categories/reproducibilidad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compartiendo entornos interactivos y reproducibles en R con Binder</title>
+      <link>/es-es/2020/08/compartiendo-entornos-interactivos-y-reproducibles-en-r-con-binder.es-es/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/2020/08/compartiendo-entornos-interactivos-y-reproducibles-en-r-con-binder.es-es/</guid>
+      <description>Trabajando de forma reproducibleEstoy tratando de volver las publicaciones de mi próximo paper más reproducibles. Esto me ha llevado a leer sobre herramientas de reproducibilidad computacional e involucrarme en comunidades como ReproHack, dónde se pone el foco en dilucidar las mejores prácticas a la hora de compartir tu código y datos.
+¿Querés saber más de ReproHack y reproducibilidad computacional? Te recomiendo la charla de Anna Krystalli en UseR!</description>
+    </item>
+    
+  </channel>
+</rss>

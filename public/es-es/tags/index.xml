@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Binder</title>
+      <link>/es-es/tags/binder/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/tags/binder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Codigo</title>
       <link>/es-es/tags/codigo/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
@@ -35,6 +44,15 @@
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/es-es/tags/ense%C3%B1anza/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Entornos</title>
+      <link>/es-es/tags/entornos/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/tags/entornos/</guid>
       <description></description>
     </item>
     
@@ -66,6 +84,15 @@
     </item>
     
     <item>
+      <title>Interactivos</title>
+      <link>/es-es/tags/interactivos/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/tags/interactivos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Iteración</title>
       <link>/es-es/tags/iteraci%C3%B3n/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
@@ -80,6 +107,15 @@
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/es-es/tags/journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learnr</title>
+      <link>/es-es/tags/learnr/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/tags/learnr/</guid>
       <description></description>
     </item>
     
@@ -125,6 +161,24 @@
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/es-es/tags/rladies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rstudio</title>
+      <link>/es-es/tags/rstudio/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiny</title>
+      <link>/es-es/tags/shiny/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/es-es/tags/shiny/</guid>
       <description></description>
     </item>
     

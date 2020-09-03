@@ -6,10 +6,21 @@
     <description>Recent content in Posts on English Version</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sharing reproducible and interactive environments in R with Binder</title>
+      <link>/2020/08/sharing-reproducible-and-interactive-environments-in-r-with-binder.en-us/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/08/sharing-reproducible-and-interactive-environments-in-r-with-binder.en-us/</guid>
+      <description>Working in a reproducible mannerI’m trying to make my next paper easier to reproduce.This has led me to read about computational reproducibility tools and get involved in communities like ReproHack, where the focus is on elucidating best practices when sharing your code and data.
+Do you want to know more about ReproHack and computational reproducibility? I recommend Anna Krystalli’s talk on UseR! 2020
+Binder and R?</description>
+    </item>
     
     <item>
       <title>Two examples of iteration with purrr - Class for the RStudio certification</title>
@@ -34,13 +45,13 @@ After one busy year that included the end of my PhD finally I have some time to 
     </item>
     
     <item>
-      <title>Where to publish your Shiny App?</title>
+      <title>Where to publish your Shiny app?</title>
       <link>/2020/03/where-to-publish-your-shinyapp.en-us/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/03/where-to-publish-your-shinyapp.en-us/</guid>
-      <description>MotivationI started to develop Shiny Apps because of my research. The development of a Shiny App for the analysis of toxicological databases allowed me to explore the data in relation to different criteria.
-Where to publish?After finishing the app, my first question was whether to publish the Shiny App. Should I include it as supplementary material of other paper or could be published as software itself?</description>
+      <description>MotivationI started to develop Shiny apps because of my research. The development of a Shiny app for the analysis of toxicological databases allowed me to explore the data in relation to different criteria.
+Where to publish?After finishing the app, my first question was whether to publish the Shiny app. Should I include it as supplementary material of other paper or could be published as software itself?</description>
     </item>
     
     <item>

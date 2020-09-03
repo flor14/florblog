@@ -6,10 +6,19 @@
     <description>Recent content in Tags on English Version</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Binder</title>
+      <link>/tags/binder/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/binder/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Code</title>
@@ -17,6 +26,15 @@
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Environments</title>
+      <link>/tags/environments/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/environments/</guid>
       <description></description>
     </item>
     
@@ -39,6 +57,15 @@
     </item>
     
     <item>
+      <title>Interactive</title>
+      <link>/tags/interactive/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/interactive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Iteration</title>
       <link>/tags/iteration/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
@@ -53,6 +80,15 @@
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learnr</title>
+      <link>/tags/learnr/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/learnr/</guid>
       <description></description>
     </item>
     
@@ -102,11 +138,29 @@
     </item>
     
     <item>
+      <title>Rstudio</title>
+      <link>/tags/rstudio/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Science</title>
       <link>/tags/science/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiny</title>
+      <link>/tags/shiny/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shiny/</guid>
       <description></description>
     </item>
     

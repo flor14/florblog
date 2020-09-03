@@ -1,0 +1,79 @@
+---
+title: Compartiendo entornos interactivos y reproducibles en R con Binder
+author: Florencia D'Andrea
+date: '2020-08-28'
+slug: compartiendo-entornos-interactivos-y-reproducibles-en-r-con-binder.es-es
+categories:
+  - Reproducibilidad
+tags:
+  - Shiny
+  - Binder
+  - RStudio
+  - LearnR
+  - entornos
+  - interactivos
+keywords:
+  - tech
+thumbnailImage: 
+  https://res.cloudinary.com/flor/image/upload/v1598698772/github_squares_c9trzb.png
+thumbnailImagePosition: right
+coverimage:
+  https://res.cloudinary.com/flor/image/upload/e_colorize:44/v1598698772/github_squares_c9trzb.png
+summary: "Shiny apps, proyectos de RStudio y más"
+---
+
+## Trabajando de forma reproducible
+
+Estoy tratando de volver las publicaciones de mi próximo paper más reproducibles. Esto me ha llevado a leer sobre herramientas de reproducibilidad computacional e involucrarme en comunidades como [ReproHack](https://twitter.com/ReproHack), dónde se pone el foco en dilucidar las mejores prácticas a la hora de compartir tu código y datos.
+
+> ¿Querés saber más de ReproHack y reproducibilidad computacional? Te recomiendo la charla de [Anna Krystalli](https://twitter.com/annakrystalli) en [UseR! 2020](https://www.youtube.com/watch?v=KHMW8fV2NXo)
+
+## ¿Binder y R?
+
+
+```{r echo=FALSE}
+knitr::include_url("https://flor14.github.io/r_de_reproducibilidad/r_de_reproducibilidad.html#17")
+
+```
+
+Conocí [Binder](https://mybinder.readthedocs.io/en/latest/faq.html) gracias al framework de los tutoriales de [Ines Montani](https://github.com/ines/course-starter-r). Binder permite correr el código de los ejercicios de forma interactiva. Entre las potencialidades de Binder esta poder compartir Shiny apps. Si bien tiene algunas desventajas en comparación con shinyapps.io, como por ejemplo tardar más tiempo en cargar, no deja de ser una alternativa interesante al momento de dejar una aplicación como parte de un paper. Además no tiene restricciones de cantidad de apps que se pueden dejar libres de forma gratuita.
+
+Además, simplemente cambiando la URL con la que llamamos a la app, Binder permite compartir el una Shiny app o acceder al mismo proyecto desde RStudio.
+
+> Si quieres usar `shinyapp.io` para publicar tu Shiny app puedes encontrar instrucciones [aquí](https://shiny.rstudio.com/articles/shinyapps.html#:~:text=Shinyapps.io%20is%20a%20platform,such%20as%20the%20RStudio%20IDE)
+
+Hace poco participé de la [CarpentryCon](https://carpentrycon.org/), no sólo ayudando en [las traducciones de lecciones al español](https://carpentries.org/blog/2020/08/Hablamos/), sino también dando un pequeño workshop junto a [Pablo Bernabeu](https://github.com/pablobernabeu/) sobre Reproducibilidad y Ciencia Abierta donde expliqué brevemente el uso de Binder.
+
+Si quieres saber más de Binder te recomiendo el libro de [The Turing Way book](https://the-turing-way.netlify.app/welcome). The [Turing Way](https://twitter.com/turingway) es otra comunidad que te recomiendo seguir si te interesa el tema de ciencia abierta y reproducibilidad.
+
+> Tutoriales: Binder es parte del framework de Inés Montani para generar tutoriales de R y Python, sino que también puede usarse para compartir tus [tutoriales realizados con el paquete learnR, tal como lo explica este blog post](https://syoh.org/learnr-tutorial/) 
+
+
+## Filminas
+
+![](https://res.cloudinary.com/flor/image/upload/c_scale,w_460/v1599145015/charlaR_con_R_3_paoy3a.png)
+
+Prepare estas filminas como parte de un meetup para presentar la primer ReproHack en español que se realizará en la conferencia [LatinR](https://latin-r.com/) en su modalidad virtual este 2020.
+
+Podrás encontrar:
+
+* Diferentes formas de capturar entornos computacionales de forma reproducible
+
+* Breve reseña del paquete `renv`
+
+* ¿Que es Binder?
+
+* Pasos para generar un entorno
+
+```{r echo=FALSE}
+knitr::include_url("https://flor14.github.io/r_de_reproducibilidad/r_de_reproducibilidad.html#21")
+
+```
+
+Estas filminas tambien estan en [inglés](https://flor14.github.io/reproducibility_slides_en/binder_reproducible_environments.html#1)
+
+
+# Nota final
+
+Debido a los [cambios en los términos de servicio de Docker](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) el primero de noviembre de este año, puede que la falta de actividad durante 6 meses genere que el link quede inactivo.
+Puedes hacer preguntas sobre Binder en este [foro](discourse.jupyter.org).

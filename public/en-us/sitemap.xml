@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2020/08/sharing-reproducible-and-interactive-environments-in-r-with-binder.en-us/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020/06/two-examples-of-iteration-with-purrr.en-us/</loc>
     <lastmod>2020-06-21T00:00:00+00:00</lastmod>
   </url>
@@ -38,6 +43,22 @@
   </url>
   
   <url>
+    <loc>/tags/binder/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="/es-es/tags/binder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="/tags/binder/"
+                />
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -60,7 +81,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -72,6 +93,12 @@
                 hreflang="en-us"
                 href="/"
                 />
+  </url>
+  
+  <url>
+    <loc>/tags/environments/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -107,6 +134,12 @@
   </url>
   
   <url>
+    <loc>/tags/interactive/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/iteration/</loc>
     <lastmod>2020-06-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -125,6 +158,22 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="/tags/journal/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/learnr/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="/es-es/tags/learnr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="/tags/learnr/"
                 />
   </url>
   
@@ -162,7 +211,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -199,6 +248,12 @@
   </url>
   
   <url>
+    <loc>/categories/reproducibility/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/rladies/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -211,6 +266,22 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="/tags/rladies/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/rstudio/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="/es-es/tags/rstudio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="/tags/rstudio/"
                 />
   </url>
   
@@ -233,6 +304,22 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="/categories/shiny/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/shiny/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="/es-es/tags/shiny/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="/tags/shiny/"
                 />
   </url>
   
@@ -286,7 +373,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -301,25 +388,25 @@
   </url>
   
   <url>
-    <loc>/tags/teaching/</loc>
-    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/teaching/</loc>
     <lastmod>2020-06-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/tutorials/</loc>
-    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+    <loc>/tags/teaching/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/tutorials/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tutorials/</loc>
     <lastmod>2020-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

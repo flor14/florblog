@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.54.0 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Florencia D&#39;Andrea">
+<meta name="keywords" content="rstats, reproducibility, environments">
+<meta name="description" content="Working in a reproducible mannerI’m trying to make my next paper easier to reproduce.This has led me to read about computational reproducibility tools and get involved in communities like ReproHack, where the focus is on elucidating best practices when sharing your code and data.
+Do you want to know more about ReproHack and computational reproducibility? I recommend Anna Krystalli’s talk on UseR! 2020
+Binder and R?">
+
+
+<meta property="og:description" content="Working in a reproducible mannerI’m trying to make my next paper easier to reproduce.This has led me to read about computational reproducibility tools and get involved in communities like ReproHack, where the focus is on elucidating best practices when sharing your code and data.
+Do you want to know more about ReproHack and computational reproducibility? I recommend Anna Krystalli’s talk on UseR! 2020
+Binder and R?">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sharing reproducible and interactive environments in R with Binder">
+<meta name="twitter:title" content="Sharing reproducible and interactive environments in R with Binder">
+<meta property="og:url" content="/2020/08/sharing-reproducible-and-interactive-environments-in-r-with-binder/">
+<meta property="twitter:url" content="/2020/08/sharing-reproducible-and-interactive-environments-in-r-with-binder/">
+<meta property="og:site_name" content="English Version">
+<meta property="og:description" content="Working in a reproducible mannerI’m trying to make my next paper easier to reproduce.This has led me to read about computational reproducibility tools and get involved in communities like ReproHack, where the focus is on elucidating best practices when sharing your code and data.
+Do you want to know more about ReproHack and computational reproducibility? I recommend Anna Krystalli’s talk on UseR! 2020
+Binder and R?">
+<meta name="twitter:description" content="Working in a reproducible mannerI’m trying to make my next paper easier to reproduce.This has led me to read about computational reproducibility tools and get involved in communities like ReproHack, where the focus is on elucidating best practices when sharing your code and data.
+Do you want to know more about ReproHack and computational reproducibility? I recommend Anna Krystalli’s talk on UseR! 2020
+Binder and R?">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-08-28T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2020-08-28T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="reproducibility">
+    
+  
+  
+    
+      <meta property="article:tag" content="Shiny">
+    
+      <meta property="article:tag" content="Binder">
+    
+      <meta property="article:tag" content="RStudio">
+    
+      <meta property="article:tag" content="environments">
+    
+      <meta property="article:tag" content="interactive">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@cantoflor_87">
+
+
+  <meta name="twitter:creator" content="@cantoflor_87">
+
+
+
+
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1584660577/3_zru9mg.png">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1584660577/3_zru9mg.png">
+
+
+  <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/v1584660577/3_zru9mg.png">
+  <meta property="twitter:image" content="https://res.cloudinary.com/flor/image/upload/v1584660577/3_zru9mg.png">
+
+
+
+
+    <title>Sharing reproducible and interactive environments in R with Binder</title>
+
+    <link rel="icon" href="https://res.cloudinary.com/flor/image/upload/v1556588922/favicon_rjn8au.ico">
+    
+
+    
+	
+    <link rel="canonical" href="/2020/08/sharing-reproducible-and-interactive-environments-in-r-with-binder/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-nnm2spxvve8onlujjlegkkytaehyadd4ksxc1hyzzq9a2wvtrgbljqyulomn.min.css" />
+    
+    
+
+    
+      
+    
+    
+	
+	
+  </head>
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/">English Version</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about">
+    
+	
+    
+      
+        <img class="header-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+  
+    
+      <div class="sidebar-profile">
+	    <a href="/#about">
+          <img class="sidebar-profile-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Florencia D&#39;Andrea</h4>
+        
+	  </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://flor14.github.io/online-cv/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">Bio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/flor14">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/cantoflor_87">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="mailto:lascientificasdedatos@gmail.com" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-pencil"></i>
+      
+      <span class="sidebar-button-desc">Mail</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-left
+              "
+       style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1584660577/3_zru9mg.png')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Sharing reproducible and interactive environments in R with Binder
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-08-28T00:00:00Z">
+        
+  
+  
+  
+  
+    28 August 2020
+  
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="/categories/reproducibility">reproducibility</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="working-in-a-reproducible-manner" class="section level2">
+<h2>Working in a reproducible manner</h2>
+<p>I’m trying to make my next paper easier to reproduce.
+This has led me to read about computational reproducibility tools and get involved in communities like <a href="https://twitter.com/ReproHack">ReproHack</a>, where the focus is on elucidating best practices when sharing your code and data.</p>
+<blockquote>
+<p>Do you want to know more about ReproHack and computational reproducibility? I recommend <a href="https://twitter.com/annakrystalli">Anna Krystalli</a>’s talk on UseR! 2020</p>
+</blockquote>
+</div>
+<div id="binder-and-r" class="section level2">
+<h2>Binder and R?</h2>
+<p>I got to know Binder thanks to the <a href="">Ines Montani tutorial framework</a>. In this framework, Binder allows you to run the code of the exercises interactively.</p>
+<p>One of the benefits of Binder is being able to share Shiny apps, although it has some disadvantages compared to shinyapps.io. “Binderized” Shiny apps take longer to build but it is still an interesting alternative when leaving an application as part of a publication. It also has no restrictions on the number of apps that can be left for free. In addition, by simply changing the URL that we use to call the app, Binder allows us to access the same project using the RStudio IDE.</p>
+<blockquote>
+<p>If you want to deploy your Shiny app using <code>shinyapp.io</code> you can find instructions <a href="">here</a></p>
+</blockquote>
+<p>I found little information that you can use Binder for RStudio or Shiny apps because the majority of examples were for use with Jupyter Notebooks. The only case of a “binderized” Shiny app was made available by <a href="https://github.com/pablobernabeu/">Pablo Bernabeu</a> as part of one of his publications. It can be found as an example in the official Binder repository.</p>
+<p>A short time ago I participated in <a href="https://carpentrycon.org/">CarpentryCon</a>, not only helping in the <a href="https://carpentries.org/blog/2020/08/Hablamos/">translations of lessons into Spanish</a>, but also giving a small workshop with Pablo on <a href="">Reproducibility and Open Science</a> where I briefly explained the use of Binder for R users.</p>
+<p>If you want to know more about Binder, I suggest <a href="https://the-turing-way.netlify.app/welcome">The Turing Way book</a>. The Turing Way is another community that I recommend you follow if you are interested in the topic of open science and reproducibility.</p>
+</div>
+<div id="slides" class="section level2">
+<h2>Slides</h2>
+<p>I prepared these slides as part of a meetup to present the first ReproHack in Spanish to be held at the LatinR 2020 conference.</p>
+<p>In these slides you can find:</p>
+<ul>
+<li><p>Different ways to capture computational environments</p></li>
+<li><p>A brief overview of the renv package</p></li>
+<li><p>What Binder is</p></li>
+<li><p>Steps to share interactive enviroments as Shiny apps or RStudio projects</p></li>
+</ul>
+<p>These slides are also in Spanish <a href="">here</a></p>
+</div>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/tags/shiny/">Shiny</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/binder/">Binder</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/rstudio/">RStudio</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/environments/">environments</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/interactive/">interactive</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2020/06/two-examples-of-iteration-with-purrr.en-us/" data-tooltip="Two examples of iteration with purrr - Class for the RStudio certification">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/2020/08/sharing-reproducible-and-interactive-environments-in-r-with-binder/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Florencia D&#39;Andrea. Creative Commons Attribution-ShareAlike 4.0 International License.
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2020/06/two-examples-of-iteration-with-purrr.en-us/" data-tooltip="Two examples of iteration with purrr - Class for the RStudio certification">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=/2020/08/sharing-reproducible-and-interactive-environments-in-r-with-binder/%29">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/cantoflor_87%25!%28EXTRA%20string=%2F2020%2F08%2Fsharing-reproducible-and-interactive-environments-in-r-with-binder%2F%29">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://res.cloudinary.com/flor/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:878787,c_fill,g_auto,r_max,w_1000/v1580572868/IMG_20200201_115251255_2_ccwd2g.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Florencia D&#39;Andrea</h4>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Biologa
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Argentina
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2020/08/sharing-reproducible-and-interactive-environments-in-r-with-binder/">
+                <h3 class="media-heading">Sharing reproducible and interactive environments in R with Binder</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Working in a reproducible mannerI’m trying to make my next paper easier to reproduce.This has led me to read about computational reproducibility tools and get involved in communities like ReproHack, where the focus is on elucidating best practices when sharing your code and data.
+Do you want to know more about ReproHack and computational reproducibility? I recommend Anna Krystalli’s talk on UseR! 2020
+Binder and R?</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2020/06/two-examples-of-iteration-with-purrr.en-us/">
+                <h3 class="media-heading">Two examples of iteration with purrr - Class for the RStudio certification</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jun 6, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">RStudio CertificationI recently became certified as a RStudio Tidyverse Instructor. To pass the certification there are two exams. In this post, I am going to share a 15 minute class that I prepared to as part of the teaching exam.
+What to teach about?I use loops frequently for my postdoc as I need to automate tasks. That is why I decided to teach two specific examples of iteration using functions in purrr package.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2020/03/cooking-your-first-tutorial.en-us/">
+                <h3 class="media-heading">Recipe for your first interactive tutorial</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">May 2020: Interview available on the RStudio blog about the tutorials https://education.rstudio.com/blog/2020/05/teach-interactive-course/
+The aim of this post is to provide a route map highlighting the resources available to generate your own tutorial.
+HelloLast year I helped to transform some courses from a DataCamp format to Ines Montani framework. Here you have some examples of tutorials created with this framework.
+After one busy year that included the end of my PhD finally I have some time to make a contribution to the community about how to build these tutorials.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2020/03/where-to-publish-your-shinyapp.en-us/">
+                <h3 class="media-heading">Where to publish your Shiny App?</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">MotivationI started to develop Shiny Apps because of my research. The development of a Shiny App for the analysis of toxicological databases allowed me to explore the data in relation to different criteria.
+Where to publish?After finishing the app, my first question was whether to publish the Shiny App. Should I include it as supplementary material of other paper or could be published as software itself?</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2020/02/intro_shiny.en-us/">
+                <h3 class="media-heading">Interactive web applications with Shiny - meetup material</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Feb 2, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Hello!In February I will participate in a meetup of the R-Ladies chapter R-Ladies Resistencia-Corrientes and the R user group R en el NEA. These groups represent the R users in the cities of Resistencia and Corrientes, Argentina.
+The meetup consists of a workshop where attendees learn to build their own apps. This material improves the one that I presented in an R-Ladies Buenos Aires meetup in 2017.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         5 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://res.cloudinary.com/flor/image/upload/v1579182616/images_1_i4cpen.png');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/2020\/08\/sharing-reproducible-and-interactive-environments-in-r-with-binder\/';
+          
+            this.page.identifier = '\/2020\/08\/sharing-reproducible-and-interactive-environments-in-r-with-binder\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'florencia';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

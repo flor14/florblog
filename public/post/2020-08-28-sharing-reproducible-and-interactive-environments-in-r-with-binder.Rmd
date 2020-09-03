@@ -1,0 +1,63 @@
+---
+title: Sharing reproducible and interactive environments in R with Binder
+author: "Florencia D'Andrea"
+date: '2020-08-28'
+slug: sharing-reproducible-and-interactive-environments-in-r-with-binder.en-us
+categories: 
+  - reproducibility
+tags: 
+  - Shiny
+  - Binder
+  - RStudio
+  - environments
+  - interactive
+keywords:
+  - rstats
+  - reproducibility
+  - environments
+thumbnailImage: 
+  https://res.cloudinary.com/flor/image/upload/v1598698772/github_squares_c9trzb.png
+thumbnailImagePosition: right
+coverimage:
+  https://res.cloudinary.com/flor/image/upload/v1598698772/github_squares_c9trzb.png
+summary: "Shiny apps and interactive RStudio projects"
+---
+
+## Working in a reproducible manner
+
+I'm trying to make my next paper easier to reproduce.
+This has led me to read about computational reproducibility tools and get involved in communities like [ReproHack](https://twitter.com/ReproHack), where the focus is on elucidating best practices when sharing your code and data.
+
+> Do you want to know more about ReproHack and computational reproducibility? I recommend [Anna Krystalli](https://twitter.com/annakrystalli)'s [talk on UseR! 2020](https://www.youtube.com/watch?v=KHMW8fV2NXo)
+
+## Binder and R?
+
+I got to know Binder thanks to the [Ines Montani tutorial framework](). In this framework, Binder allows you to run the code of the exercises interactively. 
+
+One of the benefits of Binder is being able to share Shiny apps, although it has some disadvantages compared to shinyapps.io. "Binderized" Shiny apps take longer to build but it is still an interesting alternative when leaving an application as part of a publication. It also has no restrictions on the number of apps that can be left for free. In addition, by simply changing the URL that we use to call the app, Binder allows us to access the same project using the RStudio IDE.
+
+> If you want to deploy your Shiny app using `shinyapp.io` you can find instructions [here](https://shiny.rstudio.com/articles/shinyapps.html#:~:text=Shinyapps.io%20is%20a%20platform,such%20as%20the%20RStudio%20IDE)
+
+I found little information that you can use Binder for RStudio or Shiny apps because the majority of examples were for use with Jupyter Notebooks. The only case of a "binderized" Shiny app was made available by [Pablo Bernabeu](https://github.com/pablobernabeu/) as part of one of his publications. It can be found as an example in the [official Binder repository]().
+
+A short time ago I participated in [CarpentryCon](https://carpentrycon.org/), not only helping in the [translations of lessons into Spanish](https://carpentries.org/blog/2020/08/Hablamos/), but also giving a small workshop with Pablo on [Reproducibility and Open Science]() where I briefly explained the use of Binder for R users.
+
+If you want to know more about Binder, I suggest [The Turing Way book](https://the-turing-way.netlify.app/welcome). The Turing Way is another community that I recommend you follow if you are interested in the topic of open science and reproducibility.
+
+
+## Slides
+
+I prepared these slides as part of a meetup to present the first ReproHack in Spanish to be held at the [LatinR](https://latin-r.com/) 2020 conference.
+
+In these slides you can find:
+
+* Different ways to capture computational environments 
+
+* A brief overview of the `renv` package
+
+* What Binder is
+
+* Steps to share interactive enviroments as Shiny apps or RStudio projects 
+
+
+These slides are also in Spanish [here]()
