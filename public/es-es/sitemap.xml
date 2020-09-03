@@ -142,7 +142,7 @@
   </url>
   
   <url>
-    <loc>/es-es/tags/interactivos/</loc>
+    <loc>/es-es/tags/interactividad/</loc>
     <lastmod>2020-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -166,6 +166,22 @@
                 rel="alternate"
                 hreflang="es-es"
                 href="/es-es/tags/journal/"
+                />
+  </url>
+  
+  <url>
+    <loc>/es-es/tags/latinr/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="/tags/latinr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="/es-es/tags/latinr/"
                 />
   </url>
   
@@ -259,6 +275,22 @@
     <loc>/es-es/categories/reproducibilidad/</loc>
     <lastmod>2020-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/es-es/tags/reprohack/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="/tags/reprohack/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="/es-es/tags/reprohack/"
+                />
   </url>
   
   <url>

@@ -11,9 +11,13 @@ tags:
   - RStudio
   - LearnR
   - entornos
-  - interactivos
+  - interactividad
+  - LatinR
+  - ReproHack
 keywords:
   - tech
+  - rstatses
+  - comunidades
 thumbnailImage: 
   https://res.cloudinary.com/flor/image/upload/v1598698772/github_squares_c9trzb.png
 thumbnailImagePosition: right
@@ -36,11 +40,11 @@ knitr::include_url("https://flor14.github.io/r_de_reproducibilidad/r_de_reproduc
 
 ```
 
-Conocí [Binder](https://mybinder.readthedocs.io/en/latest/faq.html) gracias al framework de los tutoriales de [Ines Montani](https://github.com/ines/course-starter-r). Binder permite correr el código de los ejercicios de forma interactiva. Entre las potencialidades de Binder esta poder compartir Shiny apps. Si bien tiene algunas desventajas en comparación con shinyapps.io, como por ejemplo tardar más tiempo en cargar, no deja de ser una alternativa interesante al momento de dejar una aplicación como parte de un paper. Además no tiene restricciones de cantidad de apps que se pueden dejar libres de forma gratuita.
+Conocí [Binder](https://mybinder.readthedocs.io/en/latest/faq.html) gracias al framework de los tutoriales de [Ines Montani](https://github.com/ines/course-starter-r). Binder permite correr el código de los ejercicios de forma interactiva. Entre las potencialidades de Binder esta poder compartir Shiny apps. Si bien tiene algunas desventajas en comparación con [shinyapps.io](shinyapps.io), como por ejemplo tardar más tiempo en cargar, no deja de ser una alternativa interesante al momento de dejar una aplicación como parte de una articulo científico. Además no tiene restricciones de cantidad de apps que se pueden dejar libres de forma gratuita.
 
 Además, simplemente cambiando la URL con la que llamamos a la app, Binder permite compartir el una Shiny app o acceder al mismo proyecto desde RStudio.
 
-> Si quieres usar `shinyapp.io` para publicar tu Shiny app puedes encontrar instrucciones [aquí](https://shiny.rstudio.com/articles/shinyapps.html#:~:text=Shinyapps.io%20is%20a%20platform,such%20as%20the%20RStudio%20IDE)
+> Si quieres usar [shinyapps.io](shinyapps.io) para publicar tu Shiny app puedes encontrar instrucciones [aquí](https://shiny.rstudio.com/articles/shinyapps.html#:~:text=Shinyapps.io%20is%20a%20platform,such%20as%20the%20RStudio%20IDE)
 
 Hace poco participé de la [CarpentryCon](https://carpentrycon.org/), no sólo ayudando en [las traducciones de lecciones al español](https://carpentries.org/blog/2020/08/Hablamos/), sino también dando un pequeño workshop junto a Pablo Bernabeu sobre Reproducibilidad y Ciencia Abierta donde expliqué brevemente el uso de Binder.
 
@@ -51,7 +55,9 @@ Si quieres saber más de Binder te recomiendo el libro de [The Turing Way book](
 
 ## Filminas
 
+<center>
 ![](https://res.cloudinary.com/flor/image/upload/c_scale,w_460/v1599145015/charlaR_con_R_3_paoy3a.png)
+</center>
 
 Prepare estas filminas como parte de un meetup para presentar la primer ReproHack en español que se realizará en la conferencia [LatinR](https://latin-r.com/) en su modalidad virtual este 2020.
 
