@@ -42,11 +42,11 @@ Además, simplemente cambiando la URL con la que llamamos a la app, Binder permi
 
 > Si quieres usar `shinyapp.io` para publicar tu Shiny app puedes encontrar instrucciones [aquí](https://shiny.rstudio.com/articles/shinyapps.html#:~:text=Shinyapps.io%20is%20a%20platform,such%20as%20the%20RStudio%20IDE)
 
-Hace poco participé de la [CarpentryCon](https://carpentrycon.org/), no sólo ayudando en [las traducciones de lecciones al español](https://carpentries.org/blog/2020/08/Hablamos/), sino también dando un pequeño workshop junto a [Pablo Bernabeu](https://github.com/pablobernabeu/) sobre Reproducibilidad y Ciencia Abierta donde expliqué brevemente el uso de Binder.
+Hace poco participé de la [CarpentryCon](https://carpentrycon.org/), no sólo ayudando en [las traducciones de lecciones al español](https://carpentries.org/blog/2020/08/Hablamos/), sino también dando un pequeño workshop junto a Pablo Bernabeu sobre Reproducibilidad y Ciencia Abierta donde expliqué brevemente el uso de Binder.
 
 Si quieres saber más de Binder te recomiendo el libro de [The Turing Way book](https://the-turing-way.netlify.app/welcome). The [Turing Way](https://twitter.com/turingway) es otra comunidad que te recomiendo seguir si te interesa el tema de ciencia abierta y reproducibilidad.
 
-> Tutoriales: Binder es parte del framework de Inés Montani para generar tutoriales de R y Python, sino que también puede usarse para compartir tus [tutoriales realizados con el paquete learnR, tal como lo explica este blog post](https://syoh.org/learnr-tutorial/) 
+> Tutoriales: Binder es parte del framework de Inés Montani para generar tutoriales de R y Python. También puede usarse para compartir tus [tutoriales realizados con el paquete learnR, tal como lo explica este blog post](https://syoh.org/learnr-tutorial/) 
 
 
 ## Filminas
@@ -66,7 +66,7 @@ Podrás encontrar:
 * Pasos para generar un entorno
 
 ```{r echo=FALSE}
-knitr::include_url("https://flor14.github.io/r_de_reproducibilidad/r_de_reproducibilidad.html#21")
+knitr::include_url("https://flor14.github.io/r_de_reproducibilidad/r_de_reproducibilidad.html#22")
 
 ```
 
