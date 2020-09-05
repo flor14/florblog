@@ -324,22 +324,6 @@
   </url>
   
   <url>
-    <loc>/tags/shiny/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="/es-es/tags/shiny/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="/tags/shiny/"
-                />
-  </url>
-  
-  <url>
     <loc>/categories/shiny/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -352,6 +336,22 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="/categories/shiny/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/shiny/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="/es-es/tags/shiny/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="/tags/shiny/"
                 />
   </url>
   
@@ -420,25 +420,25 @@
   </url>
   
   <url>
-    <loc>/tags/teaching/</loc>
-    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/teaching/</loc>
     <lastmod>2020-06-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/tutorials/</loc>
-    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+    <loc>/tags/teaching/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/tutorials/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tutorials/</loc>
     <lastmod>2020-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

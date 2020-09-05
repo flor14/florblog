@@ -71,7 +71,7 @@ In these slides you can find:
 
 * What Binder is
 
-* Steps to share interactive enviroments with Binder.
+* Steps to share interactive environments with Binder.
 
 
 ```{r echo=FALSE}
@@ -86,5 +86,5 @@ Slides in [Spanish](https://flor14.github.io/r_de_reproducibilidad/r_de_reproduc
 # Final note
 
 Due to [changes to Docker terms of service](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) on November 1st the lack of activity for 6 months may cause the sharing link to become inactive.
-You can ask questions about Binder [here](discourse.jupyter.org).
+You can ask questions about Binder in the following link https://discourse.jupyter.org/
 

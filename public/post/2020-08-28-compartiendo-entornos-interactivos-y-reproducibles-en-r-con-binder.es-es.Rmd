@@ -86,4 +86,4 @@ Filminas en [Inglés](https://flor14.github.io/reproducibility_slides_en/binder_
 # Nota final
 
 Debido a los [cambios en los términos de servicio de Docker](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) el primero de noviembre de este año, puede que la falta de actividad durante 6 meses genere que el link quede inactivo.
-Puedes hacer preguntas sobre Binder en este [foro](discourse.jupyter.org).
+Puedes hacer preguntas sobre Binder en el siguiente link https://discourse.jupyter.org/
